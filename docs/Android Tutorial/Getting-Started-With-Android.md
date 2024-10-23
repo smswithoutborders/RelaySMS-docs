@@ -161,6 +161,8 @@ Logout means all your current messages will be deleted and you can always log ba
 
 <img src="/Android/settings.png" alt="Google Play Store" class="resized-image"/>
 <img src="/Android/security.png" alt="Google Play Store" class="resized-image"/>
+<img src="/Android/revokeComfirm.png" alt="Google Play Store" class="resized-image"/>
+
 
 ### Customizing Your Language Preference
 
