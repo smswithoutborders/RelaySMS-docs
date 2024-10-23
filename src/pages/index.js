@@ -45,6 +45,18 @@ function HomepageHeader() {
             <Translate>Get Started with Android</Translate>
           </Link>
         </div>
+
+
+        {/* Button Group */}
+        <div className={styles.buttonGroup}>
+          <Link
+            className="button button--outline button--primary button--lg"
+            to="docs/Troubleshooting/Troubleshooting-FAQ"
+            aria-label="Troubleshooting Guide"
+          >
+            <Translate>Troubleshooting Guide</Translate>
+          </Link>
+        </div>
       </div>
     </header>
   );
