@@ -65,28 +65,24 @@ One of the key features of RelaySMS is the ability to save access to online plat
 
 <img src="/Android/addPlateforms.png" alt="token" class="resized-image"/>
 
-### Step 6. Configure your App and begin utilizing​
+### Step 6. Choose a Gateway Client
 
 Once you've linked your apps to your RelaySMS account, you'll need to add your gateway client number or select one from the list of available gateway clients. One important setting to configure is selecting the Gateway number for communication. It is cheaper to opt for a Gateway number from the same service provider as yours or within your country.
-
-<img src="/Android/landingpage.png" alt="add-message" class="resized-image"/>
-<img src="/Android/settings.png" alt="setting" class="resized-image"/>
-
-### Step 7. Gateway Clients
 
 **Available Clients:**
 
 - A list of pre-configured gateway clients is displayed.
 - Pulling down on the list will refresh it, ensuring you have the latest available options.
 
-**Adding Custom Clients:**
-
-If your preferred gateway isn't listed, you can set up your own custom client. Instructions for configuring a custom gateway client are as follows:
 
  <img src="/Android/Gateway1.png" alt="GatewayAvailable" class="resized-image"/>
  <img src="/Android/GateWay2.png" alt="GatewayAvailable" class="resized-image"/>
 
-### To set a gateway number, follow these steps below
+**Adding Custom Clients:**
+
+If your preferred gateway isn't listed, you can set up your own custom client. Instructions for configuring a custom gateway client are as follows:
+
+###  To add a gateway number, follow these steps below
 
  Save the intended gateway number in your contacts.
 1. select Gateway Clients on the homepage.
@@ -165,6 +161,8 @@ Logout means all your current messages will be deleted and you can always log ba
 
 <img src="/Android/settings.png" alt="Google Play Store" class="resized-image"/>
 <img src="/Android/security.png" alt="Google Play Store" class="resized-image"/>
+<img src="/Android/revokeComfirm.png" alt="Google Play Store" class="resized-image"/>
+
 
 ### Customizing Your Language Preference
 
