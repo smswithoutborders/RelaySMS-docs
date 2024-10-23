@@ -163,7 +163,6 @@ Logout means all your current messages will be deleted and you can always log ba
 <img src="/Android/security.png" alt="Google Play Store" class="resized-image"/>
 <img src="/Android/revokeComfirm.png" alt="Google Play Store" class="resized-image"/>
 
-
 ### Customizing Your Language Preference
 
 The app currently offers support in English, French, and Farsi. Here's how you can switch languages:
@@ -172,8 +171,7 @@ The app currently offers support in English, French, and Farsi. Here's how you c
 
 You can choose your preferred language right on the first screen when you launch the app for the first time.
 
-<img src="/Android/settings.png" alt="onbordingLanguage" class="resized-image"/>
-<img src="/Android/languague.png" alt="onbordinglang" class="resized-image"/>
+<img src="/Android/language.png" alt="onbordinglang" class="resized-image"/>
 
 2. Modify Your Language Through Settings:
 
