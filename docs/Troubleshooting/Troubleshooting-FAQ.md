@@ -15,7 +15,7 @@ sidebar_position: 1
 
 - Ensure your Android device is running Android 7 or later, and your iOS device is running iOS 10 or later.
 - Check your internet connection and try downloading again.
-- If the issue persists, contact our support team for assistance.
+- If the issue persists, contact <a href="developers@smswithoutborders.com"> our support</a> team for assistance.
 
 ---
 
@@ -39,7 +39,7 @@ sidebar_position: 1
 
 - Double-check the phone number used for your account. Ensure it's active and receiving SMS messages.
 - Try requesting a new verification code.
-- If the issue persists, contact our support team for assistance.
+- If the issue persists, contact our <a href="developers@smswithoutborders.com">support Team</a>  for assistance.
 
 ---
 
@@ -51,8 +51,7 @@ sidebar_position: 1
 - Verify that the access to the platform is not already saved to another RelaySMS account.
 - Log out of your account, clear the app's cache and data, and log back in.
 - Try saving the platform again.
-- If the issue persists, contact our support team for assistance.
-
+- If the issue persists, contact our support team <a href="developers@smswithoutborders.com">support team</a> 
 ---
 
 ### Message Publishing Issues
@@ -64,7 +63,7 @@ sidebar_position: 1
 - Log out of your account, clear the app's cache and data, and log back in.
 - If you haven't used the account for a long time, revoke access to the platform and restore it.
 - Check your SIM card is active and able to send SMS messages.
-- If the issue persists, contact our support team for assistance.
+- If the issue persists, contact our <a href="developers@smswithoutborders.com">support team</a> for assistance.
 
 ---
 
@@ -73,4 +72,4 @@ sidebar_position: 1
 - **Update the App**: Ensure you have the latest version of the RelaySMS app installed.
 - **Restore tokens**: It is recommended to revoke and restore access to your platforms on the app every 3 to 6 months. 
 - **Check for Network Issues**: Verify that your device is active and is able to send SMS messages.
-- **Contact Support**: If you continue to experience issues, don't hesitate to reach out to our support team for assistance.
+- **Contact Support**: If you continue to experience issues, don't hesitate to reach out to our <a href="developers@smswithoutborders.com">support team</a>  for assistance.

@@ -175,6 +175,8 @@ You can choose your preferred language right on the first screen when you launch
 
 2. Modify Your Language Through Settings:
 
+<img src="/Android/settings.png" alt="onbordinglang" class="resized-image"/>
+
 You can also adjust your language preference anytime by following these steps:
 
 - Navigate to the app's Settings menu.
@@ -182,6 +184,3 @@ You can also adjust your language preference anytime by following these steps:
 - Select your desired language from the available options.
 
 The app interface will automatically update to reflect your chosen language.
-
-<img src="/Android/settings.png" alt="Google Play Store" class="resized-image"/>
-<img src="/Android/language.png" alt="languaguesettings" class="resized-image"/>
