@@ -83,7 +83,8 @@ Once you've linked your apps to your RelaySMS account, you'll need to add your g
 
 If your preferred gateway isn't listed, you can set up your own custom client. Instructions for configuring a custom gateway client are as follows:
 
-<img src="/Android/choseGateway.png" alt="setting" class="resized-image"/>
+ <img src="/Android/Gateway1.png" alt="GatewayAvailable" class="resized-image"/>
+ <img src="/Android/GateWay2.png" alt="GatewayAvailable" class="resized-image"/>
 
 ### To set a gateway number, follow these steps below
 
@@ -95,8 +96,6 @@ If your preferred gateway isn't listed, you can set up your own custom client. I
 6. Confirm the selection and add the gateway number successfully.
 
  <img src="/Android/Gateway1.png" alt="GatewayAvailable" class="resized-image"/>
-
-<!--<img src="/Android/GateWay2.png" alt="refresh gateway" class="resized-image"/> -->
 
 <img src="/Android/addGateway.png" alt="addgatewayclient" class="resized-image"/>
 
