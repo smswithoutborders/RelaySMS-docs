@@ -9,12 +9,11 @@ sidebar_position: 1
 RelaySMS offre aux utilisateurs la possibilité de rester connectés à leurs plateformes en ligne même lorsque l'accès à Internet est indisponible. En utilisant la messagerie SMS, les utilisateurs peuvent continuer à communiquer sans interruption - leurs contacts reçoivent les messages comme ils le feraient normalement.
 
 ## Introduction
-
 Les étapes ci-dessous vous aideront à configurer votre compte et à commencer à utiliser RelaySMS.
 
 ### Étape 1. Télécharger l'Application
 
-![Google Play Store](/Android/swob_on_playstore.png)
+![Google Play Store](/Android/playstore.png)
 
 - Téléchargez depuis le [Google Play Store](https://play.google.com/store/apps/details?id=com.afkanerd.sw0b)
 
