@@ -12,7 +12,7 @@ Los pasos a continuación te ayudarán a configurar tu cuenta y empezar a usar R
 
 ### Paso 1. Descargar la aplicación​
 
-![Google Play Store](/Android/swob_on_playstore.png)
+![Google Play Store](/Android/playstore.png)
 
 - Descárgala desde [Google_Play_Store](https://play.google.com/store/apps/details?id=com.afkanerd.sw0b)
 

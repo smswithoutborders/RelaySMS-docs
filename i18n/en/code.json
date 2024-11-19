@@ -1,8 +1,8 @@
 {
   "title": {
-  "message": "SMSWithoutBorders >> Documentation"
- },
-  "tagline":{
+    "message": "SMSWithoutBorders >> Documentation"
+  },
+  "tagline": {
     "message": "Stay connected"
   },
   "Get Started with iOS": {
@@ -317,5 +317,8 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "Troubleshooting Guide": {
+    "message": "Troubleshooting Guide"
   }
 }

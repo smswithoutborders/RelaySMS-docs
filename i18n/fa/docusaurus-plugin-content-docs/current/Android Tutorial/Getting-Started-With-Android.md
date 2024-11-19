@@ -14,7 +14,7 @@ RelaySMS به کاربران این امکان را می‌دهد که حتی د
 
 ### مرحله ۱: دانلود برنامه​
 
-![فروشگاه گوگل پلی](/Android/swob_on_playstore.png)
+![فروشگاه گوگل پلی](/Android/playstore.png)
 
 - دانلود از [فروشگاه گوگل پلی](https://play.google.com/store/apps/details?id=com.afkanerd.sw0b)
 
