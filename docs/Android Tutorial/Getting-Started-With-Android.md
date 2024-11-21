@@ -14,7 +14,7 @@ The steps below will help set up your account and start using RelaySMS.
 
 ### Step 1. Download App​
 
-![Google Play Store](/Android/swob_on_playstore.png)
+![Google Play Store](/Android/playstore.png)
 
 - Download from [Google_Play_Store](https://play.google.com/store/apps/details?id=com.afkanerd.sw0b)
 
