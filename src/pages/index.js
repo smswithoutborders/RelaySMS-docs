@@ -21,7 +21,7 @@ function HomepageHeader() {
         />
 
         {/* Title and Tagline */}
-        <h1 className={styles.hero__title} aria-label="RelaySMS >> Documentation">
+        <h1 className={styles.hero__title} aria-label="Smswithoutborders Projects  >> Documentation">
           <Translate>{siteConfig.title}</Translate>
         </h1>
         <p className={styles.hero__subtitle} aria-label="stay Connected">

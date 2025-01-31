@@ -1,8 +1,4 @@
 {
-  "title": {
-    "message": "ریلِی‌اس‌ام‌اس",
-    "description": "The title in the navbar"
-  },
   "logo.alt": {
     "message": "لوگوی ریلِی‌اس‌ام‌اس",
     "description": "The alt text of navbar logo"

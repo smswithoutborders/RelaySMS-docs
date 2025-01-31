@@ -1,8 +1,4 @@
 {
-  "title": {
-    "message": "RelaySMS",
-    "description": "The title in the navbar"
-  },
   "logo.alt": {
     "message": "RelaySMS logo",
     "description": "The alt text of navbar logo"

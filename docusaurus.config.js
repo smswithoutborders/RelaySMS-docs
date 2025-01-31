@@ -2,7 +2,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "RelaySMS >> Documentation",
+  title: "Smswithoutborders Projects >> Documentation",
   tagline: "Stay connected",
   favicon: "favicon.ico",
   url: "https://docs.smswithoutborders.com",
@@ -73,10 +73,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "RelaySMS",
         logo: {
-          alt: "RelaySMS logo",
-          src: "logo-icon-light.png"
+          alt: "Swob logo",
+          src: "logo.png"
         },
         items: [
           {
@@ -100,7 +99,7 @@ const config = {
               },
               {
                 label: "Setting up a Gateway",
-                to: "/docs/Gateway Clients Guide/Setting-Up-a-Gateway"
+                to: "/docs/Gateway Clients Guide/GatewayClientsGuide"
               }
             ]
           },
