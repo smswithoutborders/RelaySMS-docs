@@ -71,7 +71,7 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    (         {
       navbar: {
         logo: {
           alt: "Swob logo",
@@ -172,7 +172,10 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula
-      }
+      },
+      typography: {
+        fontFamily: "'Unbounded', 'Mona Sans', sans-serif",
+      }, 
     })
 };
 
