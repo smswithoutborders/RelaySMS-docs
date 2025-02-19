@@ -315,5 +315,8 @@
   "theme.tags.tagsPageTitle": {
     "message": "Etiquetas",
     "description": "The title of the tag list page"
+  },
+  "Troubleshooting Guide": {
+    "message":"Guía de solución de problemas"
   }
 }
