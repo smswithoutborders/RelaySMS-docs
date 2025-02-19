@@ -215,5 +215,8 @@
   "theme.chatBot.welcomeMessage": {
     "message": "Bienvenue! Posez-moi n'importe quelle question.",
     "description": "Message de bienvenue affiché lorsque l'utilisateur interagit avec le chatbot"
+  },
+  "Troubleshooting Guide": {
+    "message": "Guide de dépannage"
   }
 }

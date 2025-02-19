@@ -315,5 +315,8 @@
   "theme.tags.tagsPageTitle": {
     "message": "برچسب‌ها",
     "description": "The title of the tag list page"
+  },
+  "Troubleshooting Guide": {
+    "message": "راهنمای عیب‌یابی"
   }
 }
