@@ -157,15 +157,15 @@ const config = {
                 href: "https://blog.smswithoutborders.com"
               },
               {
-                label: "FaceBook",
-                href: "https://www.facebook.com/SMSWithoutBorders"
+                label: "Twitter",
+                href: "https://x.com/RelaySMS"
               },
               {
-                label: "YouTube",
-                href: "https://www.youtube.com/@smswithoutborders9162"
+                label: "Bluesky",
+                href: "https://bsky.app/profile/relaysms.bsky.social"
               }
             ]
-          }
+          },                   
         ],
         copyright: `Copyright © ${new Date().getFullYear()} SMSWithoutBorders. Built with Docusaurus.`
       },
@@ -174,7 +174,7 @@ const config = {
         darkTheme: prismThemes.dracula
       },
       typography: {
-        fontFamily: "'Unbounded', 'Mona Sans', sans-serif",
+        fontFamily: "'Mona Sans'",
       }, 
     })
 };
