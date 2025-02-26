@@ -80,7 +80,7 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "contributing/introduction",
+            docId: "Android Tutorial/Getting-Started-With-Android",
             position: "left",
             label: "Docs"
           },
