@@ -40,7 +40,7 @@
     "description": "L'étiquette du lien du pied de page avec l'étiquette=YouTube renvoyant à https://www.youtube.com/@smswithoutborders9162"
   },
   "copyright": {
-    "message": "Droits d'auteur © 2024 SMSWithoutBorders. Créé avec Docusaurus.",
+    "message": "Droits d'auteur © SMSWithoutBorders. Créé avec Docusaurus.",
     "description": "Le copyright du pied de page"
   }
 }
