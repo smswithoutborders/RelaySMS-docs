@@ -2,7 +2,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "RelaySMS >> Documentation",
+  title: "Smswithoutborders Projects >> Documentation",
   tagline: "Stay connected",
   favicon: "favicon.ico",
   url: "https://docs.smswithoutborders.com",
@@ -71,17 +71,16 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    (         {
       navbar: {
-        title: "RelaySMS",
         logo: {
-          alt: "RelaySMS logo",
-          src: "logo-icon-light.png"
+          alt: "Swob logo",
+          src: "logo.png"
         },
         items: [
           {
             type: "doc",
-            docId: "contributing/introduction",
+            docId: "Android Tutorial/Getting-Started-With-Android",
             position: "left",
             label: "Docs"
           },
@@ -100,7 +99,7 @@ const config = {
               },
               {
                 label: "Setting up a Gateway",
-                to: "/docs/Gateway Clients Guide/Setting-Up-a-Gateway"
+                to: "/docs/Gateway Clients Guide/GatewayClientsGuide"
               }
             ]
           },
@@ -158,22 +157,25 @@ const config = {
                 href: "https://blog.smswithoutborders.com"
               },
               {
-                label: "FaceBook",
-                href: "https://www.facebook.com/SMSWithoutBorders"
+                label: "Twitter",
+                href: "https://x.com/RelaySMS"
               },
               {
-                label: "YouTube",
-                href: "https://www.youtube.com/@smswithoutborders9162"
+                label: "Bluesky",
+                href: "https://bsky.app/profile/relaysms.bsky.social"
               }
             ]
-          }
+          },                   
         ],
         copyright: `Copyright © ${new Date().getFullYear()} SMSWithoutBorders. Built with Docusaurus.`
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula
-      }
+      },
+      typography: {
+        fontFamily: "'Mona Sans'",
+      }, 
     })
 };
 

@@ -21,11 +21,12 @@ function HomepageHeader() {
         />
 
         {/* Title and Tagline */}
-        <h1 className={styles.hero__title} aria-label="RelaySMS >> Documentation">
-          <Translate>{siteConfig.title}</Translate>
+        <h1 className={styles.hero__title} aria-label="Smswithoutborders Projects >> Documentation">
+          <Translate>Smswithoutborders Projects &gt;&gt; Documentation</Translate>
         </h1>
-        <p className={styles.hero__subtitle} aria-label="stay Connected">
-          <Translate>{siteConfig.tagline}</Translate>
+        
+        <p className={styles.hero__subtitle} aria-label="Stay Connected">
+          <Translate>Stay Connected</Translate>
         </p>
 
         {/* Button Group */}

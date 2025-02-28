@@ -1,7 +1,7 @@
 {
-  "title":{
-    "message": "اس ام اس بدون مرز >> مستندات" },
-  "tagline": { 
+  "Smswithoutborders Projects >> Documentation":{
+    "message": "پروژه‌های Smswithoutborders >> مستندات" },
+    "Stay Connected": {
    "message":"متصل بمانید"},
   "Get Started with iOS": {
     "message": "شروع به کار با iOS"
@@ -315,5 +315,8 @@
   "theme.tags.tagsPageTitle": {
     "message": "برچسب‌ها",
     "description": "The title of the tag list page"
+  },
+  "Troubleshooting Guide": {
+    "message": "راهنمای عیب‌یابی"
   }
 }
