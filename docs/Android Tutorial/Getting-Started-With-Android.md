@@ -6,181 +6,155 @@ sidebar_position: 1
 
 ## Getting Started with Android
 
-RelaySMS provides users with the ability to stay connected with their online platforms even when internet access is unavailable. By leveraging SMS messaging, users can continue communicating seamlessly - their contacts receive messages just as they normally would.
+RelaySMS allows users to stay connected with online platforms even when internet access is unavailable. By leveraging SMS messaging, users can continue communicating seamlessly—contacts receive messages just as they normally would.
 
 ## Introduction​
 
-The steps below will help set up your account and start using RelaySMS.
+Follow these steps to set up your account and start using RelaySMS.
 
-### Step 1. Download App​
+---
+
+### Step 1: Download the App​
 
 ![Google Play Store](/Android/playstore.png)
 
-- Download from [Google_Play_Store](https://play.google.com/store/apps/details?id=com.afkanerd.sw0b)
-
-- [Github](https://github.com/smswithoutborders/SMSwithoutBorders-Android/releases/tag/v1.0) or
-
+- Download from [Google Play Store](https://play.google.com/store/apps/details?id=com.afkanerd.sw0b)
+- [GitHub](https://github.com/smswithoutborders/SMSwithoutBorders-Android/releases/tag/v1.0)
 - Build from [source](https://github.com/smswithoutborders/SMSwithoutBorders-Android)
 
 #### Technical Requirements
 
-- SMS capability Android smartphone
+- Android smartphone with SMS capability
+- Android 6.0 or above
 
-- Android 6.0 and above
+---
 
-### Step 2. Create an account
+### Step 2: Create an Account
 
-#### Onboarding / Using the App
+#### Onboarding
 
-<img src="/Android/gettingstarted.png" alt="onbording1" class="resized-image"/>
-<img src="/Android/skip.png" alt="onbording" class="resized-image"/>
-<img src="/Android/finish.png" alt="onbording2" class="resized-image"/>
+<img src="/Android/gettingstarted.png" alt="onboarding1" class="resized-image"/>
+<img src="/Android/skip.png" alt="onboarding" class="resized-image"/>
+<img src="/Android/finish.png" alt="onboarding2" class="resized-image"/>
 
-- Sign up for a free account or log into your account on the app by clicking on the “add account” button, select “create new” and fill in the required information and then click on “sign up”.
+- Sign up for a free account or log in by clicking **“Add Account”** → **“Create New”** → Fill in details → **Sign Up**.
 
-<img src="/Android/skip.png" alt="sign_in" class="resized-image"/>
 <img src="/Android/login.png" alt="sign_in1" class="resized-image"/>
 <img src="/Android/createaccount.png" alt="sign_in2" class="resized-image"/>
 
-**Note**: An authentication pin will be sent to a valid phone through SMS.
+**Note**: An authentication PIN will be sent via SMS.
 
-### Step 3: Verify your phone number
+---
 
-A verification number will be sent to your phone number; input and verify.
+### Step 3: Verify Your Phone Number
 
-<img src="/Android/verificationcode.png" alt="no-validation" class="resized-image"/>
+A verification code will be sent to your phone. Enter it to verify your account.
 
-### Step 4: Log-in
+<img src="/Android/verificationcode.png" alt="verification" class="resized-image"/>
 
-If you already have an account, click on “login” and fill in your phone number and password to get into your RelaySMS account.
+---
 
-<img src="/Android/skip.png" alt="onbording" class="resized-image"/>
+### Step 4: Log In
+
+If you already have an account, click **“Login”**, enter your phone number and password.
+
 <img src="/Android/login.png" alt="login" class="resized-image"/>
 
-### Step 5. Save access to platforms​
+---
 
-One of the key features of RelaySMS is the ability to save access to online platforms while you have an active internet, then use the app to make requests to these platforms without an active internet connection. Once you log in and click on **Save Accounts**, you will have a list of platforms we currently support. You can save your credentials for as many platforms as you can foresee further need in an offline situation.
+### Step 5: Save Access to Platforms​
 
-**Note**: You need to have the platform you want to save installed on your phone before you can save it on the RelaySMS platform.
+- Log in and click **Save Accounts**.
+- Select platforms to save credentials for future offline use.
 
-<img src="/Android/addPlateforms.png" alt="token" class="resized-image"/>
+**Note**: Ensure the platform app is installed before saving.
 
-### Step 6. Choose a Gateway Client
+<img src="/Android/addPlateforms.png" alt="save_platforms" class="resized-image"/>
 
-Once you've linked your apps to your RelaySMS account, you'll need to add your gateway client number or select one from the list of available gateway clients. One important setting to configure is selecting the Gateway number for communication. It is cheaper to opt for a Gateway number from the same service provider as yours or within your country.
+---
 
-**Available Clients:**
+### Step 6: Choose a Gateway Client
 
-- A list of pre-configured gateway clients is displayed.
-- Pulling down on the list will refresh it, ensuring you have the latest available options.
+- Select a pre-configured **Gateway Number** from the list.
+- Refresh the list to update available gateways.
 
+**Adding a Custom Gateway:**
 
- <img src="/Android/Gateway1.png" alt="GatewayAvailable" class="resized-image"/>
- <img src="/Android/GateWay2.png" alt="GatewayAvailable" class="resized-image"/>
+1. Save the gateway number in your contacts.
+2. Open **Gateway Clients** in the app.
+3. Tap **3 dots** → **Add**.
+4. Select the saved gateway number.
+5. Confirm and add successfully.
 
-**Adding Custom Clients:**
+<img src="/Android/addGateway.png" alt="add_gateway" class="resized-image"/>
 
-If your preferred gateway isn't listed, you can set up your own custom client. Instructions for configuring a custom gateway client are as follows:
+---
 
-###  To add a gateway number, follow these steps below
+## Communicating Using the App
 
- Save the intended gateway number in your contacts.
-1. select Gateway Clients on the homepage.
-3. Tap the _3 dots_ sign at the top right corner and tap _add_.
-4. Click on the **Contact icon** to access your contacts.
-5. Find and select the saved Gateway Number.
-6. Confirm the selection and add the gateway number successfully.
+### Step 1: Click the Compose Button
 
- <img src="/Android/Gateway1.png" alt="GatewayAvailable" class="resized-image"/>
+<img src="/Android/landingpage.png" alt="compose" class="resized-image"/>
 
-<img src="/Android/addGateway.png" alt="addgatewayclient" class="resized-image"/>
+- Open RelaySMS and click the **pencil icon**.
 
-<img src="/Android/addGateway-Number.png" alt="addgatewayclient" class="resized-image"/>
+### Step 2: Select a Platform
 
+Choose a platform to compose your message.
 
-# Communicating using the app
+<img src="/Android/chosePlateformtosendMessage.png" alt="select_platform" class="resized-image"/>
 
-Let's discover how to communicate without an Internet connection using RelaySMS.
+### Step 3: Compose & Send via SMS
 
-### Step 1: Click the compose button
+- Write your message and send it as an **encrypted SMS**.
+- The message will be decrypted for the recipient.
 
-<img src="/Android/landingpage.png" alt="add-message" class="resized-image"/>
+<img src="/Android/ComposeGmail.png" alt="compose_gmail" class="resized-image"/>
+<img src="/Android/ComposeTelegram.png" alt="compose_telegram" class="resized-image"/>
+<img src="/Android/TwitterPost.png" alt="compose_twitter" class="resized-image"/>
 
-After the first stage has been completed, which is saving access to platforms you wish to communicate on, synchronizing, and adding a gateway number.
+### Step 4: SMS Sent!
 
-Open the RelaySMS application after being downloaded from [Google Play Store](https://play.google.com/store/apps/details?id=com.afkanerd.sw0b), [Github](https://github.com/smswithoutborders/SMSwithoutBorders-Android/releases/tag/v1.0), or build from [source](https://github.com/smswithoutborders/SMSwithoutBorders-Android) and click on the "pencil icon" to compose a message.
+- Your message is sent securely.
+- Delivery time depends on the network and gateway client.
 
-### Step 2. Select a platform to compose a message​
+---
 
-Choose a platform to start composing your message.
+## Managing Saved Platforms
 
-<img src="/Android/chosePlateformtosendMessage.png" alt="add-message" class="resized-image"/>
+### Revoking Access
 
-### Step 3. Compose your message and send as SMS
+- Go to **Settings** → **Security & Privacy** → **Revoke Platforms**.
 
-After composing your message on any platform, proceed to send it as usual. You will then be directed to your standard SMS page, where you can send the message to the pre-saved gateway number as an SMS. Note that the message will appear as encrypted when sending it as an SMS. This extra layer of security ensures that only you and the recipient can access the message, maintaining confidentiality.
+<img src="/Android/settings.png" alt="settings" class="resized-image"/>
+<img src="/Android/revokeComfirm.png" alt="revoke" class="resized-image"/>
 
-<img src="/Android/ComposeGmail.png" alt="add-message" class="resized-image"/>
-<img src="/Android/ComposeTelegram.png" alt="add-message" class="resized-image"/>
-<img src="/Android/TwitterPost.png" alt="add-message" class="resized-image"/>
+### Deleting & Logging Out
 
-#### Requirements​
+- **Logout**: Removes messages but retains your account.
+- **Delete Account**: Removes all saved data.
 
-- Recipient's email for Gmail
-- Contacts phone number for Telegram
-- Tweet body for Twitter
+- Navigate to **Settings** → **Security & Privacy** → **Logout/Delete**.
 
-For either of the platforms selected, fill the required fields accurately and send SMS.
+<img src="/Android/settings.png" alt="settings" class="resized-image"/>
 
-### Step 4: SMS Sent
+---
 
-Congratulations! You have successfully sent the SMS. The recipient will now receive the original message in a readable format. Please note that the time for receiving the message may vary depending on the mobile network and the functionality of the gateway client device.
+## Customizing Language Preferences
 
-### Revoking Saved Platforms
+RelaySMS supports English, French, and Farsi.
 
-Revoking saved platforms removes your access to them through RelaySMS. This means that you can no longer send messages to that online platform using the RelaySMS app. To do this:
+1. **During Onboarding:** Select your language on the welcome screen.
+   
+   <img src="/Android/language.png" alt="language_select" class="resized-image"/>
 
-- Click on settings.
-- Go to security and privacy.
-- Tap ‘revoke platforms’ and choose the platform you wish to delete.
+2. **Change Language in Settings:**
+   - Go to **Settings** → **Language** → Select preferred language.
+   
+   <img src="/Android/settings.png" alt="change_language" class="resized-image"/>
 
-<img src="/Android/settings.png" alt="Google Play Store" class="resized-image"/>
-<img src="/Android/security.png" alt="Google Play Store" class="resized-image"/>
-<img src="/Android/revokeComfirm.png" alt="Google Play Store" class="resized-image"/>
+The app will update its interface to your selected language.
 
+---
 
-### Deleting and logging out of the account
-
-Deleting your account means deleting all your saved accounts online. You can always recreate your account if needed.
-
-Logout means all your current messages will be deleted and you can always log back in when needed.
-
-- Click on settings.
-- Go to security and privacy.
-- Tap ‘Logout’ to log out of your account and ‘Delete’ to delete your account.
-
-<img src="/Android/settings.png" alt="Google Play Store" class="resized-image"/>
-<img src="/Android/security.png" alt="Google Play Store" class="resized-image"/>
-<img src="/Android/revokeComfirm.png" alt="Google Play Store" class="resized-image"/>
-
-### Customizing Your Language Preference
-
-The app currently offers support in English, French, and Farsi. Here's how you can switch languages:
-
-1. Set Your Language During Onboarding:
-
-You can choose your preferred language right on the first screen when you launch the app for the first time.
-
-<img src="/Android/language.png" alt="onbordinglang" class="resized-image"/>
-
-2. Modify Your Language Through Settings:
-
-<img src="/Android/settings.png" alt="onbordinglang" class="resized-image"/>
-
-You can also adjust your language preference anytime by following these steps:
-
-- Navigate to the app's Settings menu.
-- Locate the "Language" option.
-- Select your desired language from the available options.
-
-The app interface will automatically update to reflect your chosen language.
+🚀 Now you're ready to use RelaySMS seamlessly even without the internet! 🎉
