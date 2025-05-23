@@ -9,6 +9,9 @@
   "Get Started with Android": {
     "message": "شروع به کار با اندروید"
   },
+      "Technical Documentation": {
+    "message": "مستندات فنی"
+  },
   "theme.ErrorPageContent.title": {
     "message": "بارگذاری صفحه با خطا روبرو شد.",
     "description": "The title of the fallback page when the page crashed"

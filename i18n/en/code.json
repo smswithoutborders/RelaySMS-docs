@@ -11,6 +11,12 @@
   "Get Started with Android": {
     "message": "Get Started with Android"
   },
+    "Troubleshooting Guide": {
+    "message": "Troubleshooting Guide"
+  },
+    "Technical Documentation": {
+    "message": "Technical Documentation"
+  },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"
@@ -317,8 +323,5 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
-  },
-  "Troubleshooting Guide": {
-    "message": "Troubleshooting Guide"
   }
 }
