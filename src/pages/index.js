@@ -31,13 +31,14 @@ function HomepageHeader() {
 
         {/* Button Group */}
         <div className={styles.buttonGroup}>
-          <Link
+              <Link
             className="button button--outline button--primary button--lg"
-            to="/docs/iOS Tutorial/Getting-Started-With-iOS"
-            aria-label="Get started with iOS"
+            to="docs"
+            aria-label="Troubleshooting Guide"
           >
-            <Translate>Get Started with iOS</Translate>
+            <Translate>Technical Documentation</Translate>
           </Link>
+       
           <Link
             className="button button--outline button--primary button--lg"
             to="docs/Android Tutorial/Getting-Started-With-Android"
@@ -56,6 +57,13 @@ function HomepageHeader() {
             aria-label="Troubleshooting Guide"
           >
             <Translate>Troubleshooting Guide</Translate>
+          </Link>
+             <Link
+            className="button button--outline button--primary button--lg"
+            to="/docs/iOS Tutorial/Getting-Started-With-iOS"
+            aria-label="Get started with iOS"
+          >
+            <Translate>Get Started with iOS</Translate>
           </Link>
         </div>
       </div>

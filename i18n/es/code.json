@@ -9,6 +9,9 @@
   "Get Started with Android": {
     "message": "Comienza con Android"
   },
+    "Technical Documentation": {
+    "message": "Documentación técnica"
+  },
   "theme.ErrorPageContent.title": {
     "message": "Esta página ha fallado.",
     "description": "The title of the fallback page when the page crashed"
