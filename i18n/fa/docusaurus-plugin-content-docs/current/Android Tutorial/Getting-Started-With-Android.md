@@ -2,183 +2,110 @@
 sidebar_position: 1
 ---
 
-# برنامه RelaySMS برای اندروید
+# اپلیکیشن RelaySMS برای اندروید
 
-## شروع کار با اندروید
+## شروع به کار با اندروید
 
-RelaySMS به کاربران این امکان را می‌دهد که حتی در زمانی که دسترسی به اینترنت ندارند، ارتباط خود را با پلتفرم‌های آنلاین حفظ کنند. با استفاده از پیامک، کاربران می‌توانند به صورت پیوسته به ارتباطات خود ادامه دهند - مخاطبان آنها پیام‌ها را به همان شکل معمول دریافت می‌کنند.
+RelaySMS به کاربران این امکان را می‌دهد که حتی در صورت عدم دسترسی به اینترنت، با پلتفرم‌های آنلاین خود در ارتباط بمانند. با استفاده از پیامک (SMS)، کاربران می‌توانند بدون وقفه به ارتباط ادامه دهند – مخاطبان آن‌ها پیام‌ها را مانند همیشه دریافت می‌کنند.
 
-## معرفی​
+## مقدمه
 
-مراحل زیر به شما کمک می‌کند حساب کاربری خود را تنظیم کنید و استفاده از RelaySMS را شروع کنید.
+RelaySMS به شما کمک می‌کند بدون نیاز به اینترنت پیام ارسال کنید. این اپلیکیشن به **دو روش قدرتمند** کار می‌کند:
 
-### مرحله ۱: دانلود برنامه​
+**استفاده از درگاه‌ها (بدون نیاز به ثبت‌نام) و استفاده از پلتفرم‌ها (با ثبت‌نام و ذخیره‌ی دسترسی از قبل)**
 
-![فروشگاه گوگل پلی](/Android/playstore.png)
+## 1. [استفاده از درگاه‌ها (بدون نیاز به ثبت‌نام)](/docs/Bridges%20Tutorial/Bridges#using-bridges-no-sign-up-required)
 
-- دانلود از [فروشگاه گوگل پلی](https://play.google.com/store/apps/details?id=com.afkanerd.sw0b)
+## 2. استفاده از پلتفرم‌ها (با ثبت‌نام و ذخیره دسترسی از قبل)
 
-- یا از [گیت‌هاب](https://github.com/smswithoutborders/SMSwithoutBorders-Android/releases/tag/v1.0)
+این روش برای زمانی مناسب است که می‌خواهید در زمان قطع اینترنت، با حساب‌های خود در پلتفرم‌هایی مانند **جیمیل، توییتر یا تلگرام** پست ارسال کنید.
 
-- یا ساخت از [کد منبع](https://github.com/smswithoutborders/SMSwithoutBorders-Android)
+مراحل استفاده از پلتفرم:
 
-#### نیازهای فنی
+**1. اپلیکیشن RelaySMS را دانلود کنید از:**
 
-- گوشی هوشمند اندروید با قابلیت ارسال پیامک
+- [Google Play Store](https://play.google.com/store/apps/details?id=com.afkanerd.sw0b)
+- [گیت‌هاب](https://github.com/smswithoutborders/SMSwithoutBorders-Android/releases/tag/v1.0) یا
+- ساخت از [کد منبع](https://github.com/smswithoutborders/SMSwithoutBorders-Android)
 
-- اندروید ۶.۰ و بالاتر
+<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
 
-### مرحله ۲: ساخت حساب کاربری
+## الزامات فنی
+- گوشی اندرویدی با قابلیت ارسال پیامک (SMS)
+- اندروید 6.0 یا بالاتر
 
-#### شروع کار / استفاده از برنامه
+**2. صفحات آغازین (Onboarding) را مرور کنید تا با نحوه‌ی کار آشنا شوید.**
 
-<img src="/Android/onbording1.png" alt="onbording1" class="resized-image"/>
-<img src="/Android/onbording.png" alt="onbording" class="resized-image"/>
-<img src="/Android/onbording2.png" alt="onbording2" class="resized-image"/>
+<img src="/Android/gettingstarted.png" alt="onbording1" class="resized-image"/>
+<img src="/Android/skip.png" alt="onbording" class="resized-image"/>
+<img src="/Android/skip1.png" alt="onbording" class="resized-image"/>
+<img src="/Android/skip2.png" alt="onbording" class="resized-image"/>
+<img src="/Android/finish.png" alt="onbording2" class="resized-image"/>
 
-- ثبت نام رایگان انجام دهید یا وارد حساب کاربری خود در برنامه شوید. روی دکمه "افزودن حساب" کلیک کنید، گزینه "ایجاد حساب جدید" را انتخاب کنید و اطلاعات مورد نیاز را پر کنید، سپس روی "ثبت‌نام" کلیک کنید.
+**3. یک حساب کاربری ایجاد کنید:**
 
-<img src="/Android/sign_in.png" alt="sign_in" class="resized-image"/>
-<img src="/Android/sign_in1.png" alt="sign_in1" class="resized-image"/>
-<img src="/Android/sign_in2.png" alt="sign_in2" class="resized-image"/>
+- روی **ثبت‌نام (Sign Up)** بزنید.
+<img src="/Android/pick.png" alt="sign_in" class="resized-image"/>
+<img src="/Android/createaccount.png" alt="sign_in2" class="resized-image"/>
+<img src="/Android/verificationcode.png" alt="verificationcode" class="resized-image"/>
 
-**نکته**: یک پین احراز هویت به شماره تلفن معتبر شما از طریق پیامک ارسال می‌شود.
+- شماره تلفن و رمز عبور خود را وارد کنید.
+- تیک موافقت با سیاست حفظ حریم خصوصی را بزنید.
+- روی **ایجاد (Create)** کلیک کنید.
 
-### مرحله ۳: تایید شماره تلفن
+**4. قبلاً حساب دارید؟** روی **ورود (Login)** بزنید، اطلاعات خود را وارد کنید و سپس **ورود** را بزنید.
 
-یک کد تایید به شماره تلفن شما ارسال خواهد شد؛ آن را وارد کرده و تایید کنید.
+<img src="/Android/pick.png" alt="sign_in" class="resized-image" />
+<img src="/Android/login.png" alt="login1" class="resized-image" />
+<img src="/Android/login1.png" alt="sign_in1" class="resized-image" />
 
-<img src="/Android/no-validation.png" alt="no-validation" class="resized-image"/>
+**5. شماره تلفن خود را تأیید کنید:**
 
-### مرحله ۴: ورود
+- کدی که از طریق پیامک دریافت کردید را وارد کنید و روی **ارسال (Submit)** بزنید.
 
-اگر قبلاً حساب کاربری دارید، روی "ورود" کلیک کنید و شماره تلفن و رمز عبور خود را وارد کنید تا وارد حساب RelaySMS خود شوید.
+<img src="/Android/verificationcode.png" alt="verificationcode" class="resized-image"/>
 
-<img src="/Android/login.png" alt="login" class="resized-image"/>
+**6. پلتفرم‌های خود را ذخیره کنید:**
 
-### مرحله ۵: ذخیره دسترسی به پلتفرم‌ها​
+<img src="/Android/GatewayNumber(1).png" alt="add-message" class="resized-image"/>
+<img src="/Android/addPlateform.png" alt="add-message" class="resized-image"/>
 
-یکی از ویژگی‌های کلیدی RelaySMS این است که امکان ذخیره دسترسی به پلتفرم‌های آنلاین را در هنگام دسترسی به اینترنت فعال فراهم می‌کند، سپس می‌توانید از برنامه برای ارسال درخواست‌ها به این پلتفرم‌ها بدون اتصال به اینترنت استفاده کنید. وقتی وارد سیستم شدید و روی **ذخیره حساب‌ها** کلیک کردید، لیستی از پلتفرم‌هایی که ما در حال حاضر پشتیبانی می‌کنیم ظاهر خواهد شد. شما می‌توانید اطلاعات خود را برای هر تعداد پلتفرمی که نیاز دارید، ذخیره کنید.
+- به تب **پلتفرم‌ها (Platforms)** بروید.
+- یکی از گزینه‌ها مانند Gmail، Twitter یا Telegram را انتخاب کنید.
+- روی **افزودن پلتفرم (Add Platform)** بزنید و مراحل تنظیم آن را دنبال کنید.
+- در صورت موفقیت، آیکن آن روشن خواهد شد!
 
-**نکته**: باید پلتفرمی که می‌خواهید ذخیره کنید روی گوشی شما نصب شده باشد تا بتوانید آن را در پلتفرم RelaySMS ذخیره کنید.
+**7. یک درگاه (Gateway Client) انتخاب کنید:**
 
-<img src="/Android/token.png" alt="token" class="resized-image"/>
+<img src="/Android/1.png" alt="GatewayAvailable" class="resized-image"/>
+<img src="/Android/GateWay2.png" alt="gateway" class="resized-image" />
+<img src="/Android/addgateway.png" alt="addgatewayclient" class="resized-image"/>
+<img src="/Android/addgateway2.png" alt="addgatewayclient" class="resized-image"/>
 
-### مرحله ۶: تنظیم برنامه و شروع استفاده​
+- به تب کشور بروید.
+- یک شماره انتخاب کرده و روی "تنظیم به عنوان پیش‌فرض" (Make Default) بزنید.
+- همچنین می‌توانید شماره درگاه اختصاصی خود را با زدن "افزودن شماره" اضافه کنید.
 
-پس از پیوند دادن برنامه‌ها به حساب کاربری RelaySMS خود، باید شماره کلاینت دروازه خود را اضافه کنید یا یکی از لیست کلاینت‌های موجود را انتخاب کنید. یکی از تنظیمات مهم انتخاب شماره دروازه برای ارتباط است. انتخاب شماره دروازه از همان ارائه‌دهنده خدمات یا درون کشور خودتان ارزان‌تر است.
+**8. پیام ارسال کنید:**
 
-<img src="/Android/add-message.png" alt="add-message" class="resized-image"/>
-<img src="/Android/setting.png" alt="setting" class="resized-image"/>
+<img src="/Android/welcome.png" alt="add-message" class="resized-image"/>
 
-### مرحله ۷: کلاینت‌های دروازه
+- در صفحه **اخیر (Recent)** روی آیکن **نوشتن پیام (Compose)** بزنید.
 
-**کلاینت‌های موجود:**
+<img src="/Android/GatewayNumber(1).png" alt="add-message" class="resized-image"/>
+<img src="/Android/addPlateform.png" alt="add-message" class="resized-image"/>
 
-- لیستی از کلاینت‌های دروازه از پیش تنظیم شده نمایش داده می‌شود.
-- با کشیدن لیست به پایین، آن را به‌روزرسانی کرده و آخرین گزینه‌های موجود را دریافت کنید.
+- یک پلتفرم ذخیره‌شده را انتخاب کرده، پیام خود را بنویسید و روی **ارسال (Send)** بزنید.
 
-**افزودن کلاینت‌های سفارشی:**
+<img src="/Android/Continue.png" alt="add-message" class="resized-image"/>
+<img src="/Android/Gmail.png" alt="add-message" class="resized-image"/>
+<img src="/Android/Telegram.png" alt="add-message" class="resized-image"/>
+<img src="/Android/Twitter.png" alt="add-message" class="resized-image"/>
 
-اگر دروازه ترجیحی شما در لیست نیست، می‌توانید کلاینت سفارشی خود را تنظیم کنید. دستورالعمل‌های پیکربندی دروازه سفارشی به شرح زیر است:
+- سپس از شما خواسته می‌شود تا برنامه SMS را انتخاب کنید.
 
-<img src="/Android/setting.png" alt="setting" class="resized-image"/>
+<img src="/Android/smsapp.png" alt="add-message" class="resized-image"/>
 
-### برای تنظیم یک شماره دروازه، مراحل زیر را دنبال کنید
+- پیام رمزنگاری‌شده شما در آنجا ظاهر خواهد شد، کافی است روی **ارسال** بزنید.
 
-1. شماره دروازه مورد نظر را در مخاطبین خود ذخیره کنید.
-2. به **تنظیمات** بروید و کلاینت‌های دروازه را انتخاب کنید.
-3. روی علامت _3 نقطه_ در گوشه بالا سمت راست کلیک کرده و گزینه _افزودن_ را انتخاب کنید.
-4. روی آیکون **مخاطب** کلیک کنید تا به مخاطبین خود دسترسی پیدا کنید.
-5. شماره دروازه ذخیره شده را پیدا کرده و انتخاب کنید.
-6. انتخاب را تأیید کرده و شماره دروازه را با موفقیت اضافه کنید.
-
-<img src="/Android/GateWayAvailable.png" alt="GatewayAvailable" class="resized-image"/>
-<img src="/Android/refresh-gateway.png" alt="refresh gateway" class="resized-image"/>
-<img src="/Android/add-gateway-client.png" alt="addgatewayclient" class="resized-image"/>
-
-# ارتباط با استفاده از برنامه
-
-بیایید ببینیم چگونه بدون اتصال به اینترنت از طریق RelaySMS ارتباط برقرار کنیم.
-
-### مرحله ۱: روی دکمه نوشتن کلیک کنید
-
-<img src="/Android/add-message.png" alt="add-message" class="resized-image"/>
-
-پس از تکمیل مرحله اول، که ذخیره دسترسی به پلتفرم‌های مورد نظر است، همگام‌سازی و اضافه کردن یک شماره دروازه.
-
-برنامه RelaySMS را پس از دانلود از [فروشگاه گوگل پلی](https://play.google.com/store/apps/details?id=com.afkanerd.sw0b)، [گیت‌هاب](https://github.com/smswithoutborders/SMSwithoutBorders-Android/releases/tag/v1.0)، یا ساخت از [کد منبع](https://github.com/smswithoutborders/SMSwithoutBorders-Android) باز کنید و روی آیکون "مداد" کلیک کنید تا یک پیام جدید بنویسید.
-
-### مرحله ۲: انتخاب یک پلتفرم برای نوشتن پیام
-
-یک پلتفرم را برای نوشتن پیام خود انتخاب کنید.
-
-<img src="/Android/savedplatform.png" alt="add-message" class="resized-image"/>
-
-### مرحله ۳: پیام خود را بنویسید و به صورت پیامک ارسال کنید
-
-پس از نوشتن پیام خود در هر پلتفرم، به صفحه ارسال پیامک هدایت می‌شوید، جایی که می‌توانید پیام را به شماره دروازه ذخیره شده به عنوان پیامک ارسال کنید. توجه داشته باشید که پیام هنگام ارسال به صورت پیامک به صورت رمزگذاری شده ظاهر می‌شود. این لایه اضافی امنیتی تضمین می‌کند که فقط شما و گیرنده به پیام دسترسی دارید.
-
-<img src="/Android/ComposeEmail.png" alt="add-message" class="resized-image"/>
-<img src="/Android/postTwitter.png" alt="add-message" class="resized-image"/>
-
-#### نیازها
-
-- ایمیل گیرنده برای جیمیل
-- شماره تلفن مخاطب برای تلگرام
-- متن توییت برای توییتر
-
-برای هر یک از پلتفرم‌های انتخابی، فیلدهای مورد نیاز را به‌دقت پر کنید و پیامک را ارسال کنید.
-
-### مرحله ۴: پیامک ارسال شد
-
-تبریک می‌گوییم! شما با موفقیت پیامک را ارسال کردید. گیرنده پیام اصلی را در قالب قابل خواندن دریافت می‌کند. لطفاً توجه داشته باشید که زمان دریافت پیام ممکن است بسته به شبکه موبایل و عملکرد دستگاه کلاینت دروازه متفاوت باشد.
-
-### لغو دسترسی به پلتفرم‌های ذخیره شده
-
-لغو دسترسی به پلتفرم‌های ذخیره شده، دسترسی شما به آنها از طریق RelaySMS را حذف می‌کند. به این معنی که دیگر نمی‌توانید با استفاده از برنامه RelaySMS به آن پلتفرم آنلاین پیام ارسال کنید. برای این کار:
-
-- روی تنظیمات کلیک کنید.
-- به بخش امنیت و حریم خصوصی بروید.
-- روی گزینه "لغو پلتفرم‌ها" ضربه بزنید و پلتفرمی که می‌خواهید حذف کنید را انتخاب کنید.
-
-<img src="/Android/clicksetting.png" alt="Google Play Store" class="resized-image"/>
-<img src="/Android/settingsecurity.png" alt="Google Play Store" class="resized-image"/>
-<img src="/Android/revokeplatform.png" alt="Google Play Store" class="resized-image"/>
-
-### حذف و خروج از حساب
-
-حذف حساب به معنای حذف تمامی حساب‌های ذخیره شده شما است. شما همیشه می‌توانید در صورت نیاز حساب جدیدی ایجاد کنید.
-
-خروج به این معنی است که تمامی پیام‌های جاری شما حذف خواهند شد و شما می‌توانید در صورت نیاز مجدداً وارد حساب کاربری خود شوید.
-
-- روی تنظیمات کلیک کنید.
-- به بخش امنیت و حریم خصوصی بروید.
-- برای خروج از حساب روی "خروج" و برای حذف حساب روی "حذف" کلیک کنید.
-
-<img src="/Android/settingLogout.png" alt="settinglogout" class="resized-image"/>
-<img src="/Android/Delete.png" alt="Google Play Store" class="resized-image"/>
-
-### شخصی‌سازی زبان برنامه
-
-برنامه در حال حاضر از زبان‌های انگلیسی، فرانسوی و فارسی پشتیبانی می‌کند. برای تغییر زبان برنامه:
-
-1. تنظیم زبان در هنگام ورود:
-
-در صفحه اول که برنامه را برای اولین بار باز می‌کنید، می‌توانید زبان مورد نظر خود را انتخاب کنید.
-
-<img src="/Android/languague.png" alt="onbordingLanguage" class="resized-image"/>
-<img src="/Android/onbordinglanguague.png" alt="onbordinglang" class="resized-image"/>
-
-2. تغییر زبان از طریق تنظیمات:
-
-شما همچنین می‌توانید در هر زمانی زبان برنامه را از طریق مراحل زیر تغییر دهید:
-
-- به منوی تنظیمات برنامه بروید.
-- گزینه "زبان" را پیدا کنید.
-- زبان مورد نظر خود را از بین گزینه‌های موجود انتخاب کنید.
-
-رابط کاربری برنامه به صورت خودکار به زبان انتخابی شما تغییر خواهد کرد.
-
-<img src="/Android/settingsmain.png" alt="settings" class="resized-image"/>
-<img src="/Android/settingLanguage.png" alt="languaguesettings" class="resized-image"/>
+پس از انتشار پیام شما در پلتفرم انتخاب‌شده، **تأییدیه‌ای از طریق SMS** دریافت خواهید کرد.
