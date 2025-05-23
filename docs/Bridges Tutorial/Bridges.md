@@ -2,69 +2,72 @@
 sidebar_position: 1
 ---
 
-# Using Bridges in the RelaySMS App  
+# Using Bridges in the RelaySMS App  (No sign-up required)
 
 Learn how to use the Bridges feature in the RelaySMS app. This tool lets you send messages securely to online platforms without needing to sign in or use the internet. Follow these steps to get started!
 
 ---
 
-## **Step 1: Get the Latest Version of the RelaySMS App**  
+## **Step 1: Get the Latest Version of the RelaySMS App** 
 
-1. **Download or Update the App:**  
-   - **For Android Users:** Visit the [Google Play Store](https://play.google.com/store/apps/details?id=com.afkanerd.sw0b).  
-   - **Alternative Options:**
-     - Download the APK from [GitHub Releases](https://github.com/smswithoutborders/SMSwithoutBorders-Android/releases/tag/v1.0).  
-     - Build the app from [source code](https://github.com/smswithoutborders/SMSwithoutBorders-Android).  
+This is the fastest way to get started. The app creates a temporary alias using your phone number **(e.g., 123456789@relaysms.me)** to send emails or tweets **without storing any tokens or logging in.**
 
-2. **Install the App:**  
-   Follow the on-screen instructions to complete the installation.  
+Steps to Use the Bridge Feature:
 
----
+**1. Download the RelaySMS app from :->**
 
-## **Step 2: Register Your Phone Number**  
+- [Google_Play_Store](https://play.google.com/store/apps/details?id=com.afkanerd.sw0b)
+- [Github](https://github.com/smswithoutborders/SMSwithoutBorders-Android/releases/tag/v1.0) or
+- Build from [source](https://github.com/smswithoutborders/SMSwithoutBorders-Android)
 
-1. **Open the App:**  
-   Tap the RelaySMS icon to launch the app.  
+<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
 
-2. **Generate Your Code:**  
-   - Tap the *“Continue without an internet connection”* button.  
+## Technical Requirements
+- SMS capability Android smartphone
+- Android 6.0 and above
 
-   <img src="/Bridges/1.png" alt="bridges" class="resized-image"/>  
-   <img src="/Bridges/2.png" alt="bridges" class="resized-image"/>  
 
-   - Two codes will be generated:  
-     - **Authentication Code**: Verifies your identity.  
-     - **Public Key**: Ensures secure communication.  
 
-3. **Verify Your Phone Number:**  
-   - You’ll receive a text message containing the verification data.  
-   - Copy the entire message and paste it into the app.  
-   - Tap the *“Verify and Save”* button to complete the process.  
+**2. Go through the onboarding pages to understand how it works.**
 
-   <img src="/Bridges/3.png" alt="bridges" class="resized-image"/>  
+<img src="/Android/gettingstarted.png" alt="onbording1" class="resized-image"/>
+<img src="/Android/skip.png" alt="onbording" class="resized-image"/>
+<img src="/Android/skip1.png" alt="onbording" class="resized-image"/>
+<img src="/Android/skip2.png" alt="onbording" class="resized-image"/>
+<img src="/Android/finish.png" alt="onbording2" class="resized-image"/>
 
----
+**3. Select a Gateway Client:**
 
-## **Step 3: Start Sending Messages**  
+- Tap the 🌍 Country tab on the navigation bar.
+- Choose a gateway client (these are phone numbers that route your offline message to the internet).
 
-1. **Choose a Platform:**  
-   Currently, RelaySMS Bridges supports **Gmail**. Select Gmail or any other available platform.  
+<img src="/Android/pick.png" alt="sign_in" class="resized-image"/>
+<img src="/Android/DefultGateway.png" alt="GatewayAvailable" class="resized-image"/>
+<img src="/Android/GateWay2.png" alt="GatewayAvailable" class="resized-image"/>
 
-   <img src="/Bridges/4.png" alt="bridges" class="resized-image"/>  
+*Note: If you don’t select one, the app will assign a default gateway for you.*
 
-2. **Write Your Message:**  
 
-   - Open the RelaySMS app.  
-   - Use your alias (e.g., `123456789@relaysms`) as the sender's address.  
+**4. Sending messages**
 
-3. **Send Your Message:**  
-   - Type your message in the designated field.  
-   - Press *“Send”*. Your message will be transmitted securely, even without an internet connection.  
+- Tap **“Compose New Message”**.
+- **Fill in the required fields** (recipient email, subject, and message).
+- Hit **Send** at the top right corner.
+- The app will prompt you to choose your **default SMS app**.
+Your message will appear there, already encrypted.
+- Tap **Send** in your messaging app — and that’s it!
 
----
+<img src="/Android/pick.png" alt="sign_in" class="resized-image"/>
+<img src="/Android/bridges.png" alt="GatewayAvailable" class="resized-image"/>
+<img src="/Android/defualtMessage.png" alt="GatewayAvailable" class="resized-image"/>
 
-## **Tips for Using RelaySMS Bridges**  
+*Your message is now on its way online, even without internet!*
 
-- **Keep Your Alias Handy:** Always use your alias when sending messages.  
-- **Stay Secure:** Never share your authentication code or public key with anyone.  
-- **Update Regularly:** Ensure you’re using the latest version of the RelaySMS app for optimal performance.  
+**5. Receiving messages**
+- Copy the entire sms message 
+- Go to the app and click on the inbox tab 
+
+<img src="/Android/inbox.png" alt="GatewayAvailable" class="resized-image"/>
+
+- Paste the message in the text box 
+- Click on decrypt 
