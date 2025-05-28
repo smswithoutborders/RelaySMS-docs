@@ -10,7 +10,7 @@ RelaySMS provides users with the ability to stay connected with their online pla
 
 ## Introduction​
 
-RelaySMS helps you send messages online without needing internet access. It works in **two powerful ways:**
+RelaySMS helps you send messages online without needing internet access. It works in **two ways:**
 
 **Using Bridges (No sign-up required) & Using Platforms (Sign-up and store access ahead of time)**
 
@@ -111,5 +111,9 @@ Steps to Use the plateform:
 <img src="/Android/smsapp.png" alt="add-message" class="resized-image"/>
 
 - Your encrypted message will appear there,  just hit **Send**.
+
+<img src="/Android/forwardDeku.png" alt="add-message" class="resized-image"/>
+<img src="/Android/encrypted.png" alt="add-message" class="resized-image"/>
+<img src="/Android/notification.png" alt="notification" class="resized-image" />
 
 You’ll receive an **SMS confirmation** once your message is published to the selected platform.
