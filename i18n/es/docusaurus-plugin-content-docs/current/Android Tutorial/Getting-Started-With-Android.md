@@ -10,7 +10,7 @@ RelaySMS permite a los usuarios mantenerse conectados con sus plataformas en lí
 
 ## Introducción
 
-RelaySMS te ayuda a enviar mensajes en línea sin necesidad de tener conexión a Internet. Funciona de **dos formas potentes:**
+RelaySMS te ayuda a enviar mensajes en línea sin necesidad de tener conexión a Internet. Funciona de **dos formas:**
 
 **Usando Puentes (sin necesidad de registro) y usando Plataformas (registro y almacenamiento de acceso previamente)**
 

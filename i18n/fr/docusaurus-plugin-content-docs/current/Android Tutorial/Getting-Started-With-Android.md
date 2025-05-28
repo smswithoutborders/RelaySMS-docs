@@ -10,7 +10,7 @@ RelaySMS permet aux utilisateurs de rester connectés à leurs plateformes en li
 
 ## Introduction
 
-RelaySMS vous aide à envoyer des messages en ligne sans avoir besoin d’une connexion Internet. Il fonctionne de **deux manières puissantes :**
+RelaySMS vous aide à envoyer des messages en ligne sans avoir besoin d’une connexion Internet. Il fonctionne de **deux façons :**
 
 **Utilisation de passerelles (aucune inscription requise) & Utilisation de plateformes (inscription et enregistrement anticipé requis)**
 
@@ -107,5 +107,6 @@ Cette méthode est idéale si vous souhaitez publier sur des plateformes comme *
 <img src="/Android/smsapp.png" alt="add-message" class="resized-image"/>
 
 - Votre message chiffré y apparaîtra, il vous suffit d’appuyer sur **Envoyer**.
+
 
 Vous recevrez une **confirmation par SMS** une fois votre message publié sur la plateforme sélectionnée.

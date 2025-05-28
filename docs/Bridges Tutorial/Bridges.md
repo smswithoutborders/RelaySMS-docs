@@ -60,6 +60,8 @@ Your message will appear there, already encrypted.
 <img src="/Android/pick.png" alt="sign_in" class="resized-image"/>
 <img src="/Android/bridges.png" alt="GatewayAvailable" class="resized-image"/>
 <img src="/Android/defualtMessage.png" alt="GatewayAvailable" class="resized-image"/>
+<img src="/Android/notifi.png" alt="notifi" class="resized-image"/>
+
 
 *Your message is now on its way online, even without internet!*
 
@@ -69,5 +71,12 @@ Your message will appear there, already encrypted.
 
 <img src="/Android/inbox.png" alt="GatewayAvailable" class="resized-image"/>
 
+
 - Paste the message in the text box 
+<img src="/Android/decryption.png" alt="GatewayAvailable" class="resized-image"/>
+
 - Click on decrypt 
+
+<img src="/Android/decryptMessage.png" alt="GatewayAvailable" class="resized-image"/>
+<img src="/Android/Indox.png" alt="GatewayAvailable" class="resized-image"/>
+
