@@ -117,3 +117,7 @@ Steps to Use the plateform:
 <img src="/Android/notification.png" alt="notification" class="resized-image" />
 
 You’ll receive an **SMS confirmation** once your message is published to the selected platform.
+
+
+
+## [How to Use the On-Device Token Storage Feature](/docs/On-Device%20Tutorial/On-DeviceToken#how-to-use-the-on-device-token-storage-feature)
