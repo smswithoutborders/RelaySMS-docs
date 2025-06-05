@@ -147,3 +147,7 @@ Logout means all your current messages will be deleted and you can always log ba
 
 <img src="/iOS/delete.png" alt="Google" class="resized-image"/>
 <img src="/iOS/logout.png" alt="Google" class="resized-image"/>
+
+
+
+## [How to Use the On-Device Token Storage Feature](/docs/On-Device%20Tutorial/On-DeviceToken#how-to-use-the-on-device-token-storage-feature)
