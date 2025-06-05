@@ -2,69 +2,70 @@
 sidebar_position: 1
 ---
 
-# Usando Puentes en la Aplicación RelaySMS  
+# Utiliser les Passerelles dans l'application RelaySMS (Aucune inscription requise)
 
-Aprende a usar la función de Puentes en la aplicación RelaySMS. Esta herramienta te permite enviar mensajes de manera segura a plataformas en línea sin necesidad de iniciar sesión o usar internet. ¡Sigue estos pasos para comenzar!
-
----
-
-## **Paso 1: Obtén la Última Versión de la Aplicación RelaySMS**  
-
-1. **Descarga o Actualiza la Aplicación:**  
-   - **Para Usuarios de Android:** Visita [Google Play Store](https://play.google.com/store/apps/details?id=com.afkanerd.sw0b).  
-   - **Opciones Alternativas:**
-     - Descarga el APK desde [GitHub Releases](https://github.com/smswithoutborders/SMSwithoutBorders-Android/releases/tag/v1.0).  
-     - Construye la aplicación desde el [código fuente](https://github.com/smswithoutborders/SMSwithoutBorders-Android).  
-
-2. **Instala la Aplicación:**  
-   Sigue las instrucciones en pantalla para completar la instalación.  
+Découvrez comment utiliser la fonctionnalité **Passerelles** dans l'application RelaySMS. Cet outil vous permet d'envoyer des messages de manière sécurisée vers des plateformes en ligne sans avoir besoin de vous connecter ou d'utiliser Internet. Suivez ces étapes pour commencer !
 
 ---
 
-## **Paso 2: Registra tu Número de Teléfono**  
+## **Étape 1 : Obtenez la dernière version de l'application RelaySMS**
 
-1. **Abre la Aplicación:**  
-   Toca el ícono de RelaySMS para iniciar la aplicación.  
+C'est la méthode la plus rapide pour démarrer. L'application crée un alias temporaire à l'aide de votre numéro de téléphone **(par exemple : 123456789@relaysms.me)** pour envoyer des emails ou des tweets **sans stocker de jetons ni se connecter.**
 
-2. **Genera tu Código:**  
-   - Toca el botón *"Continuar sin conexión a internet"*.  
+Étapes pour utiliser la fonctionnalité Passerelle :
 
-   <img src="/Bridges/1.png" alt="bridges" class="resized-image"/>  
-   <img src="/Bridges/2.png" alt="bridges" class="resized-image"/>  
+**1. Téléchargez l'application RelaySMS depuis :->**
 
-   - Se generarán dos códigos:  
-     - **Código de Autenticación:** Verifica tu identidad.  
-     - **Clave Pública:** Asegura una comunicación segura.  
+- [Google Play Store](https://play.google.com/store/apps/details?id=com.afkanerd.sw0b)
+- [Github](https://github.com/smswithoutborders/SMSwithoutBorders-Android/releases/tag/v1.0) ou
+- Compilez à partir du [code source](https://github.com/smswithoutborders/SMSwithoutBorders-Android)
 
-3. **Verifica tu Número de Teléfono:**  
-   - Recibirás un mensaje de texto con los datos de verificación.  
-   - Copia todo el mensaje y pégalo en la aplicación.  
-   - Toca el botón *"Verificar y Guardar"* para completar el proceso.  
+<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
 
-   <img src="/Bridges/3.png" alt="bridges" class="resized-image"/>  
+## Exigences techniques
+- Smartphone Android avec capacité SMS
+- Android 6.0 ou version ultérieure
 
----
+**2. Parcourez les pages d’introduction pour comprendre le fonctionnement.**
 
-## **Paso 3: Comienza a Enviar Mensajes**  
+<img src="/Android/gettingstarted.png" alt="onbording1" class="resized-image"/>
+<img src="/Android/skip.png" alt="onbording" class="resized-image"/>
+<img src="/Android/skip1.png" alt="onbording" class="resized-image"/>
+<img src="/Android/skip2.png" alt="onbording" class="resized-image"/>
+<img src="/Android/finish.png" alt="onbording2" class="resized-image"/>
 
-1. **Elige una Plataforma:**  
-   Actualmente, los Puentes de RelaySMS son compatibles con **Gmail**. Selecciona Gmail u otra plataforma disponible.  
+**3. Sélectionnez un client Passerelle :**
 
-   <img src="/Bridges/4.png" alt="bridges" class="resized-image"/>  
+- Appuyez sur l'onglet 🌍 Pays dans la barre de navigation.
+- Choisissez un client passerelle (ce sont des numéros de téléphone qui transmettent votre message hors ligne vers Internet).
 
-2. **Escribe tu Mensaje:**  
+<img src="/Android/pick.png" alt="sign_in" class="resized-image"/>
+<img src="/Android/DefultGateway.png" alt="GatewayAvailable" class="resized-image"/>
+<img src="/Android/GateWay2.png" alt="GatewayAvailable" class="resized-image"/>
 
-   - Abre la aplicación RelaySMS.  
-   - Usa tu alias (por ejemplo, `123456789@relaysms`) como dirección del remitente.  
+*Remarque : si vous n'en sélectionnez pas, l'application choisira une passerelle par défaut pour vous.*
 
-3. **Envía tu Mensaje:**  
-   - Escribe tu mensaje en el campo designado.  
-   - Presiona *"Enviar"*. Tu mensaje se transmitirá de manera segura, incluso sin conexión a internet.  
+**4. Envoi de messages**
 
----
+- Appuyez sur **“Nouveau message”**.
+- **Remplissez les champs requis** (email du destinataire, objet, et message).
+- Appuyez sur **Envoyer** en haut à droite.
+- L'application vous demandera de choisir votre **application SMS par défaut**.
+Votre message y apparaîtra, déjà chiffré.
+- Appuyez sur **Envoyer** dans votre application de messagerie — et c’est tout !
 
-## **Consejos para Usar los Puentes de RelaySMS**  
+<img src="/Android/pick.png" alt="sign_in" class="resized-image"/>
+<img src="/Android/bridges.png" alt="GatewayAvailable" class="resized-image"/>
+<img src="/Android/defualtMessage.png" alt="GatewayAvailable" class="resized-image"/>
 
-- **Mantén tu Alias a Mano:** Usa siempre tu alias al enviar mensajes.  
-- **Permanece Seguro:** Nunca compartas tu código de autenticación ni tu clave pública con nadie.  
-- **Actualiza Regularmente:** Asegúrate de usar la última versión de la aplicación RelaySMS para un rendimiento óptimo.  
+*Votre message est maintenant en route vers Internet, même sans connexion !*
+
+**5. Réception des messages**
+
+- Copiez l’intégralité du message SMS  
+- Allez dans l’application et cliquez sur l’onglet "Boîte de réception"  
+
+<img src="/Android/inbox.png" alt="GatewayAvailable" class="resized-image"/>
+
+- Collez le message dans la zone de texte  
+- Cliquez sur **Déchiffrer**

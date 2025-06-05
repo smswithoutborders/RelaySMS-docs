@@ -9,6 +9,9 @@
   "Get Started with Android": {
     "message": "Commencer avec Android"
   },
+      "Technical Documentation": {
+    "message": "Documentation technique"
+  },
   "theme.ErrorPageContent.title": {
     "message": "Cette page a planté.",
     "description": "Le titre de la page de secours lorsque la page a planté"

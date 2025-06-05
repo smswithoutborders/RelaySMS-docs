@@ -89,6 +89,10 @@ const config = {
             position: "left",
             type: "dropdown",
             items: [
+                {
+                label: "On-Device Token Storage Feature",
+                to: "/docs/On-Device Tutorial/On-DeviceToken"
+              },
               {
                 label: "RelaySMS Android Tutorial",
                 to: "/docs/Android Tutorial/Getting-Started-With-Android"
