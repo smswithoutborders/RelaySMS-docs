@@ -14,7 +14,7 @@ RelaySMS helps you send messages online without needing internet access. It work
 
 **Using Bridges (No sign-up required) & Using Platforms (Sign-up and store access ahead of time)**
 
-## 1. [Using Bridges (No sign-up required)](/docs/Bridges%20Tutorial/Bridges#using-bridges-no-sign-up-required)
+## [1. Using Bridges (No sign-up required)](/docs/Bridges%20Tutorial/Bridges#using-bridges-no-sign-up-required)
 
 ## 2. Using Platforms (Sign-up and store access ahead of time)
 

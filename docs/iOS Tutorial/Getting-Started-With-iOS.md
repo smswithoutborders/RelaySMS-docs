@@ -2,152 +2,138 @@
 sidebar_position: 1
 ---
 
-# RelaySMS App for iOS
+## RelaySMS for iOS
 
-## Getting Started with iOS
+### Stay Connected, Even Without Internet
 
-RelaySMS provides users with the ability to stay connected with their online platforms even when internet access is unavailable. By leveraging SMS messaging, users can continue communicating seamlessly- their contacts receive messages just as they normally would.
+RelaySMS enables users to stay connected to their online platforms even when they don't have internet access. By utilizing SMS messaging, users can communicate seamlessly while ensuring their contacts receive their messages just as if they had sent them through traditional online platforms.
 
-## Introduction​
+### Getting Started with RelaySMS on iOS
 
-The steps below will help set up your account and start using RelaySMS.
 
-### Step 1. Download App​
+#### Step 1: Download the App
 
 ![App Store](/img/ios2.jpeg)
 
-- Download from [App_Store](https://apps.apple.com/us/app/relaysms/id6630382970)
+- Download RelaySMS from the [App Store](https://apps.apple.com/us/app/relaysms/id6630382970)
+- Alternatively, you can access it on [GitHub](https://github.com/smswithoutborders/SMSwithoutBorders-Android)
+- **Technical Requirements:**
+    - SMS-capable iPhone
+    - iOS-compatible version
 
-- [Github](https://github.com/smswithoutborders/SMSwithoutBorders-Android/releases/tag/v1.0) or
 
-<!-- - Build from [source](https://github.com/smswithoutborders/SMSwithoutBorders-Android) -->
+There are two ways to communicate using  the app during an internet shutdown;  
 
-#### Technical Requirements
+**A.** By using your default RelaySMS account(bridges), where u can send an email without the need to sign up or save platforms
 
-- SMS capable iPhone
+**B.** By saving access to your desired platforms on the app 
 
-- IOS 10.0 and above
 
-### Step 2. Create an account
+### A. Communicating Using RelaySMS Bridges 
 
-#### Onboarding / Using the App
+*Using Bridges (No sign-up required) & Using Platforms (Sign-up and store access ahead of time)*
 
-<img src="/iOS/1-welcome.png" alt="onbording1" class="resized-image"/>
-<img src="/iOS/2a-skip.png" alt="onbording1" class="resized-image"/>
-<img src="/iOS/2b-TutorialFinish.png" alt="onbording1" class="resized-image"/>
+## [1. Using Bridges (No sign-up required)](/docs/Bridges%20Tutorial/Bridges#using-bridges-no-sign-up-required)
 
-- Sign up for a free account or log into your account on the app by clicking on the “get started” button, select “create new” and fill in the required information and then click on “sign up”.
 
-<img src="/iOS/2-step2creatandlog.png" alt="onbording1" class="resized-image"/>
-<img src="/iOS/3-CreateAccount.png" alt="onbording1" class="resized-image"/>
+**Step 1: Click the "compose new message" Button**
+<!-- rePlace the images with the right ones -->
+<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
 
-**Note** An authentication pin will be sent to your phone through SMS.
+**Step 2. Compose a Message**
 
-### Step 3: Verify your phone number
+- Fill in the required fields (e.g. recipient’s email for Gmail, Click Send and RelaySMS will redirect you to the SMS app.)
 
-A verification number will be sent to your phone number, input and verify
+<!-- rePlace the images with the right ones -->
+<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
 
-<img src="/iOS/3a-verificationCode.png" alt="onbording1" class="resized-image"/>
+**Step 3: Sending Messages via SMS**
 
-### Step 4: Log-in
+After composing your message, confirm and send it through your phone’s SMS service. The recipient will receive the message as if it were sent directly from the online platform.
 
-If you already have an account click on “login” and fill in your phone number and password to get into your RelaySMS account.
+<!-- rePlace the images with the right ones -->
+<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
 
-A verification number will be sent to your phone number, input and verify
 
-<img src="/iOS/login.png" alt="onbording1" class="resized-image"/>
+**Step 4: Receiving Replies**
 
-### Step 5. Save access to platforms​
+- Open the **RelaySMS app** and navigate to the **Inbox**.
+- Tap **"Paste the incoming message here"** and input the SMS response.
+- Tap **"Decrypt"** to reveal the message.
 
-One of the key features of RelaySMS is to be able to save access to online platforms while you have an active internet, then use the App to make requests to these platforms without an active internet connection. Once you login and click on Save Accounts, you will have a list of platforms we currently support. You can save your credentials for as many platforms as you can foresee further need in an offline situation.
-
-**Note: You need to have the platform you want to save installed on your phone before you can save it on the RelaySMS platform.**
-
-<img src="/iOS/addPlatforms.png" alt="onbording1" class="resized-image"/>
-
-### Step 6. Configure your App and begin utilizing​
-
-Once you've linked your apps to your RelaySMS account, you'll need to choose your preferred gateway client from the list of available gateway clients. One important setting to configure is selecting the Gateway number for communication. Opting for a Gateway number from the same service provider as yours or within your country is cheaper.
-
-<img src="/iOS/landing.png" alt="onbording1" class="resized-image"/>
-<img src="/iOS/security.png" alt="onbording1" class="resized-image"/>
-Once you've linked your apps to your RelaySMS account, you'll need to add your gateway client number or select one from the list of available gateway clients. One important setting to configure is selecting the Gateway number for communication. It is cheaper to Opt for a Gateway number from the same service provider as yours or within your country.
+<!-- rePlace the images with the right ones -->
+<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
 
 
 
-### Step 7. Gateway Clients
+### B. Communicating Using Saved Platforms 
 
-**Available Clients:**
+**Step 2: Sign Up for an Account**
 
-- A list of pre-configured gateway clients is displayed.
-- Pulling down on the list will refresh it, ensuring you have the latest available options.
+1. Open the app and tap on **Sign Up**.
+2. Enter the required information and proceed.
+3. An authentication PIN will be sent to your phone via SMS.
 
-# Communicating using the app
+**Onboarding Screens**
 
-Let's discover how to communicate without an Internet connection using RelaySMS
-
-### Step 1: Click the compose button
-
-<img src="/iOS/landing.png" alt="compose image" class="resized-image"/>
-
-After the first stage has been completed which is saving access to platforms you wish to communicate with offline.
-
-click on the "pencil icon" to compose message.
-
-### Step 2. Select a platform to compose the message​
-
-Choose a platform to start composing the message
-
-<img src="/iOS/composes.png" alt="add-message" class="resized-image"/>
-
-### Step 3. Compose your message and send as SMS
-
-After composing your message on any platform, proceed to send it as usual. You will then be directed to your standard SMS page, where you can send the message to the pre-saved gateway number as an SMS. Note that the message will appear as encrypted when sending it as an SMS. This extra layer of security ensures that only you and the recipient can access the message, maintaining confidentiality.
-
-<img src="/iOS/ComposeGmail.png" alt="add-message" class="resized-image"/>
-<img src="/iOS/ComposeTelegram.png" alt="add-message" class="resized-image"/>
-<img src="/iOS/ComposeTwitter.png" alt="add-message" class="resized-image"/>
-
-#### Requirements​
-
-- Recipient's email for Gmail
-- Contacts phone number for Telegram
-- Tweet body for Twitter
-
-For either of the platforms selected, fill in the required fields accurately and send SMS
-
-The SMS will appear encrypted on your messaging app
-
-### Step 4: SMS Sent
-
-Congratulations! You have successfully sent the SMS. The recipient will now receive the original message in a readable format. Please note that the time for receiving the message may vary depending on the mobile network and the functionality of the gateway client device.
-
-### Revoking Saved Platforms
-
-Revoking saved platforms removes your access to them through RelaySMS. This means that you can no longer send messages to that online platform using the RelaySMS app. To do this;
-
-- Click on settings
-- Go to security and privacy
-- Tap ‘revoke platforms’ and choose the platform you wish to delete
-
-<img src="/iOS/landing.png" alt="Google" class="resized-image"/>
-<img src="/iOS/revokePlatforms.png" alt="Google" class="resized-image"/>
-<img src="/iOS/selectrevoke.png" alt="Google" class="resized-image"/>
-
-### Deleting and loging out of the account
-
-Deleting your account means deleting all your saved accounts online. You can always recreate your account if needed.
-
-Logout means all your current messages will be deleted and you can always log back in when needed.
+<!-- rePlace the images with the right ones -->
+<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
+<!-- rePlace the images with the right ones -->
+<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
+<!-- rePlace the images with the right ones -->
+<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
+<!-- rePlace the images with the right ones -->
+<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
 
 
-- Click on settings
-- Go to security and privacy
-- Tap ‘Logout’ to log out of your account and ‘Delete’ to delete your account
+**Step 3: Verify Your Phone Number**
 
-<img src="/iOS/delete.png" alt="Google" class="resized-image"/>
-<img src="/iOS/logout.png" alt="Google" class="resized-image"/>
+- Enter the verification code sent via SMS to complete your account setup.
+
+<!-- rePlace the images with the right ones -->
+<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
+
+**Step 4: Log In**
+
+- If you already have an account, tap **Log In.**
+- Enter your registered phone number and password.
+- Enter the verification code received via SMS.
+
+<!-- rePlace the images with the right ones -->
+<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
 
 
+**Saving Platforms for Offline Messaging**
 
-## [How to Use the On-Device Token Storage Feature](/docs/On-Device%20Tutorial/On-DeviceToken#how-to-use-the-on-device-token-storage-feature)
+1. **Log in** to RelaySMS.
+2. Tap **Save Accounts** to view the list of available platforms.
+3. Select the platforms you wish to save.
+4. Ensure the platform you want to save is installed on your phone.
+
+<!-- rePlace the images with the right ones -->
+<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
+
+#### Managing Your Saved Platforms
+
+**Revoking Access to a Saved Platform**
+
+1. Open **Platforms** 
+2. Select the platform you would like to remove access from 
+3. Tap **Remove Access**
+
+<!-- rePlace the images with the right ones -->
+<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
+
+
+**Deleting and Logging Out of Your Account**
+
+- Delete Account: Erases all saved accounts and data. You will need to create a new account to use RelaySMS again.
+- Logout: Removes all current messages but allows you to log in later.
+
+<!-- rePlace the images with the right ones -->
+<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
+
+
+---
+
+RelaySMS ensures seamless communication even when offline, keeping you connected no matter where you are.
