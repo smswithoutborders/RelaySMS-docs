@@ -1,142 +1,121 @@
----
 sidebar_position: 1
 ---
 
-# Application RelaySMS pour iOS
+## RelaySMS pour iOS
 
-## Commencer avec iOS
+### Restez connecté, même sans Internet
 
-RelaySMS permet aux utilisateurs de rester connectés à leurs plateformes en ligne même lorsque l'accès à Internet n'est pas disponible. En utilisant la messagerie SMS, les utilisateurs peuvent continuer à communiquer sans interruption - leurs contacts reçoivent les messages comme ils le feraient normalement.
+RelaySMS permet aux utilisateurs de rester connectés à leurs plateformes en ligne même sans accès Internet. En utilisant des SMS, les utilisateurs peuvent communiquer sans interruption, et leurs contacts reçoivent leurs messages comme s’ils avaient été envoyés via des plateformes en ligne traditionnelles.
 
-## Introduction
+### Commencer avec RelaySMS sur iOS
 
-Les étapes ci-dessous vous aideront à configurer votre compte et à commencer à utiliser RelaySMS.
-
-### Étape 1. Télécharger l'application
+#### Étape 1 : Télécharger l’app
 
 ![App Store](/img/ios2.jpeg)
 
-- Téléchargez depuis [App_Store](https://apps.apple.com/us/app/relaysms/id6630382970)
+- Téléchargez RelaySMS depuis l’[App Store](https://apps.apple.com/us/app/relaysms/id6630382970)  
+- Vous pouvez également y accéder sur [GitHub](https://github.com/smswithoutborders/SMSwithoutBorders-Android)  
+- **Exigences techniques :**  
+  - iPhone compatible SMS  
+  - Version iOS compatible
 
-- [Github](https://github.com/smswithoutborders/SMSwithoutBorders-Android/releases/tag/v1.0)
+Il y a deux façons de communiquer avec l’app en cas de panne Internet :
 
-<!-- - Compiler depuis [source](https://github.com/smswithoutborders/SMSwithoutBorders-Android) -->
+**A.** Avec votre compte RelaySMS par défaut (bridges), vous pouvez envoyer un e‑mail sans vous inscrire ni sauvegarder des plateformes
 
-#### Exigences techniques
+**B.** En sauvegardant l’accès à vos plateformes souhaitées dans l’app
 
-- iPhone compatible avec les SMS
-- iOS 10.0 et supérieur
 
-### Étape 2. Créer un compte
+### A. Communiquer avec les bridges RelaySMS
 
-#### Onboarding / Utilisation de l'application
+*Utilisation des bridges (sans inscription) & utilisation des plateformes (inscription et enregistrement préalables)*
 
-<img src="/iOS/1-welcome.png" alt="onbording1" class="resized-image"/>
-<img src="/iOS/2a-skip.png" alt="onbording1" class="resized-image"/>
-<img src="/iOS/2b-TutorialFinish.png" alt="onbording1" class="resized-image"/>
+## [1. Utilisation des bridges (sans inscription préalable)](/docs/Bridges%20Tutorial/Bridges#using-bridges-no-sign-up-required)
 
-- Inscrivez-vous pour un compte gratuit ou connectez-vous à votre compte dans l'application en cliquant sur le bouton « commencer », sélectionnez « créer un nouveau » et remplissez les informations requises, puis cliquez sur « s'inscrire ».
+**Étape 1 : Cliquez sur le bouton "composer un nouveau message"**  
+<img src="/Android/pick.png" alt="sign_in" class="resized-image"/>
 
-<img src="/iOS/2-step2creatandlog.png" alt="onbording1" class="resized-image"/>
-<img src="/iOS/3-CreateAccount.png" alt="onbording1" class="resized-image"/>
+**Étape 2 : Rédigez un message**
 
-**Note :** Un code d'authentification sera envoyé à votre téléphone par SMS.
+- Remplissez les champs requis (ex. adresse e‑mail du destinataire pour Gmail), appuyez sur Envoyer et RelaySMS redirigera vers l’app SMS.  
+<img src="/Android/bridges.png" alt="GatewayAvailable" class="resized-image"/>
 
-### Étape 3 : Vérifiez votre numéro de téléphone
+**Étape 3 : Envoyer via SMS**
 
-Un code de vérification sera envoyé à votre numéro de téléphone, saisissez-le pour vérifier.
+Après avoir rédigé votre message, confirmez l’envoi via le service SMS de votre téléphone. Le destinataire recevra le message comme s’il provenait directement de la plateforme en ligne.  
+<img src="/Android/defualtMessage.png" alt="GatewayAvailable" class="resized-image"/>  
+<img src="/Android/notifi.png" alt="notifi" class="resized-image"/>
 
-<img src="/iOS/3a-verificationCode.png" alt="onbording1" class="resized-image"/>
+**Étape 4 : Recevoir les réponses**
 
-### Étape 4 : Connexion
+- Ouvrez l’app **RelaySMS** et allez dans la **Boîte de réception**.  
+- Touchez **"Collez le message entrant ici"** et saisissez la réponse SMS.  
+- Touchez **"Déchiffrer"** pour afficher le message.  
 
-Si vous avez déjà un compte, cliquez sur « connexion » et renseignez votre numéro de téléphone et votre mot de passe pour accéder à votre compte RelaySMS.
+<img src="/Android/inbox.png" alt="GatewayAvailable" class="resized-image"/>  
+<img src="/Android/decryption.png" alt="GatewayAvailable" class="resized-image"/>  
+<img src="/Android/decryptMessage.png" alt="GatewayAvailable" class="resized-image"/>  
+<img src="/Android/Indox.png" alt="GatewayAvailable" class="resized-image"/>
 
-Un code de vérification sera envoyé à votre numéro de téléphone, saisissez-le pour vérifier.
+### B. Communiquer en utilisant des plateformes sauvegardées
 
-<img src="/iOS/login.png" alt="onbording1" class="resized-image"/>
+**Étape 2 : Créez un compte**
 
-### Étape 5. Sauvegarder l'accès aux plateformes
+1. Ouvrez l’app et touchez **S’inscrire**.  
+2. Entrez les informations requises et procédez.  
+3. Un code PIN d’authentification sera envoyé à votre téléphone par SMS.
 
-L'une des principales fonctionnalités de RelaySMS est la possibilité de sauvegarder l'accès aux plateformes en ligne lorsque vous avez un accès Internet actif, puis d'utiliser l'application pour faire des demandes à ces plateformes sans connexion Internet. Une fois connecté et en cliquant sur Sauvegarder les comptes, vous verrez une liste des plateformes actuellement prises en charge. Vous pouvez sauvegarder vos identifiants pour autant de plateformes que vous en prévoyez avoir besoin hors ligne.
+**Écrans d’accueil**  
 
-**Remarque : vous devez avoir l'application de la plateforme que vous souhaitez sauvegarder installée sur votre téléphone avant de pouvoir la sauvegarder sur la plateforme RelaySMS.**
+<img src="/Android/gettingstarted.png" alt="onbording1" class="resized-image"/>  
+<img src="/Android/pick.png" alt="sign_in" class="resized-image"/>  
+<img src="/Android/createaccount.png" alt="sign_in2" class="resized-image"/>
 
-<img src="/iOS/addPlatforms.png" alt="onbording1" class="resized-image"/>
+**Étape 3 : Vérifiez votre numéro de téléphone**
 
-### Étape 6. Configurer votre application et commencer à l'utiliser
+- Entrez le code reçu par SMS pour finaliser la création du compte.  
+<img src="/Android/verificationcode.png" alt="verificationcode" class="resized-image"/>
 
-Une fois que vous avez lié vos applications à votre compte RelaySMS, vous devez choisir votre client de passerelle préféré dans la liste des clients de passerelle disponibles. Une configuration importante est de sélectionner le numéro de passerelle pour la communication. Il est plus économique de choisir un numéro de passerelle du même fournisseur de service ou dans votre pays.
+**Étape 4 : Connectez-vous**
 
-<img src="/iOS/landing.png" alt="onbording1" class="resized-image"/>
-<img src="/iOS/security.png" alt="onbording1" class="resized-image"/>
+- Si vous avez déjà un compte, touchez **Se connecter**.  
+- Saisissez votre numéro et mot de passe.  
+- Entrez le code reçu par SMS.  
+<img src="/Android/pick.png" class="resized-image"/>  
+<img src="/Android/login.png" class="resized-image"/>  
+<img src="/Android/login1.png" class="resized-image"/>  
+<img src="/Android/verificationcode.png" class="resized-image"/>
 
-### Étape 7. Clients de passerelle
+**Sauvegarder des plateformes pour la messagerie hors ligne**
 
-**Clients disponibles :**
+1. **Connectez-vous** à RelaySMS.  
+2. Touchez **Sauvegarder les comptes** pour voir les plateformes disponibles.  
+3. Sélectionnez celles que vous souhaitez enregistrer.  
+4. Assurez-vous que la plateforme est installée sur votre téléphone.  
 
-- Une liste de clients de passerelle préconfigurés est affichée.
-- Tirer la liste vers le bas pour la rafraîchir et obtenir les dernières options disponibles.
+<img src="/Android/GatewayNumber(1).png" class="resized-image"/>  
+<img src="/Android/addPlateform.png" class="resized-image"/>
 
-# Communication avec l'application
+#### Gérer vos plateformes enregistrées
 
-Découvrons comment communiquer sans connexion Internet grâce à RelaySMS.
+**Révoquer l’accès**
 
-### Étape 1 : Cliquez sur le bouton composer
+1. Ouvrez **Plateformes**  
+2. Sélectionnez la plateforme à supprimer  
+3. Touchez **Retirer l’accès**  
 
-<img src="/iOS/landing.png" alt="compose image" class="resized-image"/>
+<img src="/Android/addPlateform.png" class="resized-image"/>  
+<img src="/Android/addPlateform.png" class="resized-image"/>  
+<img src="/Android/RevokeTelegram.png" class="resized-image"/>
 
-Après avoir terminé la première étape, qui consiste à sauvegarder l'accès aux plateformes avec lesquelles vous souhaitez communiquer hors ligne, cliquez sur l'icône en forme de crayon pour composer un message.
+**Supprimer et se déconnecter**
 
-### Étape 2. Sélectionnez une plateforme pour composer le message
+- **Supprimer le compte** : efface toutes les données et comptes enregistrés.  
+- **Se déconnecter** : supprime les messages en cours mais permet de se reconnecter ultérieurement.  
+<img src="/OnDeviceToken/1.png" class="resized-image"/>  
+<img src="/OnDeviceToken/2.png" class="resized-image"/>  
+<img src="/OnDeviceToken/3.png" class="resized-image"/>
 
-Choisissez une plateforme pour commencer à rédiger le message.
+---
 
-<img src="/iOS/composes.png" alt="add-message" class="resized-image"/>
-
-### Étape 3. Rédigez votre message et envoyez-le par SMS
-
-Après avoir rédigé votre message sur une plateforme, procédez comme d'habitude pour l'envoyer. Vous serez alors dirigé vers votre page SMS standard, où vous pourrez envoyer le message au numéro de passerelle préenregistré en tant que SMS. Le message apparaîtra comme crypté lorsqu'il sera envoyé en tant que SMS. Cette couche de sécurité supplémentaire garantit que seuls vous et le destinataire pouvez accéder au message, assurant la confidentialité.
-
-<img src="/iOS/ComposeGmail.png" alt="add-message" class="resized-image"/>
-<img src="/iOS/ComposeTelegram.png" alt="add-message" class="resized-image"/>
-<img src="/iOS/ComposeTwitter.png" alt="add-message" class="resized-image"/>
-
-#### Exigences :
-
-- E-mail du destinataire pour Gmail
-- Numéro de téléphone du contact pour Telegram
-- Corps du tweet pour Twitter
-
-Pour chacune des plateformes sélectionnées, remplissez les champs requis avec précision et envoyez le SMS.
-
-Le SMS apparaîtra crypté dans votre application de messagerie.
-
-### Étape 4 : SMS envoyé
-
-Félicitations ! Vous avez réussi à envoyer le SMS. Le destinataire recevra maintenant le message original dans un format lisible. Notez que le délai de réception du message peut varier en fonction du réseau mobile et du fonctionnement du client de passerelle.
-
-### Révocation des plateformes sauvegardées
-
-Révoquer des plateformes sauvegardées supprime votre accès à ces dernières via RelaySMS. Cela signifie que vous ne pourrez plus envoyer de messages à cette plateforme en ligne via l'application RelaySMS. Pour ce faire :
-
-- Cliquez sur paramètres
-- Accédez à sécurité et confidentialité
-- Appuyez sur « révoquer les plateformes » et choisissez la plateforme que vous souhaitez supprimer.
-
-<img src="/iOS/landing.png" alt="Google" class="resized-image"/>
-<img src="/iOS/revokePlatforms.png" alt="Google" class="resized-image"/>
-<img src="/iOS/selectrevoke.png" alt="Google" class="resized-image"/>
-
-### Suppression et déconnexion du compte
-
-Supprimer votre compte signifie supprimer tous vos comptes sauvegardés en ligne. Vous pouvez toujours recréer votre compte si nécessaire.
-
-Se déconnecter signifie que tous vos messages actuels seront supprimés et vous pourrez toujours vous reconnecter si besoin.
-
-- Cliquez sur paramètres
-- Accédez à sécurité et confidentialité
-- Appuyez sur « Déconnexion » pour vous déconnecter de votre compte et sur « Supprimer » pour supprimer votre compte.
-
-<img src="/iOS/delete.png" alt="Google" class="resized-image"/>
-<img src="/iOS/logout.png" alt="Google" class="resized-image"/>
+RelaySMS assure une communication fluide même hors ligne, pour que vous restiez connecté où que vous soyez.
