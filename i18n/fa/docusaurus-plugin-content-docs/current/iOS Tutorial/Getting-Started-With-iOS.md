@@ -1,142 +1,117 @@
----
 sidebar_position: 1
 ---
 
-# اپلیکیشن RelaySMS برای iOS
+## RelaySMS برای iOS
 
-## شروع به کار با iOS
+### ارتباط برقرار کنید، حتی بدون اینترنت
 
-RelaySMS به کاربران امکان می‌دهد حتی زمانی که دسترسی به اینترنت وجود ندارد، به پلتفرم‌های آنلاین خود متصل بمانند. با استفاده از پیامک (SMS)، کاربران می‌توانند بدون وقفه به ارتباط خود ادامه دهند - پیام‌های آنها مانند همیشه به مخاطبین ارسال می‌شود.
+RelaySMS به کاربران اجازه می‌دهد حتی زمانی که به اینترنت دسترسی ندارند، به پلتفرم‌های آنلاین خود متصل بمانند. با استفاده از پیام‌های SMS، کاربران می‌توانند بدون وقفه ارتباط برقرار کنند و مخاطبان آن‌ها پیام‌ها را درست مانند ارسال از طریق پلتفرم‌های آنلاین دریافت می‌کنند.
 
-## مقدمه
+### شروع کار با RelaySMS در iOS
 
-مراحل زیر به شما کمک می‌کند تا حساب خود را راه‌اندازی کنید و شروع به استفاده از RelaySMS کنید.
-
-### مرحله 1. دانلود اپلیکیشن
+#### مرحله ۱: دانلود اپلیکیشن
 
 ![App Store](/img/ios2.jpeg)
 
-- دانلود از [App_Store](https://apps.apple.com/us/app/relaysms/id6630382970)
+- RelaySMS را از [App Store](https://apps.apple.com/us/app/relaysms/id6630382970) دانلود کنید  
+- یا می‌توانید آن را از [GitHub](https://github.com/smswithoutborders/SMSwithoutBorders-Android) دریافت کنید  
+- **نیازمندی‌های فنی:**  
+  - آیفونی که قابلیت ارسال SMS داشته باشد  
+  - نسخه iOS سازگار
 
-- [Github](https://github.com/smswithoutborders/SMSwithoutBorders-Android/releases/tag/v1.0) 
+دو روش برای ارتباط با اپ در زمان قطع اینترنت وجود دارد:
 
-<!-- - کامپایل از [source](https://github.com/smswithoutborders/SMSwithoutBorders-Android) -->
+**A.** با استفاده از حساب پیش‌فرض RelaySMS (bridges)، می‌توانید بدون نیاز به ثبت‌نام یا ذخیره پلتفرم‌ها ایمیل ارسال کنید
 
-#### پیش‌نیازهای فنی
+**B.** با ذخیره دسترسی به پلتفرم‌های مورد نظر در اپ
 
-- آیفون با قابلیت ارسال پیامک
-- iOS 10.0 و بالاتر
 
-### مرحله 2. ایجاد حساب کاربری
+### A. ارتباط با bridges RelaySMS
 
-#### نصب اپلیکیشن و شروع به کار
+*استفاده از bridges (بدون ثبت‌نام) & استفاده از پلتفرم‌ها (ثبت‌نام و ذخیره قبلی)*
 
-<img src="/iOS/1-welcome.png" alt="onbording1" class="resized-image"/>
-<img src="/iOS/2a-skip.png" alt="onbording1" class="resized-image"/>
-<img src="/iOS/2b-TutorialFinish.png" alt="onbording1" class="resized-image"/>
+## [1. استفاده از bridges (بدون ثبت‌نام)](/docs/Bridges%20Tutorial/Bridges#using-bridges-no-sign-up-required)
 
-- برای ایجاد حساب کاربری رایگان ثبت‌نام کنید یا به حساب خود وارد شوید. برای این کار بر روی دکمه «شروع» کلیک کرده، گزینه «ایجاد حساب جدید» را انتخاب کرده و اطلاعات مورد نیاز را پر کنید، سپس روی «ثبت‌نام» کلیک کنید.
+**مرحله ۱: کلیک روی دکمه "نوشتن پیام جدید"**  
+<img src="/Android/pick.png" alt="sign_in" class="resized-image"/>
 
-<img src="/iOS/2-step2creatandlog.png" alt="onbording1" class="resized-image"/>
-<img src="/iOS/3-CreateAccount.png" alt="onbording1" class="resized-image"/>
+**مرحله ۲: نوشتن پیام**
 
-**توجه:** کد تأیید به شماره تلفن شما ارسال خواهد شد.
+- فیلدهای ضروری را پر کنید (مثلاً ایمیل گیرنده برای Gmail)، روی ارسال ضربه بزنید و RelaySMS شما را به اپ SMS هدایت می‌کند.  
+<img src="/Android/bridges.png" alt="GatewayAvailable" class="resized-image"/>
 
-### مرحله 3: تأیید شماره تلفن
+**مرحله ۳: ارسال پیام از طریق SMS**
 
-یک کد تأیید به شماره تلفن شما ارسال خواهد شد. آن را وارد کنید تا شماره تأیید شود.
+پس از نوشتن پیام خود، آن را از طریق سرویس SMS تلفن ارسال کنید. گیرنده پیام را همانند ارسال از پلتفرم آنلاین دریافت می‌کند.  
+<img src="/Android/defualtMessage.png" alt="GatewayAvailable" class="resized-image"/>  
+<img src="/Android/notifi.png" alt="notifi" class="resized-image"/>
 
-<img src="/iOS/3a-verificationCode.png" alt="onbording1" class="resized-image"/>
+**مرحله ۴: دریافت پاسخ**
 
-### مرحله 4: ورود
+- اپ **RelaySMS** را باز کنید و به **Inbox** بروید.  
+- روی **"Paste the incoming message here"** ضربه بزنید و پاسخ SMS را وارد کنید.  
+- روی **"Decrypt"** ضربه بزنید تا پیام نمایان شود.  
+<img src="/Android/inbox.png" alt="GatewayAvailable" class="resized-image"/>  
+<img src="/Android/decryption.png" alt="GatewayAvailable" class="resized-image"/>  
+<img src="/Android/decryptMessage.png" alt="GatewayAvailable" class="resized-image"/>  
+<img src="/Android/Indox.png" alt="GatewayAvailable" class="resized-image"/>
 
-اگر قبلاً حساب دارید، روی «ورود» کلیک کرده و شماره تلفن و رمز عبور خود را وارد کنید تا به حساب خود در RelaySMS دسترسی پیدا کنید.
+### B. ارتباط با پلتفرم‌های ذخیره شده
 
-یک کد تأیید به شماره تلفن شما ارسال می‌شود. آن را وارد کنید تا حساب تأیید شود.
+**مرحله ۲: ثبت‌نام برای حساب کاربری**
 
-<img src="/iOS/login.png" alt="onbording1" class="resized-image"/>
+1. اپ را باز کنید و روی **Register** ضربه بزنید.  
+2. اطلاعات لازم را وارد کرده و ادامه دهید.  
+3. یک PIN تأیید از طریق SMS برای شما ارسال می‌شود.
 
-### مرحله 5. ذخیره‌سازی دسترسی به پلتفرم‌ها
+**صفحات راه‌اندازی**  
+<img src="/Android/gettingstarted.png" alt="onbording1" class="resized-image"/>  
+<img src="/Android/pick.png" alt="sign_in" class="resized-image"/>  
+<img src="/Android/createaccount.png" alt="sign_in2" class="resized-image"/>
 
-یکی از ویژگی‌های اصلی RelaySMS امکان ذخیره‌سازی دسترسی به پلتفرم‌های آنلاین است، زمانی که به اینترنت دسترسی دارید. سپس می‌توانید با استفاده از اپلیکیشن درخواست‌های خود را بدون نیاز به اتصال به اینترنت به این پلتفرم‌ها ارسال کنید. پس از ورود و کلیک بر روی «ذخیره حساب‌ها»، لیستی از پلتفرم‌های پشتیبانی شده را مشاهده خواهید کرد. می‌توانید اطلاعات ورود به چندین پلتفرم را ذخیره کنید تا در مواقعی که نیاز دارید آفلاین باشید، از آنها استفاده کنید.
+**مرحله ۳: تأیید شماره تلفن**
 
-**توجه:** شما باید قبل از ذخیره پلتفرم روی RelaySMS، اپلیکیشن آن پلتفرم را روی گوشی خود نصب کرده باشید.
+- کد ارسال‌شده از طریق SMS را وارد کنید تا ثبت‌نام کامل شود.  
+<img src="/Android/verificationcode.png" alt="verificationcode" class="resized-image"/>
 
-<img src="/iOS/addPlatforms.png" alt="onbording1" class="resized-image"/>
+**مرحله ۴: ورود به حساب**
 
-### مرحله 6. پیکربندی اپلیکیشن و شروع به کار
+- اگر حساب دارید، روی **Login** ضربه بزنید.  
+- شماره تلفن و رمز عبور ثبت‌شده را وارد کنید.  
+- کد تأیید ارسال شده را وارد کنید.  
+<img src="/Android/pick.png" class="resized-image"/>  
+<img src="/Android/login.png" class="resized-image"/>  
+<img src="/Android/login1.png" class="resized-image"/>  
+<img src="/Android/verificationcode.png" class="resized-image"/>
 
-پس از اینکه اپلیکیشن‌های خود را به حساب RelaySMS متصل کردید، باید مشتری دروازه (gateway) مورد نظر خود را از لیست موجود انتخاب کنید. یکی از پیکربندی‌های مهم، انتخاب شماره دروازه برای ارتباطات است. انتخاب شماره دروازه از همان سرویس‌دهنده یا کشور شما به‌صرفه‌تر است.
+**ذخیره پلتفرم‌ها برای پیام‌رسانی آفلاین**
 
-<img src="/iOS/landing.png" alt="onbording1" class="resized-image"/>
-<img src="/iOS/security.png" alt="onbording1" class="resized-image"/>
+1. به RelaySMS وارد شوید.  
+2. روی **Save Accounts** بزنید تا لیست پلتفرم‌های موجود را ببینید.  
+3. پلتفرم‌های مورد نظر خود را انتخاب کنید.  
+4. مطمئن شوید آن اپ روی گوشی شما نصب است.  
+<img src="/Android/GatewayNumber(1).png" class="resized-image"/>  
+<img src="/Android/addPlateform.png" class="resized-image"/>
 
-### مرحله 7. مشتری‌های دروازه
+#### مدیریت پلتفرم‌های ذخیره‌شده
 
-**مشتری‌های موجود:**
+**لغو دسترسی**
 
-- لیستی از مشتری‌های دروازه از پیش‌پیکربندی شده نمایش داده می‌شود.
-- برای به‌روزرسانی لیست و دریافت آخرین گزینه‌های موجود، صفحه را به پایین بکشید.
+1. وارد **Platforms** شوید  
+2. پلتفرم مورد نظر را انتخاب کنید  
+3. روی **Remove Access** ضربه بزنید  
+<img src="/Android/addPlateform.png" class="resized-image"/>  
+<img src="/Android/addPlateform.png" class="resized-image"/>  
+<img src="/Android/RevokeTelegram.png" class="resized-image"/>
 
-# ارتباط با اپلیکیشن
+**حذف و خروج از حساب**
 
-بیایید بررسی کنیم که چگونه می‌توان با استفاده از RelaySMS بدون اتصال به اینترنت ارتباط برقرار کرد.
+- حذف حساب: همه داده‌ها و حساب‌های ذخیره‌شده پاک می‌شوند.  
+- خروج: پیام‌های جاری حذف می‌شوند اما می‌توانید بعداً وارد شوید.  
+<img src="/OnDeviceToken/1.png" class="resized-image"/>  
+<img src="/OnDeviceToken/2.png" class="resized-image"/>  
+<img src="/OnDeviceToken/3.png" class="resized-image"/>
 
-### مرحله 1: روی دکمه نوشتن کلیک کنید
+---
 
-<img src="/iOS/landing.png" alt="compose image" class="resized-image"/>
-
-پس از اینکه اولین مرحله، یعنی ذخیره‌سازی دسترسی به پلتفرم‌های مورد نیاز برای ارتباط آفلاین را به پایان رساندید، روی آیکون مداد کلیک کنید تا یک پیام جدید بنویسید.
-
-### مرحله 2. انتخاب پلتفرم برای نوشتن پیام
-
-پلتفرمی را انتخاب کنید تا شروع به نوشتن پیام کنید.
-
-<img src="/iOS/composes.png" alt="add-message" class="resized-image"/>
-
-### مرحله 3. پیام خود را بنویسید و از طریق پیامک ارسال کنید
-
-پس از نوشتن پیام روی پلتفرم مورد نظر، مطابق معمول پیام را ارسال کنید. سپس به صفحه پیامک خود منتقل خواهید شد، جایی که می‌توانید پیام را به شماره دروازه ثبت‌شده به عنوان پیامک ارسال کنید. پیام به صورت رمزگذاری‌شده ظاهر می‌شود، که این لایه امنیتی تضمین می‌کند که فقط شما و گیرنده می‌توانید به پیام دسترسی داشته باشید و حریم خصوصی شما محفوظ می‌ماند.
-
-<img src="/iOS/ComposeGmail.png" alt="add-message" class="resized-image"/>
-<img src="/iOS/ComposeTelegram.png" alt="add-message" class="resized-image"/>
-<img src="/iOS/ComposeTwitter.png" alt="add-message" class="resized-image"/>
-
-#### نیازمندی‌ها:
-
-- ایمیل گیرنده برای Gmail
-- شماره تلفن مخاطب برای Telegram
-- متن توییت برای Twitter
-
-برای هر پلتفرمی که انتخاب کرده‌اید، فیلدهای مورد نیاز را با دقت پر کنید و پیامک را ارسال کنید.
-
-پیامک به‌صورت رمزگذاری‌شده در اپلیکیشن پیامک شما ظاهر می‌شود.
-
-### مرحله 4: پیامک ارسال شد
-
-تبریک! شما با موفقیت پیامک را ارسال کردید. گیرنده پیام اصلی را در یک فرمت خوانا دریافت خواهد کرد. توجه داشته باشید که زمان دریافت پیام ممکن است بسته به شبکه موبایل و عملکرد مشتری دروازه متفاوت باشد.
-
-### لغو دسترسی به پلتفرم‌های ذخیره‌شده
-
-لغو دسترسی به پلتفرم‌های ذخیره‌شده به این معناست که شما دیگر به این پلتفرم‌ها از طریق RelaySMS دسترسی نخواهید داشت. برای انجام این کار:
-
-- روی تنظیمات کلیک کنید
-- به بخش امنیت و حریم خصوصی بروید
-- روی «لغو دسترسی به پلتفرم‌ها» کلیک کنید و پلتفرمی که می‌خواهید حذف کنید را انتخاب کنید.
-
-<img src="/iOS/landing.png" alt="Google" class="resized-image"/>
-<img src="/iOS/revokePlatforms.png" alt="Google" class="resized-image"/>
-<img src="/iOS/selectrevoke.png" alt="Google" class="resized-image"/>
-
-### حذف و خروج از حساب کاربری
-
-حذف حساب کاربری به معنای حذف تمام پلتفرم‌های ذخیره‌شده است. شما همچنان می‌توانید در صورت نیاز دوباره حساب خود را ایجاد کنید.
-
-خروج از حساب کاربری به این معناست که تمامی پیام‌های جاری شما حذف خواهند شد و همچنان می‌توانید در صورت نیاز دوباره وارد حساب کاربری خود شوید.
-
-- روی تنظیمات کلیک کنید
-- به بخش امنیت و حریم خصوصی بروید
-- روی «خروج» کلیک کنید تا از حساب خود خارج شوید و روی «حذف» کلیک کنید تا حساب کاربری خود را حذف کنید.
-
-<img src="/iOS/delete.png" alt="Google" class="resized-image"/>
-<img src="/iOS/logout.png" alt="Google" class="resized-image"/>
+با RelaySMS حتی در حالت آفلاین هم ارتباط خود را حفظ کنید، در هر مکان در دسترس باشید.
