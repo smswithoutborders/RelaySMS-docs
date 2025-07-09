@@ -37,23 +37,20 @@ There are two ways to communicate using  the app during an internet shutdown;
 
 
 **Step 1: Click the "compose new message" Button**
-<!-- rePlace the images with the right ones -->
-<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
+<img src="/Android/pick.png" alt="sign_in" class="resized-image"/>
+
 
 **Step 2. Compose a Message**
 
 - Fill in the required fields (e.g. recipient’s email for Gmail, Click Send and RelaySMS will redirect you to the SMS app.)
-
-<!-- rePlace the images with the right ones -->
-<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
+<img src="/Android/bridges.png" alt="GatewayAvailable" class="resized-image"/>
 
 **Step 3: Sending Messages via SMS**
 
 After composing your message, confirm and send it through your phone’s SMS service. The recipient will receive the message as if it were sent directly from the online platform.
 
-<!-- rePlace the images with the right ones -->
-<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
-
+<img src="/Android/defualtMessage.png" alt="GatewayAvailable" class="resized-image"/>
+<img src="/Android/notifi.png" alt="notifi" class="resized-image"/>
 
 **Step 4: Receiving Replies**
 
@@ -61,10 +58,12 @@ After composing your message, confirm and send it through your phone’s SMS ser
 - Tap **"Paste the incoming message here"** and input the SMS response.
 - Tap **"Decrypt"** to reveal the message.
 
-<!-- rePlace the images with the right ones -->
-<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
 
+<img src="/Android/inbox.png" alt="GatewayAvailable" class="resized-image"/>
+<img src="/Android/decryption.png" alt="GatewayAvailable" class="resized-image"/>
 
+<img src="/Android/decryptMessage.png" alt="GatewayAvailable" class="resized-image"/>
+<img src="/Android/Indox.png" alt="GatewayAvailable" class="resized-image"/>
 
 ### B. Communicating Using Saved Platforms 
 
@@ -76,32 +75,25 @@ After composing your message, confirm and send it through your phone’s SMS ser
 
 **Onboarding Screens**
 
-<!-- rePlace the images with the right ones -->
-<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
-<!-- rePlace the images with the right ones -->
-<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
-<!-- rePlace the images with the right ones -->
-<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
-<!-- rePlace the images with the right ones -->
-<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
-
+<img src="/Android/gettingstarted.png" alt="onbording1" class="resized-image"/>
+<img src="/Android/pick.png" alt="sign_in" class="resized-image"/>
+<img src="/Android/createaccount.png" alt="sign_in2" class="resized-image"/>
 
 **Step 3: Verify Your Phone Number**
 
 - Enter the verification code sent via SMS to complete your account setup.
 
-<!-- rePlace the images with the right ones -->
-<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
-
+<img src="/Android/verificationcode.png" alt="verificationcode" class="resized-image"/>
 **Step 4: Log In**
 
 - If you already have an account, tap **Log In.**
 - Enter your registered phone number and password.
 - Enter the verification code received via SMS.
 
-<!-- rePlace the images with the right ones -->
-<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
-
+<img src="/Android/pick.png" alt="sign_in" class="resized-image" />
+<img src="/Android/login.png" alt="login1" class="resized-image" />
+<img src="/Android/login1.png" alt="sign_in1" class="resized-image" />
+<img src="/Android/verificationcode.png" alt="verificationcode" class="resized-image"/>
 
 **Saving Platforms for Offline Messaging**
 
@@ -110,8 +102,8 @@ After composing your message, confirm and send it through your phone’s SMS ser
 3. Select the platforms you wish to save.
 4. Ensure the platform you want to save is installed on your phone.
 
-<!-- rePlace the images with the right ones -->
-<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
+<img src="/Android/GatewayNumber(1).png" alt="add-message" class="resized-image"/>
+<img src="/Android/addPlateform.png" alt="add-message" class="resized-image"/>
 
 #### Managing Your Saved Platforms
 
@@ -121,18 +113,18 @@ After composing your message, confirm and send it through your phone’s SMS ser
 2. Select the platform you would like to remove access from 
 3. Tap **Remove Access**
 
-<!-- rePlace the images with the right ones -->
-<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
-
+<img src="/Android/addPlateform.png" alt="add-message" class="resized-image"/>
+<img src="/Android/addPlateform.png" alt="add-message" class="resized-image"/>
+<img src="/Android/RevokeTelegram.png" alt="add-message" class="resized-image"/>
 
 **Deleting and Logging Out of Your Account**
 
 - Delete Account: Erases all saved accounts and data. You will need to create a new account to use RelaySMS again.
 - Logout: Removes all current messages but allows you to log in later.
 
-<!-- rePlace the images with the right ones -->
-<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
-
+<img src="/OnDeviceToken/1.png" alt="add-message" class="resized-image"/>
+<img src="/OnDeviceToken/2.png" alt="add-message" class="resized-image"/>
+<img src="/OnDeviceToken/3.png" alt="add-message" class="resized-image"/>
 
 ---
 
