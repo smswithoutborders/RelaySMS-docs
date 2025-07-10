@@ -87,11 +87,13 @@
   animation-delay: 0.6s;
 }
 
+
+
 .buttonGroup {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   margin-top: 3rem;
   animation: fadeSlideIn 0.6s ease forwards;
   opacity: 0;
@@ -99,9 +101,24 @@
   animation-delay: 0.8s;
 }
 
+.buttonColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+/* Mobile: stack columns */
+@media screen and (max-width: 768px) {
+  .buttonGroup {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .heroButton {
   background: linear-gradient(145deg, #c6d8f5, #cad8f7);
-  color: rgba(30, 64, 175, 0.9); 
+  color: rgba(30, 64, 175, 0.9);
   border: 1px solid rgba(30, 64, 175, 0.5);
   padding: 0.9rem 2.2rem;
   font-size: 1.1rem;
@@ -110,12 +127,14 @@
   cursor: pointer;
   transition: box-shadow 0.3s ease, transform 0.25s ease;
   box-shadow: none;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
 }
 
 .heroButton:hover,
 .heroButton:focus-visible {
   box-shadow: 8px 8px 20px rgba(145, 186, 253, 0.7);
-  outline: none;
   transform: translateY(-3px);
   color: #1e40af;
 }
@@ -131,6 +150,7 @@
     transform: translateY(0);
   }
 }
+
 
 @media (max-width: 768px) {
   .heroBanner {
