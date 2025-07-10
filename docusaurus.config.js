@@ -73,10 +73,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     (         {
       navbar: {
-        logo: {
-          alt: "Swob logo",
-          src: "logo.png"
-        },
+       logo: {
+    alt: "Swob Logo",
+    src: "SWOB.png",
+    srcDark: "SWOB-Dark Theme.png",
+  },
         items: [
           {
             type: "doc",
