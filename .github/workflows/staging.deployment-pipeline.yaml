@@ -21,11 +21,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          yarn install --no-lockfile
+          npm install
 
       - name: Build project
         run: |
-          yarn build
+          npm run build
 
       - name: Prepare build for deployment
         run: |
