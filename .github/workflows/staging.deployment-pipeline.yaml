@@ -37,6 +37,8 @@ jobs:
           mv scripts/ build_output/scripts/
           mv Dockerfile.nginx build_output/Dockerfile
           mv .gitignore build_output/.gitignore
+          mv deploy.sh build_output/deploy.sh
+          mv docker-compose.yml build_output/docker-compose.yml
 
       - name: Set up Git for commit
         uses: qoomon/actions--setup-git@v1
