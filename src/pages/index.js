@@ -29,19 +29,25 @@ function HomepageHeader() {
           <Translate>Stay Connected</Translate>
         </p>
 
+
 <div className={styles.buttonGroup}>
-  <Link className={clsx("button", styles.heroButton)} to="docs">
-    <Translate>Technical Documentation</Translate>
-  </Link>
-  <Link className={clsx("button", styles.heroButton)} to="docs/Android Tutorial/Getting-Started-With-Android">
-    <Translate>Get Started with Android</Translate>
-  </Link>
-  <Link className={clsx("button", styles.heroButton)} to="docs/Troubleshooting/Troubleshooting-FAQ">
-    <Translate>Troubleshooting Guide</Translate>
-  </Link>
-  <Link className={clsx("button", styles.heroButton)} to="/docs/iOS Tutorial/Getting-Started-With-iOS">
-    <Translate>Get Started with iOS</Translate>
-  </Link>
+  <div className={styles.buttonColumn}>
+    <Link className={clsx("button", styles.heroButton)} to="docs/Troubleshooting/Troubleshooting-FAQ">
+      <Translate>Troubleshooting Guide</Translate>
+    </Link>
+    <Link className={clsx("button", styles.heroButton)} to="/docs/iOS Tutorial/Getting-Started-With-iOS">
+      <Translate>Get Started with iOS</Translate>
+    </Link>
+  </div>
+
+  <div className={styles.buttonColumn}>
+    <Link className={clsx("button", styles.heroButton)} to="docs/Technical Documentation/Coming-Soon">
+      <Translate>Technical Documentation</Translate>
+    </Link>
+    <Link className={clsx("button", styles.heroButton)} to="docs/Android Tutorial/Getting-Started-With-Android">
+      <Translate>Get Started with Android</Translate>
+    </Link>
+  </div>
 </div>
 
       </div>
