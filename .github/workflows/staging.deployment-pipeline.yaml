@@ -75,6 +75,8 @@ jobs:
           script: |
             set -e
 
+            cd ${{ secrets.PROJECT_PATH }}
+
             echo "============================"
             echo "🚀 Deleting local build/staging branch if exists ..."
             echo "============================"
@@ -99,7 +101,6 @@ jobs:
             echo "============================"
             echo "🚀 Fetching all branches ..."
             echo "============================"
-            cd ${{ secrets.PROJECT_PATH }}
             if ! git fetch --all; then
               echo "❌ Error fetching branches!"
               exit 1
