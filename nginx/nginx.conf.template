@@ -24,7 +24,7 @@ server {
     add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload";
     add_header X-XSS-Protection "1; mode=block";
     add_header Referrer-Policy "strict-origin";
-    add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com;";
+    add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://path-to-mona-sans.woff2/; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com;";
     add_header Permissions-Policy "geolocation=(),midi=(),sync-xhr=(),microphone=(),camera=(),magnetometer=(),gyroscope=(),fullscreen=(self),payment=()";
     add_header X-Frame-Options "SAMEORIGIN";
     add_header X-Content-Type-Options nosniff;
