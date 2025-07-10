@@ -76,6 +76,27 @@ jobs:
             set -e
 
             echo "============================"
+            echo "🚀 Deleting local build/staging branch if exists ..."
+            echo "============================"
+            current_branch=$(git rev-parse --abbrev-ref HEAD)
+            if [ "$current_branch" = "build/staging" ]; then
+              if git branch --list main; then
+                git checkout main
+              elif git branch --list master; then
+                git checkout master
+              else
+                echo "❌ No main or master branch to switch to before deleting build/staging!"
+                exit 1
+              fi
+            fi
+            if git branch --list build/staging; then
+              git branch -D build/staging
+            fi
+            echo "==============================="
+            echo "✅ Local build/staging branch deleted (if existed)"
+            echo "==============================="
+
+            echo "============================"
             echo "🚀 Fetching all branches ..."
             echo "============================"
             cd ${{ secrets.PROJECT_PATH }}
@@ -96,17 +117,6 @@ jobs:
             fi
             echo "==============================="
             echo "✅ Switched to build/staging branch"
-            echo "==============================="
-
-            echo "============================"
-            echo "🚀 Resetting branch to origin/build/staging ..."
-            echo "============================"
-            if ! git fetch origin build/staging && git reset --hard origin/build/staging; then
-              echo "❌ Error resetting to latest build/staging!"
-              exit 1
-            fi
-            echo "==============================="
-            echo "✅ Reset complete"
             echo "==============================="
 
             echo "========================="
