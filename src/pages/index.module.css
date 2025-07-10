@@ -45,9 +45,15 @@
     padding: 2rem 1rem;
   }
 
-  .hero__title {
-    font-size: 2.2rem;
-  }
+.hero__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.2;
+  margin: 1rem 0;
+}
 
   .hero__subtitle {
     font-size: 1.4rem;
