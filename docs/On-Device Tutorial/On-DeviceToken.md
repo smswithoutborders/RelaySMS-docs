@@ -18,8 +18,6 @@ To start storing your access tokens locally on your device:
 
 - Find the toggle for **“Store tokens on-device”** and switch it ON.
 
-
-<!--  add images -->
 <img src="/OnDeviceToken/1.png" alt="add-message" class="resized-image"/>
 <img src="/OnDeviceToken/2.png" alt="add-message" class="resized-image"/>
 <img src="/OnDeviceToken/3.png" alt="add-message" class="resized-image"/>

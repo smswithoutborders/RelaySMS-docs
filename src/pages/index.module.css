@@ -1,69 +1,173 @@
 .heroBanner {
-  padding: 4rem 0;
+  padding: 10rem 2rem;
   text-align: center;
   position: relative;
   overflow: hidden;
-  min-height: 600px;
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-color: var( --background-color);
+  font-family: "Segoe UI Variable", "Segoe UI", system-ui, sans-serif;
+}
+
+.heroBanner::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: -40%;
+  width: 180%;
+  height: 180%;
+  background: radial-gradient(circle at center, #d7dcf7 0%, transparent 70%);
+  animation: pulse 20s ease-in-out infinite;
+  z-index: 0;
+  filter: blur(80px);
+  opacity: 0.4;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.1) translate(10px, 10px);
+    opacity: 0.6;
+  }
 }
 
 .headerContainer {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-
-.hero__title {
-  font-size: 3rem;
-  margin-top: 1rem;
-  font-weight: bold;
-}
-
-.hero__subtitle {
-  font-size: 1.8rem;
-  margin-top: 0.5rem;
-}
-
-.buttonGroup {
-  display: flex;
-  gap: 20px;
-  margin-top: 2rem;
-}
-
-.buttonGroup a {
-  padding: 1rem 2rem;
-}
-
-/* Media Query for Mobile */
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem 1rem;
-  }
-
-  .hero__title {
-    font-size: 2.2rem;
-  }
-
-  .hero__subtitle {
-    font-size: 1.4rem;
-  }
-
-  .buttonGroup {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .buttonGroup a {
-    width: 100%;
-    text-align: center;
-  }
 }
 
 .hero_img {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  height: 110px;
+  width: 110px;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.3);
+  animation: fadeSlideIn 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+  animation-delay: 0.2s;
+}
+
+.hero__title,
+.hero__subtitle {
+  color: var(--navbar-text-color);
+  transition: color 0.3s ease;
+}
+
+.hero__title {
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-weight: 800;
+  color: var(--navbar-text-color); 
+  transition: color 0.3s ease;
+  margin-top: 0;
+  line-height: 1.1;
+  text-shadow: 1px 1px 3px rgba(30, 64, 175, 0.2);
+  animation: fadeSlideIn 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+  animation-delay: 0.4s;
+}
+
+.hero__subtitle {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  margin-top: 0.5rem;
+  color: var(--navbar-text-color);
+  transition: color 0.3s ease;
+  max-width: 600px;
+  animation: fadeSlideIn 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+  animation-delay: 0.6s;
+}
+
+
+
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  animation: fadeSlideIn 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+  animation-delay: 0.8s;
+}
+
+.buttonColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+/* Mobile: stack columns */
+@media screen and (max-width: 768px) {
+  .buttonGroup {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.heroButton {
+  background: linear-gradient(145deg, #c6d8f5, #cad8f7);
+  color: rgba(30, 64, 175, 0.9);
+  border: 1px solid rgba(30, 64, 175, 0.5);
+  padding: 0.9rem 2.2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 13px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.25s ease;
+  box-shadow: none;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.heroButton:hover,
+.heroButton:focus-visible {
+  box-shadow: 8px 8px 20px rgba(145, 186, 253, 0.7);
+  transform: translateY(-3px);
+  color: #1e40af;
+}
+
+.heroButton:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 4px;
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .heroBanner {
+    padding: 6rem 3rem;
+  }
+  .hero_img {
+    height: 90px;
+    width: 90px;
+  }
+  .hero__title {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+  }
+  .hero__subtitle {
+    font-size: clamp(1.1rem, 4vw, 1.5rem);
+  }
+  .buttonGroup a {
+    width: 100%;
+    justify-content: center;
+  }
 }

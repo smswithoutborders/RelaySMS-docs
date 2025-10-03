@@ -11,7 +11,7 @@ function HomepageHeader() {
   return (
     <header className={clsx("hero", styles.heroBanner)}>
       <div className={clsx("container", styles.headerContainer)}>
-        {/* Logo Section */}
+  
         <img
           alt="Swob logo"
           className={styles.hero_img}
@@ -20,7 +20,7 @@ function HomepageHeader() {
           width={180}
         />
 
-        {/* Title and Tagline */}
+  
         <h1 className={styles.hero__title} aria-label="Smswithoutborders Projects >> Documentation">
           <Translate>Smswithoutborders Projects &gt;&gt; Documentation</Translate>
         </h1>
@@ -29,43 +29,27 @@ function HomepageHeader() {
           <Translate>Stay Connected</Translate>
         </p>
 
-        {/* Button Group */}
-        <div className={styles.buttonGroup}>
-              <Link
-            className="button button--outline button--primary button--lg"
-            to="docs"
-            aria-label="Troubleshooting Guide"
-          >
-            <Translate>Technical Documentation</Translate>
-          </Link>
-       
-          <Link
-            className="button button--outline button--primary button--lg"
-            to="docs/Android Tutorial/Getting-Started-With-Android"
-            aria-label="Get started with Android"
-          >
-            <Translate>Get Started with Android</Translate>
-          </Link>
-        </div>
 
+<div className={styles.buttonGroup}>
+  <div className={styles.buttonColumn}>
+    <Link className={clsx("button", styles.heroButton)} to="docs/Troubleshooting/Troubleshooting-FAQ">
+      <Translate>Troubleshooting Guide</Translate>
+    </Link>
+    <Link className={clsx("button", styles.heroButton)} to="/docs/iOS Tutorial/Getting-Started-With-iOS">
+      <Translate>Get Started with iOS</Translate>
+    </Link>
+  </div>
 
-        {/* Button Group */}
-        <div className={styles.buttonGroup}>
-          <Link
-            className="button button--outline button--primary button--lg"
-            to="docs/Troubleshooting/Troubleshooting-FAQ"
-            aria-label="Troubleshooting Guide"
-          >
-            <Translate>Troubleshooting Guide</Translate>
-          </Link>
-             <Link
-            className="button button--outline button--primary button--lg"
-            to="/docs/iOS Tutorial/Getting-Started-With-iOS"
-            aria-label="Get started with iOS"
-          >
-            <Translate>Get Started with iOS</Translate>
-          </Link>
-        </div>
+  <div className={styles.buttonColumn}>
+    <Link className={clsx("button", styles.heroButton)} to="docs/Technical Documentation/Coming-Soon">
+      <Translate>Technical Documentation</Translate>
+    </Link>
+    <Link className={clsx("button", styles.heroButton)} to="docs/Android Tutorial/Getting-Started-With-Android">
+      <Translate>Get Started with Android</Translate>
+    </Link>
+  </div>
+</div>
+
       </div>
     </header>
   );
@@ -82,3 +66,5 @@ export default function Home() {
     </Layout>
   );
 }
+
+
