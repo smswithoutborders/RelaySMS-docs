@@ -1,173 +1,151 @@
 .heroBanner {
-  padding: 10rem 2rem;
-  text-align: center;
   position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ifm-background-color);
   overflow: hidden;
-  background-color: var( --background-color);
-  font-family: "Segoe UI Variable", "Segoe UI", system-ui, sans-serif;
+  font-family: "Mona Sans", "Ubuntu", system-ui, sans-serif;
+  text-align: center;
+  padding: 0 2rem;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-.heroBanner::before {
-  content: "";
+.gradientOverlay {
   position: absolute;
-  top: -40%;
-  left: -40%;
-  width: 180%;
-  height: 180%;
-  background: radial-gradient(circle at center, #d7dcf7 0%, transparent 70%);
-  animation: pulse 20s ease-in-out infinite;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 120%;
+  filter: blur(100px);
+  animation: glow 10s ease-in-out infinite;
   z-index: 0;
-  filter: blur(80px);
-  opacity: 0.4;
+  transition: background 0.3s ease;
 }
 
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1) translate(0, 0);
-    opacity: 0.4;
-  }
-  50% {
-    transform: scale(1.1) translate(10px, 10px);
-    opacity: 0.6;
-  }
+@keyframes glow {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
 }
 
-.headerContainer {
+.heroInner {
   position: relative;
-  max-width: 960px;
-  margin: 0 auto;
-  z-index: 1;
+  z-index: 2;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.hero_img {
-  margin-bottom: 2rem;
-  height: 110px;
-  width: 110px;
-  object-fit: contain;
-  border-radius: 16px;
-  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.3);
-  animation: fadeSlideIn 0.6s ease forwards;
+  gap: 1rem;
+  animation: fadeInUp 1.2s ease forwards;
   opacity: 0;
-  transform: translateY(30px);
-  animation-delay: 0.2s;
 }
 
-.hero__title,
-.hero__subtitle {
-  color: var(--navbar-text-color);
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.heroLogo {
+  margin-bottom: 1rem;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.heroTitle {
+  font-size: clamp(1.4rem, 3.5vw, 2.6rem);
+  font-weight: 600;
+  color: var(--ifm-color-emphasis);
+  margin: 0.3rem 0;
+  letter-spacing: -0.02em;
   transition: color 0.3s ease;
 }
 
-.hero__title {
-  font-size: clamp(2.5rem, 6vw, 3.5rem);
-  font-weight: 800;
-  color: var(--navbar-text-color); 
-  transition: color 0.3s ease;
-  margin-top: 0;
-  line-height: 1.1;
-  text-shadow: 1px 1px 3px rgba(30, 64, 175, 0.2);
-  animation: fadeSlideIn 0.6s ease forwards;
-  opacity: 0;
-  transform: translateY(30px);
-  animation-delay: 0.4s;
-}
-
-.hero__subtitle {
-  font-size: clamp(1.4rem, 3vw, 1.8rem);
-  margin-top: 0.5rem;
-  color: var(--navbar-text-color);
-  transition: color 0.3s ease;
+.heroSubtitle {
+  font-size: clamp(1.1rem, 3vw, 1.3rem);
+  color: var(--ifm-color-primary);
   max-width: 600px;
-  animation: fadeSlideIn 0.6s ease forwards;
-  opacity: 0;
-  transform: translateY(30px);
-  animation-delay: 0.6s;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  transition: color 0.3s ease;
 }
 
-
-
-.buttonGroup {
+.buttonRow {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 3rem;
-  animation: fadeSlideIn 0.6s ease forwards;
-  opacity: 0;
-  transform: translateY(30px);
-  animation-delay: 0.8s;
-}
-
-.buttonColumn {
-  display: flex;
-  flex-direction: column;
   gap: 1.2rem;
-  align-items: center;
 }
 
-/* Mobile: stack columns */
-@media screen and (max-width: 768px) {
-  .buttonGroup {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.heroButton {
-  background: linear-gradient(145deg, #c6d8f5, #cad8f7);
-  color: rgba(30, 64, 175, 0.9);
-  border: 1px solid rgba(30, 64, 175, 0.5);
-  padding: 0.9rem 2.2rem;
-  font-size: 1.1rem;
+.mainButton {
+  background: linear-gradient(135deg, var(--ifm-color-primary-dark), var(--ifm-color-primary));
+  color: var(--ifm-color-on-primary, #fff) !important;
+  border: none;
+  padding: 0.9rem 2rem;
+  border-radius: 12px;
   font-weight: 600;
-  border-radius: 13px;
-  cursor: pointer;
-  transition: box-shadow 0.3s ease, transform 0.25s ease;
-  box-shadow: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.3);
+  min-width: 200px;
   text-align: center;
-  width: 100%;
-  max-width: 300px;
 }
 
-.heroButton:hover,
-.heroButton:focus-visible {
-  box-shadow: 8px 8px 20px rgba(145, 186, 253, 0.7);
+.mainButton:hover {
   transform: translateY(-3px);
-  color: #1e40af;
+  box-shadow: 0 6px 25px rgba(79, 70, 229, 0.5);
 }
 
-.heroButton:focus-visible {
-  outline: 3px solid #93c5fd;
-  outline-offset: 4px;
+.outlineButton {
+  background: transparent;
+  color: var(--ifm-color-emphasis) !important;
+  border: 2px solid var(--ifm-color-primary);
+  border-radius: 12px;
+  padding: 0.9rem 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  text-align: center;
 }
 
-@keyframes fadeSlideIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.outlineButton:hover {
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--ifm-color-primary) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);
 }
 
+[data-theme="dark"] .heroBanner {
+  background: #131922;
+}
+
+[data-theme="dark"] .gradientOverlay {
+  background: radial-gradient(circle at 30% 20%, rgba(18, 32, 63, 0.3) 0%, transparent 70%);
+}
+
+[data-theme="dark"] .heroTitle,
+[data-theme="dark"] .heroSubtitle {
+  color: rgb(207, 221, 236);
+}
+
+[data-theme="dark"] .mainButton {
+  background: linear-gradient(135deg, #4338ca, #4f46e5);
+  color: #fff !important;
+}
+
+[data-theme="dark"] .outlineButton {
+  border-color: #60a5fa;
+  color: #60a5fa !important;
+}
 
 @media (max-width: 768px) {
-  .heroBanner {
-    padding: 6rem 3rem;
-  }
-  .hero_img {
-    height: 90px;
-    width: 90px;
-  }
-  .hero__title {
-    font-size: clamp(1.8rem, 5vw, 2.5rem);
-  }
-  .hero__subtitle {
-    font-size: clamp(1.1rem, 4vw, 1.5rem);
-  }
-  .buttonGroup a {
-    width: 100%;
-    justify-content: center;
-  }
+  .heroLogo { height: 100px; width: 100px; }
+  .heroSubtitle { font-size: 1rem; }
+  .buttonRow { flex-direction: column; align-items: center; }
+  .mainButton, .outlineButton { width: 100%; max-width: 280px; }
 }
