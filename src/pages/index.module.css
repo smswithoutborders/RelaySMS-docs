@@ -91,33 +91,14 @@
   font-size: 1rem;
   transition: all 0.3s ease;
   box-shadow: 0 4px 14px rgba(79, 70, 229, 0.3);
-  min-width: 200px;
+  width: 250px;
   text-align: center;
+  display: inline-block;
 }
 
 .mainButton:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 25px rgba(79, 70, 229, 0.5);
-}
-
-.outlineButton {
-  background: transparent;
-  color: var(--ifm-color-emphasis) !important;
-  border: 2px solid var(--ifm-color-primary);
-  border-radius: 12px;
-  padding: 0.9rem 2rem;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  min-width: 200px;
-  text-align: center;
-}
-
-.outlineButton:hover {
-  background: rgba(99, 102, 241, 0.1);
-  color: var(--ifm-color-primary) !important;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);
+  box-shadow: 0 6px 20px rgba(248, 162, 50, 0.5);
 }
 
 [data-theme="dark"] .heroBanner {
