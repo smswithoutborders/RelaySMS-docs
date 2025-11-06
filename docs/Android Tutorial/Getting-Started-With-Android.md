@@ -51,20 +51,17 @@ Steps to Use the Bridge Feature:
 
 **3. Select a Gateway Client:**
 
-
-<img src="/Android/1.png" alt="GatewayAvailable" class="resized-image"/>
-<img src="/Android/GateWay2.png" alt="gateway" class="resized-image" />
-<img src="/Android/addgateway.png" alt="addgatewayclient" class="resized-image"/>
-<img src="/Android/addgateway2.png" alt="addgatewayclient" class="resized-image"/>
-
 - Tap the 🌍 Country tab on the navigation bar.
 
 - Choose a gateway client (these are phone numbers that route your offline message to the internet).
 
 - Alternatively, you can select a gateway client from the list that pops up when you hit the send button after composing your message.
 
-<!-- add images -->
 
+<img src="/Android/1.png" alt="GatewayAvailable" class="resized-image"/>
+<img src="/Android/GateWay2.png" alt="gateway" class="resized-image" />
+<img src="/Android/addgateway.png" alt="addgatewayclient" class="resized-image"/>
+<img src="/Android/addgateway2.png" alt="addgatewayclient" class="resized-image"/>
 
 *Note: If you don’t select one, the app will assign a default gateway for you.*
 
@@ -80,8 +77,6 @@ Steps to Use the Bridge Feature:
 *NB: If the RelaySMS app is not set as your default message app, you will need to choose a default messaging app to send your message.*
 
 *Your message is now on its way online, even without internet!*
-
-
 
 
 **5. Receiving messages**
