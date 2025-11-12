@@ -52,7 +52,7 @@ function HomepageHeader() {
             <Translate>Troubleshooting Guide</Translate>
           </Link>
           <Link
-            className={clsx("button", styles.outlineButton)}
+            className={clsx("button", styles.mainButton)}
             to="/docs/Technical Documentation/Coming-Soon"
           >
             <Translate>Technical Docs</Translate>
