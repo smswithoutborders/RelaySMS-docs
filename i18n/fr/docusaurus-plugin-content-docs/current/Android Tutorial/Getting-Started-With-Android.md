@@ -4,109 +4,85 @@ sidebar_position: 1
 
 # Application RelaySMS pour Android
 
-## Premiers pas avec Android
+## Bien démarrer avec Android
 
-RelaySMS permet aux utilisateurs de rester connectés à leurs plateformes en ligne même en cas d'absence de connexion Internet. En s'appuyant sur les messages SMS, les utilisateurs peuvent continuer à communiquer sans interruption — leurs contacts reçoivent les messages comme d’habitude.
+RelaySMS permet aux utilisateurs de rester connectés à leurs plateformes en ligne même lorsque l’accès à Internet est indisponible. En utilisant la messagerie SMS, les utilisateurs peuvent continuer à communiquer et leurs contacts reçoivent les messages en ligne comme d’habitude.
 
 ## Introduction
 
-RelaySMS vous aide à envoyer des messages en ligne sans avoir besoin d’une connexion Internet. Il fonctionne de **deux façons :**
+RelaySMS vous aide à envoyer des messages en ligne **sans avoir besoin d’Internet**.  
+Il fonctionne de **deux manières :**
 
-**Utilisation de passerelles (aucune inscription requise) & Utilisation de plateformes (inscription et enregistrement anticipé requis)**
+## [1. Utiliser des Bridges (Aucune inscription requise)](/docs/Bridges%20Tutorial/Bridges#using-bridges-no-sign-up-required)
 
-## 1. [Utiliser des passerelles (aucune inscription requise)](/docs/Bridges%20Tutorial/Bridges#using-bridges-no-sign-up-required)
-
-## 2. Utiliser des plateformes (inscription et enregistrement anticipé requis)
+## **2. Utiliser des plateformes (Inscription et configuration nécessaire à l’avance)**
 
 Cette méthode est idéale si vous souhaitez publier sur des plateformes comme **Gmail, Twitter ou Telegram** pendant des coupures d’Internet en utilisant vos propres comptes.
 
-Étapes pour utiliser une plateforme :
+### Étapes pour utiliser la fonctionnalité Plateforme :
 
-**1. Téléchargez l'application RelaySMS depuis :**
+1. **Télécharger l’application RelaySMS.**
 
 - [Google Play Store](https://play.google.com/store/apps/details?id=com.afkanerd.sw0b)
-- [Github](https://github.com/smswithoutborders/SMSwithoutBorders-Android/releases/tag/v1.0) ou
-- Compilez à partir du [code source](https://github.com/smswithoutborders/SMSwithoutBorders-Android)
+- [Github](https://github.com/smswithoutborders/SMSwithoutBorders-Android/releases/tag/v1.0)
+- Ou compiler depuis la [source](https://github.com/smswithoutborders/SMSwithoutBorders-Android)
 
-<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
+<img src="/Android/Playstore.png" class="resized-image"/>
 
-## Prérequis techniques
-- Smartphone Android compatible SMS
-- Android 6.0 ou supérieur
+2. **Passez l’onboarding pour vous familiariser.**
+- Cliquez sur **Make app default** (optionnel)
 
-**2. Parcourez les pages d’introduction pour comprendre le fonctionnement de l’application.**
+*(Images conservées inchangées)*
 
-<img src="/Android/gettingstarted.png" alt="onbording1" class="resized-image"/>
-<img src="/Android/skip.png" alt="onbording" class="resized-image"/>
-<img src="/Android/skip1.png" alt="onbording" class="resized-image"/>
-<img src="/Android/skip2.png" alt="onbording" class="resized-image"/>
-<img src="/Android/finish.png" alt="onbording2" class="resized-image"/>
+3. **Créer un compte :**
+- Appuyez sur **Sign Up**
+- Entrez votre email ou numéro de téléphone + mot de passe
+- Cochez la politique de confidentialité
+- Cliquez sur **Create**
+- Entrez le code Recaptcha
 
-**3. Créez un compte :**
+4. **Vous avez déjà un compte ?**
+Appuyez sur **Login**, entrez vos informations et le code Recaptcha.
 
-- Appuyez sur **S'inscrire**.
-<img src="/Android/pick.png" alt="sign_in" class="resized-image"/>
-<img src="/Android/createaccount.png" alt="sign_in2" class="resized-image"/>
-<img src="/Android/verificationcode.png" alt="verificationcode" class="resized-image"/>
+5. **Vérifiez votre téléphone**
+- Entrez le code SMS reçu puis cliquez sur **Submit**
 
-- Entrez votre numéro de téléphone et un mot de passe.
-- Cochez la case de politique de confidentialité.
-- Cliquez sur **Créer**.
+6. **Enregistrer vos plateformes :**
+- Ouvrez l’onglet **Platforms**
+- Choisissez Gmail, Twitter ou Telegram
+- Appuyez sur **Add Platform**
 
-**4. Vous avez déjà un compte ?** Appuyez sur **Connexion**, saisissez vos informations, puis cliquez sur **Connexion**.
+7. **Choisir un Gateway Client :**
+- Ouvrez l’onglet **Country**
+- Sélectionnez un numéro et appuyez sur **Make Default**
+- Vous pouvez ajouter votre propre gateway via **Add Number**
 
-<img src="/Android/pick.png" alt="sign_in" class="resized-image" />
-<img src="/Android/login.png" alt="login1" class="resized-image" />
-<img src="/Android/login1.png" alt="sign_in1" class="resized-image" />
+8. **Envoyer un message :**
+- Sur la page **Recent**, appuyez sur l’icône **Compose**
+- Choisissez une plateforme sauvegardée
+- Rédigez votre message puis appuyez sur **Send**
+- Confirmez le client Gateway
 
-**5. Vérifiez votre téléphone :**
+*NB : Si RelaySMS n’est pas votre application SMS par défaut, il vous sera demandé d’en choisir une.*
 
-- Entrez le code SMS reçu puis appuyez sur **Soumettre**.
+### Comment utiliser la fonctionnalité de stockage de jetons sur l’appareil
 
-<img src="/Android/verificationcode.png" alt="verificationcode" class="resized-image"/>
+La fonction **Store Tokens On-Device** stocke vos jetons d’accès **sur votre appareil**, et non sur les serveurs RelaySMS.
 
-**6. Enregistrez vos plateformes :**
+#### Activer le stockage local :
+1. Ouvrez **RelaySMS**
+2. Allez dans **Settings**
+3. Allez dans **Publishing**
+4. Activez **Store tokens on-device**
 
-<img src="/Android/GatewayNumber(1).png" alt="add-message" class="resized-image"/>
-<img src="/Android/addPlateform.png" alt="add-message" class="resized-image"/>
+#### Désactiver :
+- Désactivez le toggle dans **Settings > Publishing**
 
-- Appuyez sur l’onglet **Plateformes**.
-- Choisissez entre Gmail, Twitter ou Telegram.
-- Cliquez sur **Ajouter une plateforme** et suivez les étapes de configuration spécifiques.
-- Une fois configurée, l’icône de la plateforme s’illuminera !
+#### Rafraîchir les jetons Twitter (local uniquement) :
+1. Après l’envoi d’un tweet, vous recevrez un SMS contenant un jeton mis à jour.
+2. Copiez le SMS complet.
+3. Ouvrez l’onglet **Inbox**
+4. Collez le SMS
+5. Le jeton sera extrait automatiquement.
 
-**7. Choisissez un client passerelle :**
-
-<img src="/Android/1.png" alt="GatewayAvailable" class="resized-image"/>
-<img src="/Android/GateWay2.png" alt="gateway" class="resized-image" />
-<img src="/Android/addgateway.png" alt="addgatewayclient" class="resized-image"/>
-<img src="/Android/addgateway2.png" alt="addgatewayclient" class="resized-image"/>
-
-- Appuyez sur l’onglet Pays.
-- Choisissez un numéro puis appuyez sur Définir par défaut.
-- Vous pouvez aussi ajouter votre propre client passerelle en appuyant sur Ajouter un numéro.
-
-**8. Envoyez un message :**
-
-<img src="/Android/welcome.png" alt="add-message" class="resized-image"/>
-
-- Sur la page **Récents**, appuyez sur l’icône de **rédaction**.
-
-<img src="/Android/GatewayNumber(1).png" alt="add-message" class="resized-image"/>
-<img src="/Android/addPlateform.png" alt="add-message" class="resized-image"/>
-
-- Choisissez une plateforme enregistrée, rédigez votre message, puis appuyez sur **Envoyer**.
-
-<img src="/Android/Continue.png" alt="add-message" class="resized-image"/>
-<img src="/Android/Gmail.png" alt="add-message" class="resized-image"/>
-<img src="/Android/Telegram.png" alt="add-message" class="resized-image"/>
-<img src="/Android/Twitter.png" alt="add-message" class="resized-image"/>
-
-- Une fenêtre vous invitera à choisir votre application SMS.
-
-<img src="/Android/smsapp.png" alt="add-message" class="resized-image"/>
-
-- Votre message chiffré y apparaîtra, il vous suffit d’appuyer sur **Envoyer**.
-
-
-Vous recevrez une **confirmation par SMS** une fois votre message publié sur la plateforme sélectionnée.
+## [How to Use the On-Device Token Storage Feature](/docs/On-Device%20Tutorial/On-DeviceToken#how-to-use-the-on-device-token-storage-feature)

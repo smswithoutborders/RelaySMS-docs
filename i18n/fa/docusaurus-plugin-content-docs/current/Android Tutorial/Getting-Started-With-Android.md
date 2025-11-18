@@ -4,108 +4,79 @@ sidebar_position: 1
 
 # اپلیکیشن RelaySMS برای اندروید
 
-## شروع به کار با اندروید
+## شروع کار با اندروید
 
-RelaySMS به کاربران این امکان را می‌دهد که حتی در صورت عدم دسترسی به اینترنت، با پلتفرم‌های آنلاین خود در ارتباط بمانند. با استفاده از پیامک (SMS)، کاربران می‌توانند بدون وقفه به ارتباط ادامه دهند – مخاطبان آن‌ها پیام‌ها را مانند همیشه دریافت می‌کنند.
+RelaySMS به شما امکان می‌دهد حتی زمانی که اینترنت قطع است، با پلتفرم‌های آنلاین خود در ارتباط بمانید. با استفاده از پیامک (SMS)، پیام‌های شما همچنان ارسال می‌شود و مخاطبان شما پیام‌ها را همانند حالت آنلاین دریافت می‌کنند.
 
 ## مقدمه
 
-RelaySMS به شما کمک می‌کند بدون نیاز به اینترنت پیام ارسال کنید. این اپلیکیشن به **دو راه** کار می‌کند:
+RelaySMS کمک می‌کند **بدون نیاز به اینترنت** پیام‌های آنلاین ارسال کنید.  
+این برنامه به **دو روش** کار می‌کند:
 
-**استفاده از درگاه‌ها (بدون نیاز به ثبت‌نام) و استفاده از پلتفرم‌ها (با ثبت‌نام و ذخیره‌ی دسترسی از قبل)**
+## [1. استفاده از Bridge ها (بدون نیاز به ثبت‌نام)](/docs/Bridges%20Tutorial/Bridges#using-bridges-no-sign-up-required)
 
-## 1. [استفاده از درگاه‌ها (بدون نیاز به ثبت‌نام)](/docs/Bridges%20Tutorial/Bridges#using-bridges-no-sign-up-required)
+## **2. استفاده از پلتفرم‌ها (نیازمند ثبت‌نام و تنظیمات اولیه)**
 
-## 2. استفاده از پلتفرم‌ها (با ثبت‌نام و ذخیره دسترسی از قبل)
+این روش مناسب زمانی است که می‌خواهید در زمان قطع اینترنت در پلتفرم‌هایی مانند **Gmail ،Twitter یا Telegram** با حساب خود پست منتشر کنید.
 
-این روش برای زمانی مناسب است که می‌خواهید در زمان قطع اینترنت، با حساب‌های خود در پلتفرم‌هایی مانند **جیمیل، توییتر یا تلگرام** پست ارسال کنید.
+### مراحل استفاده از پلتفرم‌ها:
 
-مراحل استفاده از پلتفرم:
+1. **دانلود برنامه RelaySMS**
+- Google Play  
+- Github  
+- یا ساخت از سورس
 
-**1. اپلیکیشن RelaySMS را دانلود کنید از:**
+2. **طی کردن مراحل اولیه (Onboarding)**
+- انتخاب **Make app default** (اختیاری)
 
-- [Google Play Store](https://play.google.com/store/apps/details?id=com.afkanerd.sw0b)
-- [گیت‌هاب](https://github.com/smswithoutborders/SMSwithoutBorders-Android/releases/tag/v1.0) یا
-- ساخت از [کد منبع](https://github.com/smswithoutborders/SMSwithoutBorders-Android)
+3. **ایجاد حساب کاربری**
+- انتخاب **Sign Up**
+- وارد کردن ایمیل یا شماره همراه + رمز عبور
+- پذیرش قوانین حریم خصوصی
+- وارد کردن Recaptcha
 
-<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
+4. **حساب دارید؟**
+- انتخاب **Login** و وارد کردن اطلاعات + Recaptcha
 
-## الزامات فنی
-- گوشی اندرویدی با قابلیت ارسال پیامک (SMS)
-- اندروید 6.0 یا بالاتر
+5. **تأیید شماره تلفن**
+- کد ارسال شده از طریق SMS را وارد کنید و روی **Submit** بزنید
 
-**2. صفحات آغازین (Onboarding) را مرور کنید تا با نحوه‌ی کار آشنا شوید.**
+6. **ذخیره پلتفرم‌ها**
+- رفتن به تب **Platforms**
+- انتخاب Gmail, Twitter یا Telegram
+- انتخاب **Add Platform**
 
-<img src="/Android/gettingstarted.png" alt="onbording1" class="resized-image"/>
-<img src="/Android/skip.png" alt="onbording" class="resized-image"/>
-<img src="/Android/skip1.png" alt="onbording" class="resized-image"/>
-<img src="/Android/skip2.png" alt="onbording" class="resized-image"/>
-<img src="/Android/finish.png" alt="onbording2" class="resized-image"/>
+7. **انتخاب Gateway Client**
+- رفتن به تب **Country**
+- انتخاب یک شماره و زدن **Make Default**
+- امکان افزودن شماره اختصاصی نیز وجود دارد
 
-**3. یک حساب کاربری ایجاد کنید:**
+8. **ارسال پیام**
+- در صفحه **Recent** روی **Compose** بزنید
+- پلتفرم را انتخاب کنید
+- پیام را بنویسید و **Send** را بزنید
+- Gateway را تأیید کنید
 
-- روی **ثبت‌نام (Sign Up)** بزنید.
-<img src="/Android/pick.png" alt="sign_in" class="resized-image"/>
-<img src="/Android/createaccount.png" alt="sign_in2" class="resized-image"/>
-<img src="/Android/verificationcode.png" alt="verificationcode" class="resized-image"/>
+*نکته: اگر RelaySMS پیام‌رسان پیش‌فرض شما نیست، باید یکی را انتخاب کنید.*
 
-- شماره تلفن و رمز عبور خود را وارد کنید.
-- تیک موافقت با سیاست حفظ حریم خصوصی را بزنید.
-- روی **ایجاد (Create)** کلیک کنید.
+### استفاده از قابلیت ذخیره‌سازی توکن‌ها روی دستگاه
 
-**4. قبلاً حساب دارید؟** روی **ورود (Login)** بزنید، اطلاعات خود را وارد کنید و سپس **ورود** را بزنید.
+قابلیت **Store Tokens On-Device** باعث می‌شود توکن‌های دسترسی شما **روی گوشی ذخیره شوند** و نه روی سرور RelaySMS.
 
-<img src="/Android/pick.png" alt="sign_in" class="resized-image" />
-<img src="/Android/login.png" alt="login1" class="resized-image" />
-<img src="/Android/login1.png" alt="sign_in1" class="resized-image" />
+#### فعال‌سازی:
+1. باز کردن برنامه
+2. رفتن به **Settings**
+3. رفتن به **Publishing**
+4. فعال‌سازی **Store tokens on-device**
 
-**5. شماره تلفن خود را تأیید کنید:**
+#### غیرفعال‌سازی:
+- غیرفعال کردن از مسیر **Settings > Publishing**
 
-- کدی که از طریق پیامک دریافت کردید را وارد کنید و روی **ارسال (Submit)** بزنید.
+#### تازه‌سازی توکن‌های توییتر (فقط هنگام ذخیره محلی):
+1. پس از ارسال توییت، پیامکی با توکن جدید دریافت می‌کنید  
+2. کل متن SMS را کپی کنید  
+3. وارد **Inbox** شوید  
+4. پیام را جای‌گذاری کنید  
+5. برنامه به‌طور خودکار توکن را به‌روزرسانی می‌کند  
 
-<img src="/Android/verificationcode.png" alt="verificationcode" class="resized-image"/>
-
-**6. پلتفرم‌های خود را ذخیره کنید:**
-
-<img src="/Android/GatewayNumber(1).png" alt="add-message" class="resized-image"/>
-<img src="/Android/addPlateform.png" alt="add-message" class="resized-image"/>
-
-- به تب **پلتفرم‌ها (Platforms)** بروید.
-- یکی از گزینه‌ها مانند Gmail، Twitter یا Telegram را انتخاب کنید.
-- روی **افزودن پلتفرم (Add Platform)** بزنید و مراحل تنظیم آن را دنبال کنید.
-- در صورت موفقیت، آیکن آن روشن خواهد شد!
-
-**7. یک درگاه (Gateway Client) انتخاب کنید:**
-
-<img src="/Android/1.png" alt="GatewayAvailable" class="resized-image"/>
-<img src="/Android/GateWay2.png" alt="gateway" class="resized-image" />
-<img src="/Android/addgateway.png" alt="addgatewayclient" class="resized-image"/>
-<img src="/Android/addgateway2.png" alt="addgatewayclient" class="resized-image"/>
-
-- به تب کشور بروید.
-- یک شماره انتخاب کرده و روی "تنظیم به عنوان پیش‌فرض" (Make Default) بزنید.
-- همچنین می‌توانید شماره درگاه اختصاصی خود را با زدن "افزودن شماره" اضافه کنید.
-
-**8. پیام ارسال کنید:**
-
-<img src="/Android/welcome.png" alt="add-message" class="resized-image"/>
-
-- در صفحه **اخیر (Recent)** روی آیکن **نوشتن پیام (Compose)** بزنید.
-
-<img src="/Android/GatewayNumber(1).png" alt="add-message" class="resized-image"/>
-<img src="/Android/addPlateform.png" alt="add-message" class="resized-image"/>
-
-- یک پلتفرم ذخیره‌شده را انتخاب کرده، پیام خود را بنویسید و روی **ارسال (Send)** بزنید.
-
-<img src="/Android/Continue.png" alt="add-message" class="resized-image"/>
-<img src="/Android/Gmail.png" alt="add-message" class="resized-image"/>
-<img src="/Android/Telegram.png" alt="add-message" class="resized-image"/>
-<img src="/Android/Twitter.png" alt="add-message" class="resized-image"/>
-
-- سپس از شما خواسته می‌شود تا برنامه SMS را انتخاب کنید.
-
-<img src="/Android/smsapp.png" alt="add-message" class="resized-image"/>
-
-- پیام رمزنگاری‌شده شما در آنجا ظاهر خواهد شد، کافی است روی **ارسال** بزنید.
-
-پس از انتشار پیام شما در پلتفرم انتخاب‌شده، **تأییدیه‌ای از طریق SMS** دریافت خواهید کرد.
+## [How to Use the On-Device Token Storage Feature](/docs/On-Device%20Tutorial/On-DeviceToken#how-to-use-the-on-device-token-storage-feature)
