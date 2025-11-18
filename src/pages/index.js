@@ -40,7 +40,7 @@ function HomepageHeader() {
             className={clsx("button", styles.mainButton)}
             to="/docs/Android Tutorial/Getting-Started-With-Android"
           >
-            <Translate>Android Development</Translate>
+            <Translate>Get Started with Android</Translate>
           </Link>
         </div>
 
