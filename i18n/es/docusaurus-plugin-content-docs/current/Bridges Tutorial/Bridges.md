@@ -2,70 +2,73 @@
 sidebar_position: 1
 ---
 
-# Utiliser les Passerelles dans l'application RelaySMS (Aucune inscription requise)
+# Usar Bridges en la aplicación RelaySMS (No se requiere registro)
 
-Découvrez comment utiliser la fonctionnalité **Passerelles** dans l'application RelaySMS. Cet outil vous permet d'envoyer des messages de manière sécurisée vers des plateformes en ligne sans avoir besoin de vous connecter ou d'utiliser Internet. Suivez ces étapes pour commencer !
+Aprende a usar la función Bridges en la aplicación RelaySMS. Esta herramienta te permite enviar mensajes de forma segura a plataformas en línea **sin iniciar sesión y sin usar Internet**. Sigue estos pasos para comenzar.
 
 ---
 
-## **Étape 1 : Obtenez la dernière version de l'application RelaySMS**
+Esta es la forma más rápida de empezar. La app crea un alias temporal usando tu número de teléfono (por ejemplo: **123456789@relaysms.me**) para enviar correos o tweets **sin almacenar tokens ni iniciar sesión**.
 
-C'est la méthode la plus rapide pour démarrer. L'application crée un alias temporaire à l'aide de votre numéro de téléphone **(par exemple : 123456789@relaysms.me)** pour envoyer des emails ou des tweets **sans stocker de jetons ni se connecter.**
+## Pasos para usar la función Bridge:
 
-Étapes pour utiliser la fonctionnalité Passerelle :
+### **1. Descarga la aplicación RelaySMS desde:**
 
-**1. Téléchargez l'application RelaySMS depuis :->**
+- Google Play Store  
+- Github  
+- O compílala desde el código fuente  
 
-- [Google Play Store](https://play.google.com/store/apps/details?id=com.afkanerd.sw0b)
-- [Github](https://github.com/smswithoutborders/SMSwithoutBorders-Android/releases/tag/v1.0) ou
-- Compilez à partir du [code source](https://github.com/smswithoutborders/SMSwithoutBorders-Android)
+<img src="/Android/Playstore.png" alt="onboarding1" class="resized-image"/>
 
-<img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
+## **Requisitos técnicos**
 
-## Exigences techniques
-- Smartphone Android avec capacité SMS
-- Android 6.0 ou version ultérieure
+- Teléfono Android con capacidad SMS  
+- Android 6.0 o superior  
 
-**2. Parcourez les pages d’introduction pour comprendre le fonctionnement.**
+### **2. Pasa por las pantallas de introducción (onboarding)** para entender cómo funciona.
 
-<img src="/Android/gettingstarted.png" alt="onbording1" class="resized-image"/>
-<img src="/Android/skip.png" alt="onbording" class="resized-image"/>
-<img src="/Android/skip1.png" alt="onbording" class="resized-image"/>
-<img src="/Android/skip2.png" alt="onbording" class="resized-image"/>
-<img src="/Android/finish.png" alt="onbording2" class="resized-image"/>
+- Presiona el botón “Hacer app predeterminada” (opcional)
 
-**3. Sélectionnez un client Passerelle :**
+<img src="/SAndroid/Welcome.png" alt="onboarding1" class="resized-image"/>
+<img src="/SAndroid/SkipSMSemail.png" alt="onboarding" class="resized-image"/>
+<img src="/SAndroid/SkipSaveAccount.png" alt="onboarding" class="resized-image"/>
+<img src="/SAndroid/SkipStartMessaging.png" alt="onboarding" class="resized-image"/>
+<img src="/SAndroid/SkipSecure.png" alt="onboarding2" class="resized-image"/>
+<img src="/SAndroid/MakeAppDefualt.png" alt="onboarding2" class="resized-image"/>
 
-- Appuyez sur l'onglet 🌍 Pays dans la barre de navigation.
-- Choisissez un client passerelle (ce sont des numéros de téléphone qui transmettent votre message hors ligne vers Internet).
+### **3. Selecciona un Gateway Client:**
 
-<img src="/Android/pick.png" alt="sign_in" class="resized-image"/>
-<img src="/Android/DefultGateway.png" alt="GatewayAvailable" class="resized-image"/>
-<img src="/Android/GateWay2.png" alt="GatewayAvailable" class="resized-image"/>
+- Pulsa la pestaña 🌍 *País* en la barra de navegación.
+- Elige un gateway client (números que envían tu mensaje offline a Internet).
+- También puedes seleccionarlo en la lista que aparece cuando presionas *Enviar* luego de escribir tu mensaje.
 
-*Remarque : si vous n'en sélectionnez pas, l'application choisira une passerelle par défaut pour vous.*
+<img src="/SAndroid/Gateway.png" alt="GatewayAvailable" class="resized-image"/>
+<img src="/SAndroid/AddGateway.png" alt="addgatewayclient" class="resized-image"/>
 
-**4. Envoi de messages**
+*Nota: Si no seleccionas uno, la app asignará uno automáticamente.*
 
-- Appuyez sur **“Nouveau message”**.
-- **Remplissez les champs requis** (email du destinataire, objet, et message).
-- Appuyez sur **Envoyer** en haut à droite.
-- L'application vous demandera de choisir votre **application SMS par défaut**.
-Votre message y apparaîtra, déjà chiffré.
-- Appuyez sur **Envoyer** dans votre application de messagerie — et c’est tout !
+### **4. Enviar mensajes**
 
-<img src="/Android/pick.png" alt="sign_in" class="resized-image"/>
-<img src="/Android/bridges.png" alt="GatewayAvailable" class="resized-image"/>
-<img src="/Android/defualtMessage.png" alt="GatewayAvailable" class="resized-image"/>
+- Pulsa **“Componer nuevo mensaje”**.
 
-*Votre message est maintenant en route vers Internet, même sans connexion !*
+<img src="/SAndroid/Afterlogin.png" alt="addgatewayclient" class="resized-image"/>
+<img src="/SAndroid/bridgeMessage.png" alt="addgatewayclient" class="resized-image"/>
 
-**5. Réception des messages**
+Para los bridges:
+- Completa los campos necesarios (correo del destinatario, asunto y mensaje).
+- Presiona **Enviar** en la esquina superior derecha.
+- Confirma el gateway client — y listo (si RelaySMS es tu app SMS predeterminada).
 
-- Copiez l’intégralité du message SMS  
-- Allez dans l’application et cliquez sur l’onglet "Boîte de réception"  
+<img src="/SAndroid/sendGateway.png" alt="addgatewayclient" class="resized-image"/>
 
-<img src="/Android/inbox.png" alt="GatewayAvailable" class="resized-image"/>
+*Nota: Si RelaySMS no es la app de SMS predeterminada, tendrás que elegir una para enviar el mensaje.*
 
-- Collez le message dans la zone de texte  
-- Cliquez sur **Déchiffrer**
+*¡Tu mensaje ahora viaja hacia Internet, incluso sin conexión!*
+
+### **5. Recibir mensajes**
+
+- Copia todo el mensaje SMS  
+- Ve a la app y pulsa la pestaña *Inbox*  
+<img src="/Android/inbox.png" alt="addgatewayclient" class="resized-image"/>
+- Pega el mensaje en el cuadro de texto  
+- Presiona *Decrypt*
