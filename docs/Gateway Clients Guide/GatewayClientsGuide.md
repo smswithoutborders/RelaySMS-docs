@@ -34,7 +34,7 @@ Once the app is installed, set it as the default SMS app on your Android device.
 
 ### Step 3: Configure Message Forwarding
 
-<img src="/GatewayHosting/1-messageForwarding.png" alt="Deku SMS App" style={{ width: '50%', maxWidth: '300px', display: 'block', margin: '0 auto' }} />
+<img src="/GatewayHosting/1-messageForwarding.png" alt="onbording1" class="resized-image"/>
 
 1. Open the Deku SMS app.
 
@@ -45,8 +45,8 @@ Once the app is installed, set it as the default SMS app on your Android device.
 ### Step 4: Add a Gateway Server
 
 <div style={{ display: 'flex', justifyContent: 'space-around', gap: '10px' }}>
-  <img src="/GatewayHosting/2-forwarding.png" alt="Deku SMS App" style={{ width: '48%', maxWidth: '300px' }} />
-  <img src="/GatewayHosting/3-viewGatewayServers.png" alt="Deku SMS App" style={{ width: '48%', maxWidth: '300px' }} /> 
+  <img src="/GatewayHosting/2-forwarding.png" alt="Deku SMS App" class="resized-image" />
+  <img src="/GatewayHosting/3-viewGatewayServers.png" alt="Deku SMS App" class="resized-image" /> 
 </div>
 
 1. Tap on the three dots in the top right corner again.
@@ -54,8 +54,8 @@ Once the app is installed, set it as the default SMS app on your Android device.
 2. Select **View Gateway Servers** from the dropdown.
 
 <div style={{ display: 'flex', justifyContent: 'space-around', gap: '10px' }}>
-  <img src="/GatewayHosting/4-sms-routing-gateway.png" alt="Deku SMS App" style={{ width: '48%', maxWidth: '300px' }} />
-  <img src="/GatewayHosting/5-selectHTTPS.png" alt="Deku SMS App" style={{ width: '48%', maxWidth: '300px' }} />
+  <img src="/GatewayHosting/4-sms-routing-gateway.png" alt="Deku SMS App" class="resized-image" />
+  <img src="/GatewayHosting/5-selectHTTPS.png" alt="Deku SMS App" class="resized-image" />
 </div>
 
 3. Tap the three dots once more and choose **Add HTTPS Gateway Server**.
@@ -64,7 +64,7 @@ Once the app is installed, set it as the default SMS app on your Android device.
 
 ### Step 5: Fill in the Required Information
 
-<img src="/GatewayHosting/6-FillRequirement.png" alt="Deku SMS App" style={{ width: '50%', maxWidth: '300px', display: 'block', margin: '0 auto' }} />
+<img src="/GatewayHosting/6-FillRequirement.png" alt="Deku SMS App" class="resized-image" />
 
 - **URL 1**: Enter the following URL:  
   `https://gatewayserver.smswithoutborders.com/v3/publish`
@@ -75,14 +75,14 @@ Once the app is installed, set it as the default SMS app on your Android device.
 
 ### Step 6: Finalize the Setup
 
-<img src="/GatewayHosting/7-addhttps.png" alt="Deku SMS App"style={{ width: '50%', maxWidth: '300px', display: 'block', margin: '0 auto' }} />
+<img src="/GatewayHosting/7-addhttps.png" alt="Deku SMS App" class="resized-image" />
 
 1. Tap **Add** to save your gateway server configuration.
 
 2. Repeat the process and add the second gateway server with **URL 2**:  
    `https://gatewayserver.smswithoutborders.com/sms/platform/android`
 
-<img src="/GatewayHosting/8-smsroutinggate.png" alt="Deku SMS App" style={{ width: '50%', maxWidth: '300px', display: 'block', margin: '0 auto' }} />
+<img src="/GatewayHosting/8-smsroutinggate.png" alt="Deku SMS App" class="resized-image" />
 
 ## Your Gateway Client is Now Ready!
 
