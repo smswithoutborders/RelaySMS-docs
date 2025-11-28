@@ -1,0 +1,16 @@
+services:
+  relaysms-docs:
+    container_name: relaysms-docs
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - ${PORT:-80}:80
+      - ${SSL_PORT:-443}:443
+    environment:
+      - SERVER_NAME=${SERVER_NAME:-localhost}
+    volumes:
+      - ${SSL_CERTIFICATE_PATH:?err}:/etc/nginx/ssl/cert.pem
+      - ${SSL_KEY_PATH:?err}:/etc/nginx/ssl/key.pem
+      - ${SSL_CHAIN_PATH:?err}:/etc/nginx/ssl/chain.pem
