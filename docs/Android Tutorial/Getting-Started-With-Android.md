@@ -23,7 +23,7 @@ This method is ideal if you want to post to platforms like **Gmail, Twitter, or 
 
 Steps to Use the Platform Feature:
 
-1. **Download the RelaySMS app.**
+ ### 1. **Download the RelaySMS app.**
 
 
 - [Google_Play_Store](https://play.google.com/store/apps/details?id=com.afkanerd.sw0b)
@@ -32,7 +32,7 @@ Steps to Use the Platform Feature:
 
 <img src="/Android/Playstore.png" alt="onbording1" class="resized-image"/>
 
-2. **Go through onboarding to get familiar.**
+ ### 2. **Go through onboarding to get familiar.**
 - Click the Make app default button (Optional)
 
 <img src="/SAndroid/Welcome.png" alt="onbording1" class="resized-image"/>
@@ -42,7 +42,7 @@ Steps to Use the Platform Feature:
 <img src="/SAndroid/SkipSecure.png" alt="onbording2" class="resized-image"/>
 <img src="/SAndroid/MakeAppDefualt.png" alt="onbording2" class="resized-image"/>
 
-3. **Create an account:**
+ ### 3. **Create an account:**
 
 - Tap Sign Up.
 
@@ -60,17 +60,18 @@ Steps to Use the Platform Feature:
 <img src="/SAndroid/verification.png" alt="onbording2" class="resized-image"/>
 <img src="/SAndroid/Afterlogin.png" alt="onbording2" class="resized-image"/>
 
-4. **Already have an account?** Tap **Login**, fill in your details, click **Login**and put in the recaptcha code.
+ ### 4. **Already have an account?** Tap **Login**, fill in your details, click **Login**and put in the recaptcha code.
 
 <img src="/SAndroid/Login.png" alt="onbording2" class="resized-image"/>
-5. **Verify your phone:**
+
+ ### 5. **Verify your phone:**
 
 <img src="/SAndroid/capcha.png" alt="onbording2" class="resized-image"/>
 <img src="/SAndroid/verification.png" alt="onbording2" class="resized-image"/>
 - Enter the SMS code you received and hit **Submit.**
 
 
-6. **Save your platforms:**
+ ### 6. **Save your platforms:**
 
 
 - Tap the **Platforms** tab.
@@ -88,8 +89,7 @@ Steps to Use the Platform Feature:
 - When successful, the icon will light up!
 
 
-
-7. **Choose a Gateway Client:**
+ ### 7. **Choose a Gateway Client:**
 
 
 -  Tap the **Country** tab.
@@ -106,7 +106,7 @@ Steps to Use the Platform Feature:
 - Alternatively, you can select a gateway client from the list that pops up when you hit the send button after composing your message.
 
 
-8. **Send a message:**
+ ### 8. **Send a message:**
 
 
 - On the **Recent** page, tap the **Compose icon.**
@@ -135,38 +135,41 @@ Your encrypted message will appear there,  just hit Send.*
 
 Our **"Store Tokens On-Device"** feature gives you more control over your account credentials by keeping your access tokens on your phone instead of on the RelaySMS servers. This tutorial walks you through how to enable or disable this feature and how to refresh Twitter tokens when using local storage.
 
-**Enabling On-Device Token Storage**
+ ## **Enabling On-Device Token Storage**
 
 To start storing your access tokens locally on your device:
 
-1. Open the **RelaySMS** app.
+ ### 1. Open the **RelaySMS** app.
 
 <img src="/SAndroid/Afterlogin.png" alt="GatewayAvailable" class="resized-image"/>
-2. Tap on **Settings**.
+
+ ### 2. Tap on **Settings**.
+
 <img src="/SAndroid/settings.png" alt="GatewayAvailable" class="resized-image"/>
 
-3. Go to the **Publishing**section.
+ ### 3. Go to the **Publishing**section.
 
 <img src="/SAndroid/deleteAccount.png" alt="GatewayAvailable" class="resized-image"/>
 
-4. Find the toggle for **“Store tokens on-device”** and switch it **ON.**
+ ### 4. Find the toggle for **“Store tokens on-device”** and switch it **ON.**
 
 
-**What happens next?**
+## **What happens next?**
 
 - All access tokens that were previously stored on RelaySMS servers will be securely transferred to your device.
 
 
 - From now on, all **new tokens** will only be stored **locally** on your phone.
 
-**Disabling On-Device Token Storage**
+## **Disabling On-Device Token Storage**
 
 To stop using local token storage and go back to storing tokens on the cloud:
 
-1. Go to **Settings > Publishing.**
+### 1. Go to **Settings > Publishing.**
 
+ 
+ ### 2. Switch the **“Store tokens on-device”** toggle **OFF.**
 
-2. Switch the **“Store tokens on-device”** toggle **OFF.**
 <img src="/SAndroid/deleteAccount.png" alt="GatewayAvailable" class="resized-image"/>
 
 **What this means:**
@@ -177,34 +180,31 @@ To stop using local token storage and go back to storing tokens on the cloud:
 - However, **new tokens** generated after this will be saved to the **RelaySMS cloud server**, not your device.
 
 
-
-**Refreshing Twitter Tokens (For On-Device Use Only)**
+ ### **Refreshing Twitter Tokens (For On-Device Use Only)**
 
 Due to Twitter's security limitations, tokens stored on your device can only be used **once per tweet**. To send another tweet, you’ll need to **revoke and restore** the token.
 
 Here’s how:
 
-1. After sending a tweet, you’ll receive an **SMS delivery status message**. If you're using an on-device token, this message will include a **refreshed Twitter token**.
+ ### 1. After sending a tweet, you’ll receive an **SMS delivery status message**. If you're using an on-device token, this message will include a **refreshed Twitter token**.
 
 
-2. **Copy the entire SMS message** (as-is).
+ ### 2. **Copy the entire SMS message** (as-is).
 
 
-3. Open the **RelaySMS app** and go to the **Inbox** section.
+ ### 3. Open the **RelaySMS app** and go to the **Inbox** section.
 
 
-4. **Paste** the full SMS message into the inbox.
+ ### 4. **Paste** the full SMS message into the inbox.
 
 
-5. The app will automatically extract and refresh your Twitter token.
+ ### 5. The app will automatically extract and refresh your Twitter token.
 
-
-6. You’re now ready to send your next tweet.
+ 
+ ### 6. You’re now ready to send your next tweet.
 
 
 Repeat this process **after every Twitter message** if you're using local token storage.
-
-
 
 
 ## [How to Use the On-Device Token Storage Feature](/docs/On-Device%20Tutorial/On-DeviceToken#how-to-use-the-on-device-token-storage-feature)
