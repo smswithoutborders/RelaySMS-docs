@@ -48,7 +48,7 @@ h3, h4, h5, h6, p, li {
 }
 
 [data-theme="dark"] {
-  --ifm-color-primary: #60a5fa;
+  --ifm-color-primary: #559ffa;
   --ifm-color-primary-dark: #1d4ed8;
   --ifm-color-primary-darker: #1e40af;
   --ifm-color-primary-darkest: #1e3a8a;

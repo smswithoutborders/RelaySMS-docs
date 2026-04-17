@@ -1,5 +1,4 @@
 import React from "react";
-import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import Layout from "@theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
@@ -21,43 +20,48 @@ function HomepageHeader() {
           width={150}
         />
 
-        <h1 className={styles.heroTitle} aria-label="Smswithoutborders Projects >> Documentation">
-          <Translate>Smswithoutborders Projects &gt;&gt; Documentation</Translate>
+        <h1 className={styles.heroTitle}>
+          <Translate>
+            Smswithoutborders Projects &gt;&gt; Documentation
+          </Translate>
         </h1>
 
-        <p className={styles.heroSubtitle} aria-label="Stay Connected">
+        <p className={styles.heroSubtitle}>
           <Translate>Stay Connected</Translate>
         </p>
 
-        <div className={styles.buttonRow}>
-          <Link
-            className={clsx("button", styles.mainButton)}
-            to="/docs/iOS Tutorial/Getting-Started-With-iOS"
-          >
-            <Translate>Get Started with iOS</Translate>
-          </Link>
-          <Link
-            className={clsx("button", styles.mainButton)}
-            to="/docs/Android Tutorial/Getting-Started-With-Android"
-          >
-            <Translate>Get Started with Android</Translate>
-          </Link>
-        </div>
+<div className={styles.dashboard}>
 
-        <div className={styles.buttonRow}>
-          <Link
-            className={clsx("button", styles.mainButton)}
-            to="/docs/Troubleshooting/Troubleshooting-FAQ"
-          >
-            <Translate>Troubleshooting Guide</Translate>
-          </Link>
-          <Link
-            className={clsx("button", styles.mainButton)}
-            to="/docs/Technical Documentation/Coming-Soon"
-          >
-            <Translate>Technical Docs</Translate>
-          </Link>
-        </div>
+  <Link
+    to="/docs/Gateway Clients Guide/GatewayClientsGuide"
+    className={styles.featureCard}
+  >
+    <div className={styles.featureTitle}>Gateway Client</div>
+    <div className={styles.featureDesc}>
+      Run your own SMS gateway infrastructure
+    </div>
+  </Link>
+
+ 
+  <div className={styles.smallGrid}>
+    <Link to="/docs/iOS Tutorial/Getting-Started-With-iOS" className={styles.smallCard}>
+      iOS Guide
+    </Link>
+
+    <Link to="/docs/Android Tutorial/Getting-Started-With-Android" className={styles.smallCard}>
+      Android Guide
+    </Link>
+
+    <Link to="/docs/Troubleshooting/Troubleshooting-FAQ" className={styles.smallCard}>
+      Troubleshooting
+    </Link>
+
+    <Link to="/docs/Technical Documentation/Coming-Soon" className={styles.smallCard}>
+      Technical Docs
+    </Link>
+  </div>
+</div>
+     
       </div>
     </header>
   );
