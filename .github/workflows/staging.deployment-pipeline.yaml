@@ -1,5 +1,4 @@
 name: Staging Deployment Pipeline
-
 on:
   push:
     branches:
@@ -21,11 +20,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install
+npm install -g pnpm
+          pnpm install
 
       - name: Build project
         run: |
-          npm run build
+          pnpm run build
 
       - name: Prepare build for deployment
         run: |
