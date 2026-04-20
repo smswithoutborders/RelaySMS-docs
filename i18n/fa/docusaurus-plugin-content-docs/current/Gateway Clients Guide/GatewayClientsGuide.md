@@ -2,88 +2,71 @@
 sidebar_position: 1
 ---
 
-# راهنمای میزبانی و اجرای کلاینت‌های دروازه
+# راهنمای میزبانی و اجرای کلاینت‌های Gateway
 
-با استفاده از این راهنمای ساده، می‌توانید کلاینت دروازه پیامکی دکو را روی دستگاه اندروید خود تنظیم و پیکربندی کنید.
+این راهنمای ساده را دنبال کنید تا یک کلاینت Gateway از Deku SMS را روی دستگاه اندرویدی خود راه‌اندازی و پیکربندی کنید.
 
-## نیازمندی‌ها برای تنظیم یک کلاینت دروازه:
+## پیش‌نیازهای راه‌اندازی یک کلاینت Gateway:
 
 ### دستگاه اندروید:
-
-- دستگاه شما باید بتواند به اینترنت متصل شود.
-- باید یک سیم کارت داشته باشد که قادر به دریافت پیامک باشد.
+دستگاه شما باید قادر به اتصال به اینترنت باشد.  
+باید دارای یک سیم‌کارت باشد که توانایی دریافت پیامک را داشته باشد.
 
 ### اتصال اینترنت:
+شما به یک اتصال اینترنت قابل اعتماد (Wi-Fi یا داده موبایل) نیاز دارید.  
+Deku SMS از داده بسیار کمی استفاده می‌کند، بنابراین داده موبایل کافی است.
 
-- شما به یک اتصال اینترنت پایدار (وای‌فای یا داده موبایل) نیاز دارید.
-- دکو پیامک از حجم داده کمی استفاده می‌کند، بنابراین داده موبایل کافی است.
+## مراحل پیکربندی Deku SMS روی دستگاه اندروید:
 
-## مراحل پیکربندی دکو پیامک بر روی دستگاه اندروید:
+### مرحله 1: دانلود برنامه Deku SMS
+می‌توانید برنامه Deku SMS را از یکی از منابع زیر دانلود کنید:
+- Google Play Store  
+- F-Droid  
+- GitHub Releases  
 
-### مرحله ۱: دانلود برنامه دکو پیامک
+### مرحله 2: تنظیم Deku SMS به عنوان برنامه پیش‌فرض پیامک
 
-می‌توانید برنامه دکو پیامک را از یکی از منابع زیر دانلود کنید:
+<img src="/GatewayHosting/1.png" alt="GatewayAvailable" class="resized-image"/>
 
-- [فروشگاه گوگل پلی](https://play.google.com/store/apps/details?id=com.afkanerd.deku)
-- [F-Droid](https://f-droid.org/packages/com.afkanerd.deku/)
-- [گیت‌هاب Releases](https://github.com/deku-messaging/Deku-SMS-Android/releases)
+پس از نصب برنامه، آن را به عنوان برنامه پیش‌فرض پیامک در دستگاه اندرویدی خود تنظیم کنید.
 
-### مرحله ۲: تنظیم دکو پیامک به عنوان برنامه پیش‌فرض پیامک
+### مرحله 3: پیکربندی انتقال پیام
 
-پس از نصب برنامه، آن را به عنوان برنامه پیش‌فرض پیامک در دستگاه اندروید خود تنظیم کنید.
+<img src="/GatewayHosting/2.png" alt="GatewayAvailable" class="resized-image"/>
 
-### مرحله ۳: پیکربندی ارسال پیام
+برنامه Deku SMS را باز کنید.  
+روی سه نقطه در گوشه بالا سمت راست برنامه ضربه بزنید.  
+از منوی کشویی، گزینه Message Forwarding را انتخاب کنید.
 
-<img src="/GatewayHosting/1-messageForwarding.png" alt="برنامه دکو پیامک" style={{ width: '50%', maxWidth: '300px', display: 'block', margin: '0 auto' }} />
+### مرحله 4: افزودن سرور Gateway
 
-1. برنامه دکو پیامک را باز کنید.
+<img src="/GatewayHosting/3.png" alt="GatewayAvailable" class="resized-image"/>
+<img src="/GatewayHosting/4.png" alt="GatewayAvailable" class="resized-image"/>
+<img src="/GatewayHosting/5.png" alt="GatewayAvailable" class="resized-image"/>
 
-2. روی سه نقطه در گوشه بالای سمت راست برنامه کلیک کنید.
+روی نقاط منو در گوشه بالا سمت راست صفحه پیام‌های مسیردهی شده ضربه بزنید.  
+روی سه نقطه در گوشه بالا سمت راست صفحه پیام‌های کلاینت Gateway ضربه بزنید.  
+دوباره روی سه نقطه ضربه بزنید و گزینه Add HTTPS Forwarders را انتخاب کنید.
 
-3. از منوی کشویی، گزینه **ارسال پیام** را انتخاب کنید.
+### مرحله 5: وارد کردن اطلاعات مورد نیاز
+<img src="/GatewayHosting/6.png" alt="GatewayAvailable" class="resized-image"/>
+<img src="/GatewayHosting/7.png" alt="GatewayAvailable" class="resized-image"/>
 
-### مرحله ۴: افزودن یک سرور دروازه
+آدرس زیر را وارد کنید:  
+https://gatewayserver.smswithoutborders.com/v3/publish  
 
-<div style={{ display: 'flex', justifyContent: 'space-around', gap: '10px' }}>
-  <img src="/GatewayHosting/2-forwarding.png" alt="برنامه دکو پیامک" style={{ width: '48%', maxWidth: '300px' }} />
-  <img src="/GatewayHosting/3-viewGatewayServers.png" alt="برنامه دکو پیامک" style={{ width: '48%', maxWidth: '300px' }} /> 
-</div>
+Tag: یک نام برای سرور Gateway خود وارد کنید.  
 
-1. دوباره روی سه نقطه در گوشه بالای سمت راست کلیک کنید.
+گزینه "All" را انتخاب کنید: مطمئن شوید که تیک "All" فعال است تا همه پیامک‌ها از طریق سرور ارسال شوند.
 
-2. از منوی کشویی، گزینه **مشاهده سرورهای دروازه** را انتخاب کنید.
+### مرحله 6: نهایی‌سازی تنظیمات
 
-<div style={{ display: 'flex', justifyContent: 'space-around', gap: '10px' }}>
-  <img src="/GatewayHosting/4-sms-routing-gateway.png" alt="برنامه دکو پیامک" style={{ width: '48%', maxWidth: '300px' }} />
-  <img src="/GatewayHosting/5-selectHTTPS.png" alt="برنامه دکو پیامک" style={{ width: '48%', maxWidth: '300px' }} />
-</div>
+<img src="/GatewayHosting/8.png" alt="GatewayAvailable" class="resized-image"/>
 
-3. یک بار دیگر روی سه نقطه ضربه بزنید و گزینه **افزودن سرور دروازه HTTPS** را انتخاب کنید.
+روی Save ضربه بزنید تا تنظیمات سرور Gateway ذخیره شود.
 
-4. برای اینکه کاربران اندروید و iOS برنامه RelaySMS بتوانند از کلاینت دروازه برای ارسال پیام‌های خود به صورت آنلاین استفاده کنند، باید دو سرور دروازه اضافه شود.
+<img src="/GatewayHosting/9.png" alt="GatewayAvailable" class="resized-image"/>
 
-### مرحله ۵: تکمیل اطلاعات مورد نیاز
+## کلاینت Gateway شما اکنون آماده است!
 
-<img src="/GatewayHosting/6-FillRequirement.png" alt="برنامه دکو پیامک" style={{ width: '50%', maxWidth: '300px', display: 'block', margin: '0 auto' }} />
-
-- **URL 1**: آدرس زیر را وارد کنید:  
-  `https://gatewayserver.smswithoutborders.com/v3/publish`
-
-- **برچسب**: نامی برای سرور دروازه خود وارد کنید.
-
-- **انتخاب گزینه "همه"**: اطمینان حاصل کنید که گزینه "همه" علامت‌گذاری شده است تا تمام پیامک‌ها از طریق سرور هدایت شوند.
-
-### مرحله ۶: تکمیل پیکربندی
-
-<img src="/GatewayHosting/7-addhttps.png" alt="برنامه دکو پیامک" style={{ width: '50%', maxWidth: '300px', display: 'block', margin: '0 auto' }} />
-
-1. روی **افزودن** کلیک کنید تا پیکربندی سرور دروازه خود ذخیره شود.
-
-2. این مراحل را تکرار کرده و سرور دوم را با **URL 2** اضافه کنید:  
-   `https://gatewayserver.smswithoutborders.com/sms/platform/android`
-
-<img src="/GatewayHosting/8-smsroutinggate.png" alt="برنامه دکو پیامک" style={{ width: '50%', maxWidth: '300px', display: 'block', margin: '0 auto' }} />
-
-## کلاینت دروازه شما آماده است!
-
-اکنون می‌توانید شماره خود را با کاربران RelaySMS به اشتراک بگذارید. دستگاه اندروید شما به عنوان یک کلاینت دروازه عمل کرده و به هدایت پیام‌ها از طریق برنامه دکو پیامک کمک می‌کند.
+اکنون می‌توانید شماره خود را با کاربران RelaySMS به اشتراک بگذارید. دستگاه اندرویدی شما به عنوان یک کلاینت Gateway عمل خواهد کرد و به مسیریابی پیام‌ها از طریق برنامه Deku SMS کمک می‌کند.

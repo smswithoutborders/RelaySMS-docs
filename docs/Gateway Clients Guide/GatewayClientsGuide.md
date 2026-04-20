@@ -9,13 +9,12 @@ Follow this simple guide to set up and configure a Deku SMS Gateway Client on yo
 ## Requirements for Setting Up a Gateway Client:
 
 ### Android Device:
-
-- Your device must be able to connect to the internet.
+- Your device must be able to connect to the internet.  
 - It should have a SIM card capable of receiving SMS messages.
 
 ### Internet Connection:
 
-- You will need a reliable internet connection (Wi-Fi or mobile data).
+- You will need a reliable internet connection (Wi-Fi or mobile data).  
 - Deku SMS uses very little data, so mobile data is sufficient.
 
 ## Steps to Configure Deku SMS on an Android Device:
@@ -24,65 +23,54 @@ Follow this simple guide to set up and configure a Deku SMS Gateway Client on yo
 
 You can download the Deku SMS app from one of the following sources:
 
-- [Google Play Store](https://play.google.com/store/apps/details?id=com.afkanerd.deku)
-- [F-Droid](https://f-droid.org/packages/com.afkanerd.deku/)
-- [GitHub Releases](https://github.com/deku-messaging/Deku-SMS-Android/releases)
+- Google Play Store  
+- F-Droid  
+- GitHub Releases  
 
 ### Step 2: Set Deku SMS as Your Default SMS App
+
+<img src="/GatewayHosting/1.png" alt="GatewayAvailable" class="resized-image"/>
 
 Once the app is installed, set it as the default SMS app on your Android device.
 
 ### Step 3: Configure Message Forwarding
 
-<img src="/GatewayHosting/1-messageForwarding.png" alt="onbording1" class="resized-image"/>
+<img src="/GatewayHosting/2.png" alt="GatewayAvailable" class="resized-image"/>
 
-1. Open the Deku SMS app.
-
-2. Tap on the three dots in the top right corner of the app.
-
-3. From the dropdown menu, select **Message Forwarding**.
+1. Open the Deku SMS app.  
+2. Tap on the three dots in the top right corner of the app.  
+3. From the dropdown menu, select **Message Forwarding.**
 
 ### Step 4: Add a Gateway Server
 
-<div style={{ display: 'flex', justifyContent: 'space-around', gap: '10px' }}>
-  <img src="/GatewayHosting/2-forwarding.png" alt="Deku SMS App" class="resized-image" />
-  <img src="/GatewayHosting/3-viewGatewayServers.png" alt="Deku SMS App" class="resized-image" /> 
-</div>
+<img src="/GatewayHosting/3.png" alt="GatewayAvailable" class="resized-image"/>
+<img src="/GatewayHosting/4.png" alt="GatewayAvailable" class="resized-image"/>
+<img src="/GatewayHosting/5.png" alt="GatewayAvailable" class="resized-image"/>
 
-1. Tap on the three dots in the top right corner again.
 
-2. Select **View Gateway Servers** from the dropdown.
-
-<div style={{ display: 'flex', justifyContent: 'space-around', gap: '10px' }}>
-  <img src="/GatewayHosting/4-sms-routing-gateway.png" alt="Deku SMS App" class="resized-image" />
-  <img src="/GatewayHosting/5-selectHTTPS.png" alt="Deku SMS App" class="resized-image" />
-</div>
-
-3. Tap the three dots once more and choose **Add HTTPS Gateway Server**.
-
-4. Two gateway servers need to be added in order for both Android and iOS users of the RelaySMS app to use the gateway client to publish their messages online.
+1. Tap on the menu dots in the top right corner of the routed messages page.  
+2. Tap on the three dots in the top right corner of the Gateway clients messages page.  
+3. Tap the three dots once more and choose **Add HTTPS Forwarders.**
 
 ### Step 5: Fill in the Required Information
 
-<img src="/GatewayHosting/6-FillRequirement.png" alt="Deku SMS App" class="resized-image" />
+<img src="/GatewayHosting/6.png" alt="GatewayAvailable" class="resized-image"/>
+<img src="/GatewayHosting/8.png" alt="GatewayAvailable" class="resized-image"/>
 
-- **URL 1**: Enter the following URL:  
-  `https://gatewayserver.smswithoutborders.com/v3/publish`
+- Enter the following URL:  
+https://gatewayserver.smswithoutborders.com/v3/publish  
 
-- **Tag**: Enter a name for your gateway server.
+- **Tag**: Enter a name for your gateway server.  
 
 - **Check "All"**: Ensure the "All" checkbox is checked to route all SMS messages through the server.
 
 ### Step 6: Finalize the Setup
 
-<img src="/GatewayHosting/7-addhttps.png" alt="Deku SMS App" class="resized-image" />
+<img src="/GatewayHosting/7.png" alt="GatewayAvailable" class="resized-image"/>
 
-1. Tap **Add** to save your gateway server configuration.
+1. Tap **Save** to save your gateway server configuration.
 
-2. Repeat the process and add the second gateway server with **URL 2**:  
-   `https://gatewayserver.smswithoutborders.com/sms/platform/android`
-
-<img src="/GatewayHosting/8-smsroutinggate.png" alt="Deku SMS App" class="resized-image" />
+<img src="/GatewayHosting/9.png" alt="GatewayAvailable" class="resized-image"/>
 
 ## Your Gateway Client is Now Ready!
 

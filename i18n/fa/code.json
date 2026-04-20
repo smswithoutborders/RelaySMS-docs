@@ -1,17 +1,4 @@
 {
-  "Smswithoutborders Projects >> Documentation":{
-    "message": "پروژه‌های Smswithoutborders >> مستندات" },
-    "Stay Connected": {
-   "message":"متصل بمانید"},
-  "Get Started with iOS": {
-    "message": "شروع به کار با iOS"
-  },
-  "Get Started with Android": {
-    "message": "شروع به کار با اندروید"
-  },
-      "Technical Documentation": {
-    "message": "مستندات فنی"
-  },
   "theme.ErrorPageContent.title": {
     "message": "بارگذاری صفحه با خطا روبرو شد.",
     "description": "The title of the fallback page when the page crashed"
@@ -319,7 +306,40 @@
     "message": "برچسب‌ها",
     "description": "The title of the tag list page"
   },
-  "Troubleshooting Guide": {
+  "home.title": {
+    "message": "مستندات SMSWithoutBorders"
+  },
+  "home.subtitle": {
+    "message": "همه چیزی که برای راه‌اندازی و درک پروژه‌های SMSWithoutBorders نیاز دارید"
+  },
+  "home.gateway.title": {
+    "message": "راهنمای کلاینت‌های دروازه"
+  },
+  "home.gateway.desc": {
+    "message": "راه‌اندازی و مدیریت دروازه SMS"
+  },
+  "home.ios.title": {
+    "message": "شروع با iOS"
+  },
+  "home.ios.desc": {
+    "message": "راه‌اندازی RelaySMS در iPhone"
+  },
+  "home.android.title": {
+    "message": "شروع با اندروید"
+  },
+  "home.android.desc": {
+    "message": "راه‌اندازی RelaySMS در اندروید"
+  },
+  "home.troubleshoot.title": {
     "message": "راهنمای عیب‌یابی"
+  },
+  "home.troubleshoot.desc": {
+    "message": "رفع مشکلات رایج"
+  },
+  "home.tech.title": {
+    "message": "مستندات فنی"
+  },
+  "home.tech.desc": {
+    "message": "API‌ها و جزئیات سیستم"
   }
 }
