@@ -1,17 +1,4 @@
 {
-  "Smswithoutborders Projects >> Documentation": {
-  "message":"Projets Smswithoutborders >> Documentation"},
-  "Stay Connected": {
-    "message":"Restez connecté"},
-  "Get Started with iOS": {
-    "message": "Commencer avec iOS"
-  },
-  "Get Started with Android": {
-    "message": "Commencer avec Android"
-  },
-      "Technical Documentation": {
-    "message": "Documentation technique"
-  },
   "theme.ErrorPageContent.title": {
     "message": "Cette page a planté.",
     "description": "Le titre de la page de secours lorsque la page a planté"
@@ -219,7 +206,40 @@
     "message": "Bienvenue! Posez-moi n'importe quelle question.",
     "description": "Message de bienvenue affiché lorsque l'utilisateur interagit avec le chatbot"
   },
-  "Troubleshooting Guide": {
+  "home.title": {
+    "message": "Documentation SMSWithoutBorders"
+  },
+  "home.subtitle": {
+    "message": "Tout ce dont vous avez besoin pour configurer et comprendre les projets SMSWithoutBorders"
+  },
+  "home.gateway.title": {
+    "message": "Guide des clients passerelle"
+  },
+  "home.gateway.desc": {
+    "message": "Configurer et gérer votre passerelle SMS"
+  },
+  "home.ios.title": {
+    "message": "Démarrer avec iOS"
+  },
+  "home.ios.desc": {
+    "message": "Configurer RelaySMS sur iPhone"
+  },
+  "home.android.title": {
+    "message": "Démarrer avec Android"
+  },
+  "home.android.desc": {
+    "message": "Configurer RelaySMS sur Android"
+  },
+  "home.troubleshoot.title": {
     "message": "Guide de dépannage"
+  },
+  "home.troubleshoot.desc": {
+    "message": "Résoudre les problèmes courants"
+  },
+  "home.tech.title": {
+    "message": "Documentation technique"
+  },
+  "home.tech.desc": {
+    "message": "APIs et détails du système"
   }
 }
