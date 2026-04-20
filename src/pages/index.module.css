@@ -1,88 +1,92 @@
 .heroBanner {
-  position: relative;
   min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--ifm-background-color);
-  overflow: hidden;
   font-family: "Mona Sans", "Ubuntu", system-ui, sans-serif;
-  text-align: center;
+  padding: 4rem 1.5rem;
 }
 
 .heroInner {
-  position: relative;
-  z-index: 2;
   width: 100%;
-  max-width: 1200px;
-  padding: 0 1rem;
+  max-width: 860px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.2rem;
-  animation: fadeInUp 1.2s ease forwards;
+  gap: 1rem;
+  animation: fadeInUp 0.9s ease forwards;
   opacity: 0;
 }
 
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
+  from { opacity: 0; transform: translateY(24px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
 .heroLogo {
-  margin-bottom: 0.1rem;
   animation: float 6s ease-in-out infinite;
+  margin-bottom: 0.5rem;
 }
 
 @keyframes float {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+  50% { transform: translateY(-7px); }
 }
 
 .heroTitle {
-  font-size: clamp(1.6rem, 4vw, 2.7rem);
-  font-weight: 500;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 700;
+  text-align: center;
   letter-spacing: -0.02em;
+  margin: 0;
 }
 
 .heroSubtitle {
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-size: clamp(0.95rem, 2vw, 1.15rem);
   color: var(--ifm-color-primary);
-  max-width: 600px;
-  margin-bottom: 0.1rem;
+  text-align: center;
+  max-width: 540px;
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
 }
 
 .dashboard {
   width: 100%;
-  max-width: 1000px;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  margin-top: 2rem;
+  gap: 1rem;
 }
 
 .featureCard {
-  padding: 1rem;
-  border-radius: 10px;
-  color: inherit;
-  background: linear-gradient(135deg, #f2f4f5af, #fbfbfc);
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.4rem 1.8rem;
+  border-radius: 14px;
   text-decoration: none !important;
-  box-shadow: 0 5px 5px rgba(59, 114, 196, 0.35);
-  transition: 0.3s ease;
+  color: inherit;
+  background: linear-gradient(135deg, #1a3a6e, #1e4fc2);
+  color: #fff !important;
+  box-shadow: 0 8px 24px rgba(30, 79, 194, 0.3);
+  transition: all 0.3s ease;
+  border: none;
 }
 
 .featureCard:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(30, 79, 194, 0.45);
 }
 
 .featureTitle {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
+  margin-bottom: 0.2rem;
 }
 
 .featureDesc {
+  font-size: 0.9rem;
   opacity: 0.85;
-  margin-top: 0.3rem;
 }
 
 .smallGrid {
@@ -92,68 +96,95 @@
 }
 
 .smallCard {
- background: linear-gradient(135deg, #f5f6f7c4, #fbfbfc);
-  border-radius: 10px;
-  padding: 1.2rem;
+  background: var(--ifm-card-background-color, #fff);
+  border-radius: 12px;
+  padding: 1.3rem 1.4rem;
   text-decoration: none !important;
   color: inherit;
-  border: 1.5px solid rgba(0,0,0,0.06);
-  transition: 0.2s;
+  border: 1.5px solid var(--ifm-color-emphasis-200);
+  transition: all 0.25s ease;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
-}
-
-.smallCard {
-  transition: all 0.25s ease;
-}
-
-.smallCard {
   position: relative;
-  transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .smallCard:hover {
-  transform: translateY(-5px);
-  border-color: transparent;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-}
-
-.smallCard:hover::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 5px;
-  background: radial-gradient(
-    circle at top left,
-    rgba(59, 115, 199, 0.15),
-    transparent 60%
-  );
-  pointer-events: none;
+  transform: translateY(-4px);
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 8px 24px rgba(30, 79, 194, 0.12);
 }
 
 .smallTitle {
   font-weight: 600;
   font-size: 1rem;
+  color: var(--ifm-heading-color);
 }
 
 .smallDesc {
-  font-size: 0.85rem;
-  opacity: 0.7;
-  line-height: 1.4;
-}
-
-@media (max-width: 700px) {
-  .smallGrid {
-    grid-template-columns: 1fr;
-  }
+  font-size: 0.83rem;
+  opacity: 0.65;
+  line-height: 1.5;
 }
 
 [data-theme="dark"] .heroBanner {
-  background: #131922;
+  background: #0f1520;
 }
 
-[data-theme="dark"] .card {
-  background: #1b2431;
-  border-color: rgba(255,255,255,0.05);
+[data-theme="dark"] .smallCard {
+  background: #1a2235;
+  border-color: rgba(255, 255, 255, 0.07);
+}
+
+[data-theme="dark"] .smallCard:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 8px 24px rgba(99, 135, 255, 0.15);
+}
+
+@media (max-width: 640px) {
+  .smallGrid { grid-template-columns: 1fr; }
+  .featureCard { flex-direction: column; text-align: center; }
+}
+
+
+
+.dropdown {
+  display: none;
+  flex-direction: column;
+  margin-top: 0.8rem;
+  gap: 0.4rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  padding-top: 0.8rem;
+}
+
+.smallCard.open .dropdown {
+  display: flex;
+}
+
+.smallCard.open {
+  cursor: pointer;
+}
+
+.dropdownItem {
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none !important;
+  color: var(--ifm-color-primary) !important;
+  background: var(--ifm-color-emphasis-100);
+  transition: background 0.2s;
+}
+
+.dropdownItem:hover {
+  background: var(--ifm-color-emphasis-200);
+}
+
+[data-theme="dark"] .dropdownItem {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .dropdownItem:hover {
+  background: rgba(255, 255, 255, 0.1);
 }

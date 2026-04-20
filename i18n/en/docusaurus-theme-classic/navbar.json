@@ -30,5 +30,21 @@
   "item.label.Setting up a Gateway": {
     "message": "Setting up a Gateway",
     "description": "Navbar item with label Setting up a Gateway"
+  },
+  "item.label.Troubleshooting": {
+    "message": "Troubleshooting",
+    "description": "Navbar item with label Troubleshooting"
+  },
+  "item.label.Get Started withAndroid": {
+    "message": "Get Started withAndroid",
+    "description": "Navbar item with label Get Started withAndroid"
+  },
+  "item.label.Get Started with iOS": {
+    "message": "Get Started with iOS",
+    "description": "Navbar item with label Get Started with iOS"
+  },
+  "item.label.Setting Up Gateway-Client": {
+    "message": "Setting Up Gateway-Client",
+    "description": "Navbar item with label Setting Up Gateway-Client"
   }
 }

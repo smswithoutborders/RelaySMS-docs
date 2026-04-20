@@ -85,19 +85,19 @@ const config = {
         },
 
         {
-          label: "Guides",
+          label: "Tutorials",
           position: "left",
           items: [
             {
-              label: "Android Setup",
+              label: "Get Started withAndroid",
               to: "/docs/Android Tutorial/Getting-Started-With-Android",
             },
             {
-              label: "iOS Setup",
+              label: "Get Started with iOS",
               to: "/docs/iOS Tutorial/Getting-Started-With-iOS",
             },
             {
-              label: "Gateway Client",
+              label: "Setting Up Gateway-Client",
               to: "/docs/Gateway Clients Guide/GatewayClientsGuide",
             },
           ],

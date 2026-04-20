@@ -1,17 +1,4 @@
 {
-  "Smswithoutborders Projects >> Documentation":{ 
-    "message":"Proyectos de Smswithoutborders >> Documentación"},
-    "Stay Connected": {
-    "message": "Mantente conectado"},
-  "Get Started with iOS": {
-    "message": "Comienza con iOS"
-  },
-  "Get Started with Android": {
-    "message": "Comienza con Android"
-  },
-    "Technical Documentation": {
-    "message": "Documentación técnica"
-  },
   "theme.ErrorPageContent.title": {
     "message": "Esta página ha fallado.",
     "description": "The title of the fallback page when the page crashed"
@@ -319,7 +306,40 @@
     "message": "Etiquetas",
     "description": "The title of the tag list page"
   },
-  "Troubleshooting Guide": {
-    "message":"Guía de solución de problemas"
+  "home.title": {
+    "message": "Documentación de SMSWithoutBorders"
+  },
+  "home.subtitle": {
+    "message": "Todo lo que necesitas para configurar y entender los proyectos SMSWithoutBorders"
+  },
+  "home.gateway.title": {
+    "message": "Guía de clientes de puerta de enlace"
+  },
+  "home.gateway.desc": {
+    "message": "Configurar y gestionar tu puerta de enlace SMS"
+  },
+  "home.ios.title": {
+    "message": "Comenzar con iOS"
+  },
+  "home.ios.desc": {
+    "message": "Configurar RelaySMS en iPhone"
+  },
+  "home.android.title": {
+    "message": "Comenzar con Android"
+  },
+  "home.android.desc": {
+    "message": "Configurar RelaySMS en Android"
+  },
+  "home.troubleshoot.title": {
+    "message": "Guía de solución de problemas"
+  },
+  "home.troubleshoot.desc": {
+    "message": "Resolver problemas comunes"
+  },
+  "home.tech.title": {
+    "message": "Documentación técnica"
+  },
+  "home.tech.desc": {
+    "message": "APIs y detalles del sistema"
   }
 }

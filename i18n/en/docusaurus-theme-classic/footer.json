@@ -17,7 +17,7 @@
   },
   "link.item.label.Troubleshooting": {
     "message": "Troubleshooting",
-    "description": "The label of footer link with label=Troubleshooting linking to /docs/Troubleshooting"
+    "description": "The label of footer link with label=Troubleshooting linking to /docs/Troubleshooting/Troubleshooting-FAQ"
   },
   "link.item.label.IRC: freenode/#afkanerd": {
     "message": "IRC: freenode/#afkanerd",
@@ -42,5 +42,33 @@
   "copyright": {
     "message": "Copyright © SMSWithoutBorders. Built with Docusaurus.",
     "description": "The footer copyright"
+  },
+  "link.title.Documentation": {
+    "message": "Documentation",
+    "description": "The title of the footer links column with title=Documentation in the footer"
+  },
+  "link.title.About": {
+    "message": "About",
+    "description": "The title of the footer links column with title=About in the footer"
+  },
+  "link.item.label.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label of footer link with label=Getting Started linking to /docs/Android Tutorial/Getting-Started-With-Android"
+  },
+  "link.item.label.Gateway Client": {
+    "message": "Gateway Client",
+    "description": "The label of footer link with label=Gateway Client linking to /docs/Gateway Clients Guide/GatewayClientsGuide"
+  },
+  "link.item.label.Issues": {
+    "message": "Issues",
+    "description": "The label of footer link with label=Issues linking to https://github.com/smswithoutborders"
+  },
+  "link.item.label.Project": {
+    "message": "Project",
+    "description": "The label of footer link with label=Project linking to https://github.com/smswithoutborders"
+  },
+  "link.item.label.Contribute": {
+    "message": "Contribute",
+    "description": "The label of footer link with label=Contribute linking to https://github.com/smswithoutborders"
   }
 }

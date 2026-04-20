@@ -1,22 +1,4 @@
 {
-  "Smswithoutborders Projects >> Documentation": {
-    "message": "Smswithoutborders Projects  >> Documentation"
-  },
-  "Stay Connected": {
-    "message": "Stay Connected"
-  },
-  "Get Started with iOS": {
-    "message": "Get Started with iOS"
-  },
-  "Get Started with Android": {
-    "message": "Get Started with Android"
-  },
-    "Troubleshooting Guide": {
-    "message": "Troubleshooting Guide"
-  },
-    "Technical Documentation": {
-    "message": "Technical Documentation"
-  },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"
@@ -63,7 +45,7 @@
   },
   "theme.colorToggle.ariaLabel": {
     "message": "Switch between dark and light mode (currently {mode})",
-    "description": "The ARIA label for the navbar color mode toggle"
+    "description": "The ARIA label for the color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
     "message": "dark mode",
@@ -323,7 +305,61 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "home.title": {
+    "message": "SMSWithoutBorders Documentation"
+  },
+  "home.subtitle": {
+    "message": "Everything you need to set up, use, and understand SMSWithoutBorders Projects"
+  },
+  "home.gateway.title": {
+    "message": "Gateway Clients Guide"
+  },
+  "home.gateway.desc": {
+    "message": "Set up and manage your SMS gateway"
+  },
+  "home.ios.title": {
+    "message": "Get Started with iOS"
+  },
+  "home.ios.desc": {
+    "message": "Setup RelaySMS on iPhone"
+  },
+  "home.android.title": {
+    "message": "Get Started with Android"
+  },
+  "home.android.desc": {
+    "message": "Setup RelaySMS on Android"
+  },
+  "home.troubleshoot.title": {
+    "message": "Troubleshooting Guide"
+  },
+  "home.troubleshoot.desc": {
+    "message": "Fix common issues"
+  },
+  "home.tech.title": {
+    "message": "Technical Docs"
+  },
+  "home.tech.desc": {
+    "message": "APIs and system details"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "system mode",
+    "description": "The name for the system color mode"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(opens in new tab)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Expand the dropdown",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Collapse the dropdown",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "This author has not written any posts yet.",
+    "description": "The text for authors with 0 blog post"
   }
 }
-
-
