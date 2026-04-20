@@ -69,119 +69,129 @@ const config = {
     ]
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    (         {
-      navbar: {
-       logo: {
-    alt: "Swob Logo",
-    src: "SWOB.png",
-    srcDark: "SWOB-Dark Theme.png",
-  },
-        items: [
-          {
-            type: "doc",
-            docId: "Android Tutorial/Getting-Started-With-Android",
-            position: "left",
-            label: "Docs"
-          },
-          {
-            label: "Tutorials",
-            position: "left",
-            type: "dropdown",
-            items: [
-                {
-                label: "On-Device Token Storage Feature",
-                to: "/docs/On-Device Tutorial/On-DeviceToken"
-              },
-              {
-                label: "RelaySMS Android Tutorial",
-                to: "/docs/Android Tutorial/Getting-Started-With-Android"
-              },
-              {
-                label: "RelaySMS iOS Tutorial",
-                to: "/docs/iOS Tutorial/Getting-Started-With-iOS"
-              },
-              {
-                label: "Setting up a Gateway",
-                to: "/docs/Gateway Clients Guide/GatewayClientsGuide"
-              }
-            ]
-          },
-          {
-            type: "doc",
-            docId: "Troubleshooting/Troubleshooting-FAQ",
-            position: "left",
-            label: "TroubleShooting"
-          },
-          {
-            type: "localeDropdown",
-            position: "right"
-          },
-          {
-            href: "https://github.com/smswithoutborders",
-            label: "GitHub",
-            position: "right"
-          }
-        ]
+  themeConfig: {
+    navbar: {
+      logo: {
+        alt: "SWOB",
+        src: "SWOB.png",
+        srcDark: "SWOB-Dark Theme.png",
       },
-      footer: {
-        style: "dark",
-        links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Tutorials",
-                to: "/docs/iOS Tutorial/Getting-Started-With-iOS"
-              },
-              {
-                label: "Troubleshooting",
-                to: "/docs/Troubleshooting"
-              }
-            ]
-          },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "IRC: freenode/#afkanerd",
-                href: "#"
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/smswithoutborders"
-              }
-            ]
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                href: "https://blog.smswithoutborders.com"
-              },
-              {
-                label: "Twitter",
-                href: "https://x.com/RelaySMS"
-              },
-              {
-                label: "Bluesky",
-                href: "https://bsky.app/profile/relaysms.bsky.social"
-              }
-            ]
-          },                   
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} SMSWithoutBorders. Built with Docusaurus.`
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula
-      },
-      typography: {
-        fontFamily: "'Mona Sans'",
-      }, 
-    })
+
+      items: [
+        {
+          label: "Docs",
+          position: "left",
+          to: "/docs/Android Tutorial/Getting-Started-With-Android",
+        },
+
+        {
+          label: "Guides",
+          position: "left",
+          items: [
+            {
+              label: "Android Setup",
+              to: "/docs/Android Tutorial/Getting-Started-With-Android",
+            },
+            {
+              label: "iOS Setup",
+              to: "/docs/iOS Tutorial/Getting-Started-With-iOS",
+            },
+            {
+              label: "Gateway Client",
+              to: "/docs/Gateway Clients Guide/GatewayClientsGuide",
+            },
+          ],
+        },
+
+      
+        {
+          label: "Troubleshooting",
+          position: "left",
+          to: "/docs/Troubleshooting/Troubleshooting-FAQ",
+        },
+
+        {
+          type: "localeDropdown",
+          position: "right",
+        },
+
+        {
+          href: "https://github.com/smswithoutborders",
+          label: "GitHub",
+          position: "right",
+        },
+      ],
+    },
+
+
+
+    footer: {
+  style: "dark",
+  links: [
+    {
+      title: "Documentation",
+      items: [
+        {
+          label: "Getting Started",
+          to: "/docs/Android Tutorial/Getting-Started-With-Android",
+        },
+        {
+          label: "Gateway Client",
+          to: "/docs/Gateway Clients Guide/GatewayClientsGuide",
+        },
+        {
+          label: "Troubleshooting",
+          to: "/docs/Troubleshooting/Troubleshooting-FAQ",
+        },
+      ],
+    },
+
+    {
+      title: "Community",
+      items: [
+        {
+          label: "GitHub",
+          href: "https://github.com/smswithoutborders",
+        },
+        {
+          label: "Issues",
+          href: "https://github.com/smswithoutborders",
+        },
+        {
+          label: "Blog",
+          href: "https://blog.smswithoutborders.com",
+        },
+      ],
+    },
+
+    {
+      title: "About",
+      items: [
+        {
+          label: "Project",
+          href: "https://github.com/smswithoutborders",
+        },
+        {
+          label: "Contribute",
+          href: "https://github.com/smswithoutborders",
+        },
+      ],
+    },
+  ],
+
+  copyright: `SWOB — Smswithoutborders © ${new Date().getFullYear()}`,
+},
+
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+
+    typography: {
+      fontFamily: "'Mona Sans', system-ui, sans-serif",
+    },
+
+  }
 };
 
 export default config;
