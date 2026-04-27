@@ -130,6 +130,19 @@ Your encrypted message will appear there,  just hit Send.*
 
 - You’ll receive an SMS confirmation once your message is published to the selected platform.
 
+### How to Delete an Account
+
+1. Open the app and click the 3 dots
+
+<img src="/SAndroid/3.png" alt="GatewayAvailable" class="resized-image"/>
+
+2. Click on Setting and scroll down and select Delete account
+
+<img src="/SAndroid/1.png" alt="GatewayAvailable" class="resized-image"/>
+
+3. Select  Delete and comfirm 
+
+<img src="/SAndroid/2.png" alt="GatewayAvailable" class="resized-image"/>
 
 ### How to Use the On-Device Token Storage Feature
 
@@ -147,7 +160,7 @@ To start storing your access tokens locally on your device:
 
 <img src="/SAndroid/settings.png" alt="GatewayAvailable" class="resized-image"/>
 
- ### 3. Go to the **Publishing**section.
+ ### 3. Go to the **Publishing** section.
 
 <img src="/SAndroid/deleteAccount.png" alt="GatewayAvailable" class="resized-image"/>
 
@@ -186,22 +199,22 @@ Due to Twitter's security limitations, tokens stored on your device can only be 
 
 Here’s how:
 
- ### 1. After sending a tweet, you’ll receive an **SMS delivery status message**. If you're using an on-device token, this message will include a **refreshed Twitter token**.
+  1. After sending a tweet, you’ll receive an **SMS delivery status message**. If you're using an on-device token, this message will include a **refreshed Twitter token**.
 
 
- ### 2. **Copy the entire SMS message** (as-is).
+  2. **Copy the entire SMS message** (as-is).
 
 
- ### 3. Open the **RelaySMS app** and go to the **Inbox** section.
+  3. Open the **RelaySMS app** and go to the **Inbox** section.
 
 
- ### 4. **Paste** the full SMS message into the inbox.
+  4. **Paste** the full SMS message into the inbox.
 
 
- ### 5. The app will automatically extract and refresh your Twitter token.
+ 5. The app will automatically extract and refresh your Twitter token.
 
  
- ### 6. You’re now ready to send your next tweet.
+ 6. You’re now ready to send your next tweet.
 
 
 Repeat this process **after every Twitter message** if you're using local token storage.
