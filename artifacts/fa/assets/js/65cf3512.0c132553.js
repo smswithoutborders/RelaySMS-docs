@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkRelaysms=globalThis.webpackChunkRelaysms||[]).push([[50],{1072(a){a.exports=JSON.parse('{"metadata":{"permalink":"/fa/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":0,"blogDescription":"\u0648\u0628\u0644\u0627\u06af","blogTitle":"\u0648\u0628\u0644\u0627\u06af"}}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkRelaysms=globalThis.webpackChunkRelaysms||[]).push([[472],{5513(s){s.exports=JSON.parse('{"title":"\u067e\u0633\u062a\u200c\u0647\u0627\u06cc \u0627\u062e\u06cc\u0631","items":[]}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkRelaysms=globalThis.webpackChunkRelaysms||[]).push([[472],{5513(s){s.exports=JSON.parse('{"title":"Articles r\xe9cents","items":[]}')}}]);
