@@ -21,13 +21,13 @@ function HomepageHeader() {
         </p>
 
         <div className={styles.dashboard}>
-          <Link to="/docs/Routing Numbers Guide/RoutingNumbersGuide" className={styles.featureCard}>
+          <Link to="/docs/Gateway Clients Guide/GatewayClientsGuide" className={styles.featureCard}>
             <div>
               <div className={styles.featureTitle}>
-                <Translate id="home.routing.title">Routing Numbers Guide</Translate>
+                <Translate id="home.gateway.title">Gateway Clients Guide</Translate>
               </div>
               <div className={styles.featureDesc}>
-                <Translate id="home.routing.desc">Set up and manage your SMS routing numbers</Translate>
+                <Translate id="home.gateway.desc">Set up and manage your SMS Gateway Clients</Translate>
               </div>
             </div>
           </Link>

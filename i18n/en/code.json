@@ -312,11 +312,11 @@
   "home.subtitle": {
     "message": "Everything you need to set up, use, and understand SMSWithoutBorders Projects"
   },
-  "home.routing.title": {
-    "message": "Routing Numbers Guide"
+  "home.gateway.title": {
+    "message": "Gateway Clients Guide"
   },
-  "home.routing.desc": {
-    "message": "Set up and manage your SMS routing numbers"
+  "home.gateway.desc": {
+    "message": "Set up and manage your SMS Gateway"
   },
   "home.ios.title": {
     "message": "Get Started with iOS"
