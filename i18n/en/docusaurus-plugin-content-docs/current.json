@@ -34,5 +34,9 @@
   "sidebar.tutorialSidebar.category.Technical Documentation": {
     "message": "Technical Documentation",
     "description": "The label for category 'Technical Documentation' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Routing Numbers Guide": {
+    "message": "Routing Numbers Guide",
+    "description": "The label for category 'Routing Numbers Guide' in sidebar 'tutorialSidebar'"
   }
 }
