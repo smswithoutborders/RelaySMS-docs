@@ -12,7 +12,6 @@ Within the app, Routing Numbers are listed under the Countries tab. Users must s
 
 Routing Numbers can be set up using the DekuSMS app, and expanding their availability across different regions helps improve reliability, reduce costs, and ensure more users can stay connected during internet shutdowns.
 
-
 # Hosting and Running Routing Numbers Guide
 
 Follow this simple guide to set up and configure a Deku SMS Gateway Client on your Android device.
