@@ -10,7 +10,7 @@ function HomepageHeader() {
   return (
     <header className={styles.heroBanner}>
       <div className={styles.heroInner}>
-        <img src={SwobLogo} alt="Swob logo" className={styles.heroLogo} height={90} width={90} />
+        <img src={SwobLogo} alt="SMSWithoutBorders logo" className={styles.heroLogo} height={90} width={90} />
         <h1 className={styles.heroTitle}>
           <Translate id="home.title">SMSWithoutBorders Documentation</Translate>
         </h1>
@@ -76,9 +76,9 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
+  const { siteConfig: { title } } = useDocusaurusContext();
   return (
-    <Layout title={siteConfig.title} description="RelaySMS Developer Documentation Portal">
+    <Layout title={title} description="RelaySMS Developer Documentation Portal">
       <HomepageHeader />
     </Layout>
   );
