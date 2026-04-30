@@ -2,6 +2,16 @@
 sidebar_position: 1
 ---
 
+# Gateway Clients
+
+Gateway Clients are a core part of how RelaySMS works. They are phone numbers or devices located in areas with an active internet connection that act as a bridge between offline users and online platforms.
+
+When a user sends a message through RelaySMS without internet access, the message is delivered via SMS to a Gateway Client. The Gateway Client then forwards that message to an online server, where it is processed and published to the user’s selected platform.
+
+Within the app, Gateway Clients are listed under the Countries tab. Users must select a gateway in a region with internet connectivity to successfully send their messages.
+
+Gateway Clients can be set up using the DekuSMS app, and expanding their availability across different regions helps improve reliability, reduce costs, and ensure more users can stay connected during internet shutdowns.
+
 # Hosting and Running Gateway Clients Guide
 
 Follow this simple guide to set up and configure a Deku SMS Gateway Client on your Android device.
@@ -9,6 +19,7 @@ Follow this simple guide to set up and configure a Deku SMS Gateway Client on yo
 ## Requirements for Setting Up a Gateway Client:
 
 ### Android Device:
+
 - Your device must be able to connect to the internet.  
 - It should have a SIM card capable of receiving SMS messages.
 
@@ -49,7 +60,7 @@ Once the app is installed, set it as the default SMS app on your Android device.
 
 
 1. Tap on the menu dots in the top right corner of the routed messages page.  
-2. Tap on the three dots in the top right corner of the Gateway clients messages page.  
+2. Tap on the three dots in the top right corner of the Gateway Clients messages page.  
 3. Tap the three dots once more and choose **Add HTTPS Forwarders.**
 
 ### Step 5: Fill in the Required Information

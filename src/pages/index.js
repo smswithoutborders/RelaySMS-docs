@@ -27,7 +27,7 @@ function HomepageHeader() {
                 <Translate id="home.gateway.title">Gateway Clients Guide</Translate>
               </div>
               <div className={styles.featureDesc}>
-                <Translate id="home.gateway.desc">Set up and manage your SMS gateway</Translate>
+                <Translate id="home.gateway.desc">Set up and manage your SMS Gateway Clients</Translate>
               </div>
             </div>
           </Link>
