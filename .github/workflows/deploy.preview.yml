@@ -33,9 +33,6 @@ jobs:
           corepack enable
           corepack prepare pnpm --activate
 
-      - name: Create .env.local file
-        run: echo "BASE_URL=https://preview-7.relaysms.afkanerd.de" > .env.local
-
       - name: Install dependencies
         run: pnpm install --no-lockfile
 
@@ -58,7 +55,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
-          source: "./out/*"
+          source: "./build/*"
           target: ${{ secrets.BUILD_PATH }}
           strip_components: 1
           rm: false

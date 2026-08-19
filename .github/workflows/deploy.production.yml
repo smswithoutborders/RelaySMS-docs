@@ -33,9 +33,6 @@ jobs:
           corepack enable
           corepack prepare pnpm --activate
 
-      - name: Create .env.local file
-        run: echo "BASE_URL=https://docs.smswithoutborders.com" > .env.local
-
       - name: Install dependencies
         run: pnpm install --no-lockfile
 
