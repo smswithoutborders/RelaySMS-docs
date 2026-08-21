@@ -64,6 +64,9 @@ When a platform is saved it will light up. Tap it to see which account is connec
 
 > Tip: By default you always have your RelaySMS mail anonymous(random alias) account - you can use it to send messages quickly without verifying your phone number.
 
+Anonymous vs authenticated:
+You can use RelaySMS Mail without saving it (anonymous), but if you save it, you can receive replies by SMS during a shutdown.
+
 
 ### Mastodon
 
@@ -74,5 +77,3 @@ When a platform is saved it will light up. Tap it to see which account is connec
 <img src="/mockup/mastodon-accounts.png" alt="Mastodon account" class="resized-image"/>
 
 
-Anonymous vs authenticated:
-You can use RelaySMS Mail without saving it (anonymous), but if you save it, you can receive replies by SMS during a shutdown.
