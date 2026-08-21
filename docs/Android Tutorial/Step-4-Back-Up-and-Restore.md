@@ -34,7 +34,7 @@ You should see your last backup
 
 ### Restore
 
-1. Wlile on-boarding click **"Restore backup"**.
+1. While on-boarding click **"Restore backup"**.
 2. Choose your backup file.
 3. Enter your verification key.
 4. Done. Your platforms are restored.
