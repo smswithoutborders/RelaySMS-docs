@@ -42,9 +42,5 @@
   "item.label.Get Started with iOS": {
     "message": "Get Started with iOS",
     "description": "Navbar item with label Get Started with iOS"
-  },
-  "item.label.Routing Number Guide": {
-    "message": "Routing Number Guide",
-    "description": "Navbar item with label Routing Number Guide"
   }
 }

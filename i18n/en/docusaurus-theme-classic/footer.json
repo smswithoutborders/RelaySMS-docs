@@ -55,10 +55,6 @@
     "message": "Getting Started",
     "description": "The label of footer link with label=Getting Started linking to /docs/Android Tutorial/Getting-Started-With-Android"
   },
-  "link.item.label.Routing Number": {
-    "message": "Routing Number",
-    "description": "The label of footer link with label=Routing Number linking to /docs/Gateway Clients Guide/GatewayClientsGuide"
-  },
   "link.item.label.Issues": {
     "message": "Issues",
     "description": "The label of footer link with label=Issues linking to https://github.com/smswithoutborders"
