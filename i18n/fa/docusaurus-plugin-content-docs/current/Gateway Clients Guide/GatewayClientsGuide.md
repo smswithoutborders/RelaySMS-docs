@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+unlisted: true
 ---
 
 # راهنمای میزبانی و اجرای شماره های مسیریابی

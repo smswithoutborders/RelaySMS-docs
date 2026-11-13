@@ -96,10 +96,6 @@ const config = {
               label: "Get Started with iOS",
               to: "/docs/iOS Tutorial/Getting-Started-With-iOS",
             },
-            {
-              label: "Routing Number Guide",
-              to: "/docs/Gateway Clients Guide/GatewayClientsGuide",
-            },
           ],
         },
 
@@ -134,10 +130,6 @@ const config = {
         {
           label: "Getting Started",
           to: "/docs/Android Tutorial/Getting-Started-With-Android",
-        },
-        {
-          label: "Routing Number",
-          to: "/docs/Gateway Clients Guide/GatewayClientsGuide",
         },
         {
           label: "Troubleshooting",
