@@ -1,4 +1,13 @@
 {
+  "homepage.chooser.cta": {
+    "message": "مشاهده آموزش"
+  },
+  "homepage.chooser.title": {
+    "message": "دستگاه خود را انتخاب کنید"
+  },
+  "homepage.chooser.metaDescription": {
+    "message": "آموزش‌های RelaySMS برای اندروید و iOS."
+  },
   "theme.ErrorPageContent.title": {
     "message": "بارگذاری صفحه با خطا روبرو شد.",
     "description": "The title of the fallback page when the page crashed"
@@ -43,25 +52,25 @@
     "message": "مشاهده تمام برچسب‌ها",
     "description": "The label of the link targeting the tag list page"
   },
-  "theme.colorToggle.ariaLabel": {
-    "message": "بین حالت تاریک و روشن سوئیچ کنید (الان {mode})",
-    "description": "The ARIA label for the navbar color mode toggle"
-  },
-  "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "حالت تیره",
-    "description": "The name for the dark color mode"
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "حالت سیستم",
+    "description": "The name for the system color mode"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
     "message": "حالت روشن",
     "description": "The name for the light color mode"
   },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "حالت تیره",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "بین حالت تاریک و روشن سوئیچ کنید (الان {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
   "theme.docs.breadcrumbs.navAriaLabel": {
     "message": "نشانگر صفحات",
     "description": "The ARIA label for the breadcrumbs"
-  },
-  "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "{count} مورد",
-    "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.paginator.navAriaLabel": {
     "message": "صفحات مستندات",
@@ -134,10 +143,6 @@
     "message": "برچسب‌ها:",
     "description": "The label alongside a tag list"
   },
-  "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "بستن",
-    "description": "The ARIA label for close button of announcement bar"
-  },
   "theme.admonition.caution": {
     "message": "توجه",
     "description": "The default label used for the Caution admonition (:::caution)"
@@ -162,25 +167,13 @@
     "message": "هشدار",
     "description": "The default label used for the Warning admonition (:::warning)"
   },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "بستن",
+    "description": "The ARIA label for close button of announcement bar"
+  },
   "theme.blog.sidebar.navAriaLabel": {
     "message": "کنترل پست‌های اخیر وبلاگ",
     "description": "The ARIA label for recent posts in the blog sidebar"
-  },
-  "theme.CodeBlock.copied": {
-    "message": "کپی شد",
-    "description": "The copied button label on code blocks"
-  },
-  "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "کپی به کلیپ‌بورد",
-    "description": "The ARIA label for copy code blocks button"
-  },
-  "theme.CodeBlock.copy": {
-    "message": "کپی",
-    "description": "The copy button label on code blocks"
-  },
-  "theme.CodeBlock.wordWrapToggle": {
-    "message": "تغییر نحوه نمایش کلمه",
-    "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.DocSidebarItem.expandCategoryAriaLabel": {
     "message": "باز کردن دسته بندی در نوار کناری '{label}'",
@@ -190,12 +183,16 @@
     "message": "بستن دسته بندی در نوار کناری '{label}'",
     "description": "The ARIA label to collapse the sidebar category"
   },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(در برگه جدید باز می‌شود)",
+    "description": "The ARIA label for the external link icon"
+  },
   "theme.NavBar.navAriaLabel": {
     "message": "صفحه اصلی",
     "description": "The ARIA label for the main navigation"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "Languages",
+    "message": "زبان‌ها",
     "description": "The label for the mobile language switcher dropdown"
   },
   "theme.NotFound.p1": {
@@ -221,6 +218,22 @@
   "theme.blog.post.readingTime.plurals": {
     "message": "خواندن ۱ دقیقه|خواندن {readingTime} دقیقه",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "کپی",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "کپی شد",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "کپی به کلیپ‌بورد",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "تغییر نحوه نمایش کلمه",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.docs.breadcrumbs.home": {
     "message": "صفحه اصلی",
@@ -250,6 +263,14 @@
     "message": "باز و بست منو",
     "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "باز کردن منو",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "بستن منو",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
   "theme.docs.sidebar.expandButtonTitle": {
     "message": "باز کردن نوار کناری",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
@@ -271,12 +292,16 @@
     "description": "The title of the page for a blog author"
   },
   "theme.blog.authorsList.pageTitle": {
-    "message": "Authors",
+    "message": "نویسندگان",
     "description": "The title of the authors page"
   },
   "theme.blog.authorsList.viewAll": {
     "message": "View All Authors",
     "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "این نویسنده هنوز مطلبی منتشر نکرده است.",
+    "description": "The text for authors with 0 blog post"
   },
   "theme.contentVisibility.unlistedBanner.title": {
     "message": "صفحه فهرست نشده",
@@ -287,12 +312,16 @@
     "description": "The unlisted content banner message"
   },
   "theme.contentVisibility.draftBanner.title": {
-    "message": "Draft page",
+    "message": "صفحه پیش‌نویس",
     "description": "The draft content banner title"
   },
   "theme.contentVisibility.draftBanner.message": {
-    "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
+    "message": "این صفحه پیش‌نویس است. فقط در حالت توسعه دیده می‌شود و در نسخه نهایی منتشر نخواهد شد.",
     "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "{count} مورد",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.ErrorPageContent.tryAgain": {
     "message": "تلاش مجدد",
@@ -305,41 +334,5 @@
   "theme.tags.tagsPageTitle": {
     "message": "برچسب‌ها",
     "description": "The title of the tag list page"
-  },
-  "home.title": {
-    "message": "مستندات SMSWithoutBorders"
-  },
-  "home.subtitle": {
-    "message": "همه چیزی که برای راه‌اندازی و درک پروژه‌های SMSWithoutBorders نیاز دارید"
-  },
-  "home.gateway.title": {
-    "message": "راهنمای کلاینت‌های دروازه"
-  },
-  "home.gateway.desc": {
-    "message": "راه‌اندازی و مدیریت دروازه SMS"
-  },
-  "home.ios.title": {
-    "message": "شروع با iOS"
-  },
-  "home.ios.desc": {
-    "message": "راه‌اندازی RelaySMS در iPhone"
-  },
-  "home.android.title": {
-    "message": "شروع با اندروید"
-  },
-  "home.android.desc": {
-    "message": "راه‌اندازی RelaySMS در اندروید"
-  },
-  "home.troubleshoot.title": {
-    "message": "راهنمای عیب‌یابی"
-  },
-  "home.troubleshoot.desc": {
-    "message": "رفع مشکلات رایج"
-  },
-  "home.tech.title": {
-    "message": "مستندات فنی"
-  },
-  "home.tech.desc": {
-    "message": "API‌ها و جزئیات سیستم"
   }
 }

@@ -1,34 +1,30 @@
 {
   "logo.alt": {
-    "message": "Logo RelaySMS",
-    "description": "The alt text for the logo in the navigation bar"
+    "message": "SWOB",
+    "description": "The alt text of navbar logo"
   },
   "item.label.Docs": {
-    "message": "Docs",
-    "description": "Navigation bar item labeled Docs"
+    "message": "Documentation",
+    "description": "Navbar item with label Docs"
   },
   "item.label.Tutorials": {
     "message": "Tutoriels",
-    "description": "Navigation bar item labeled Tutorials"
+    "description": "Navbar item with label Tutorials"
   },
-  "item.label.TroubleShooting": {
+  "item.label.Troubleshooting": {
     "message": "Dépannage",
-    "description": "Navigation bar item labeled Troubleshooting"
+    "description": "Navbar item with label Troubleshooting"
   },
   "item.label.GitHub": {
     "message": "GitHub",
-    "description": "Navigation bar item labeled GitHub"
+    "description": "Navbar item with label GitHub"
   },
-  "item.label.RelaySMS Android Tutorial": {
-    "message": "Tutoriel RelaySMS Android",
-    "description": "Navigation bar item labeled RelaySMS Android Tutorial"
+  "item.label.Get Started with Android": {
+    "message": "Démarrer avec Android",
+    "description": "Navbar item with label Get Started with Android"
   },
-  "item.label.RelaySMS iOS Tutorial": {
-    "message": "Tutoriel RelaySMS iOS",
-    "description": "Navigation bar item labeled RelaySMS iOS Tutorial"
-  },
-  "item.label.Setting up a Gateway": {
-    "message": "Configurer une passerelle",
-    "description": "Navigation bar item labeled Setting up a Gateway"
+  "item.label.Get Started with iOS": {
+    "message": "Démarrer avec iOS",
+    "description": "Navbar item with label Get Started with iOS"
   }
 }

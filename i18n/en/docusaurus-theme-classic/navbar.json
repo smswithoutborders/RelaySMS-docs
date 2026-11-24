@@ -1,6 +1,6 @@
 {
   "logo.alt": {
-    "message": "RelaySMS logo",
+    "message": "SWOB",
     "description": "The alt text of navbar logo"
   },
   "item.label.Docs": {
@@ -11,33 +11,17 @@
     "message": "Tutorials",
     "description": "Navbar item with label Tutorials"
   },
-  "item.label.TroubleShooting": {
-    "message": "TroubleShooting",
-    "description": "Navbar item with label TroubleShooting"
+  "item.label.Troubleshooting": {
+    "message": "Troubleshooting",
+    "description": "Navbar item with label Troubleshooting"
   },
   "item.label.GitHub": {
     "message": "GitHub",
     "description": "Navbar item with label GitHub"
   },
-  "item.label.RelaySMS Android Tutorial": {
-    "message": "RelaySMS Android Tutorial",
-    "description": "Navbar item with label RelaySMS Android Tutorial"
-  },
-  "item.label.RelaySMS iOS Tutorial": {
-    "message": "RelaySMS iOS Tutorial",
-    "description": "Navbar item with label RelaySMS iOS Tutorial"
-  },
-  "item.label.Setting up a Gateway": {
-    "message": "Setting up a Gateway",
-    "description": "Navbar item with label Setting up a Gateway"
-  },
-  "item.label.Troubleshooting": {
-    "message": "Troubleshooting",
-    "description": "Navbar item with label Troubleshooting"
-  },
-  "item.label.Get Started withAndroid": {
-    "message": "Get Started withAndroid",
-    "description": "Navbar item with label Get Started withAndroid"
+  "item.label.Get Started with Android": {
+    "message": "Get Started with Android",
+    "description": "Navbar item with label Get Started with Android"
   },
   "item.label.Get Started with iOS": {
     "message": "Get Started with iOS",

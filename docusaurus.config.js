@@ -25,7 +25,7 @@ const config = {
         path: "en"
       },
       fr: {
-        label: "French",
+        label: "Français",
         direction: "ltr",
         htmlLang: "fr-FR",
         calendar: "gregory",

@@ -1,8 +1,9 @@
 ---
 sidebar_position: 1
+sidebar_label: Troubleshooting Guide
 ---
 
-## RelaySMS Troubleshooting Guide
+# RelaySMS Troubleshooting Guide
 
 ### Common Issues and Solutions
 

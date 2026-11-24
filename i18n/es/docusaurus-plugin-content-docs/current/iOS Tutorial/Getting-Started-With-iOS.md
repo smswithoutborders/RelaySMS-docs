@@ -1,117 +1,38 @@
+---
 sidebar_position: 1
 ---
 
-## RelaySMS para iOS
+# Primeros pasos con RelaySMS - iOS
 
-### Mantente conectado, incluso sin Internet
+### Mantente conectado incluso cuando no hay internet
 
-RelaySMS permite a los usuarios mantenerse conectados a sus plataformas en línea incluso cuando no tienen acceso a Internet. Utilizando mensajes SMS, los usuarios pueden comunicarse sin problemas y sus contactos reciben los mensajes como si se hubieran enviado a través de plataformas en línea tradicionales.
+RelaySMS te permite enviar mensajes, correos electrónicos y publicaciones a tus plataformas en línea usando solo SMS. No necesitas internet. Tus contactos reciben tus mensajes en línea, exactamente como siempre.
 
-### Comenzando con RelaySMS en iOS
+RelaySMS ya no te pide iniciar sesión ni registrarte. Todo lo que guardas se queda en tu dispositivo.
 
-#### Paso 1: Descarga la aplicación
+## Pasos del tutorial de iOS
 
-![App Store](/img/ios2.jpeg)
+Usa la barra lateral del tutorial de iOS para avanzar paso a paso:
 
-- Descarga RelaySMS desde la [App Store](https://apps.apple.com/us/app/relaysms/id6630382970)  
-- Alternativamente, puedes acceder en [GitHub](https://github.com/smswithoutborders/SMSwithoutBorders-Android)  
-- **Requisitos técnicos:**  
-  - iPhone con capacidad para SMS  
-  - Versión de iOS compatible
+1. Descargar la aplicación
+2. Primeros pasos en la app
+3. Guardar plataformas
+4. Copia de seguridad y restauración
+5. Enviar un mensaje
+6. Números de enrutamiento
 
-Hay dos formas de comunicarte con la app durante un corte de Internet:
+Si tienes prisa, empieza por [Enviar un mensaje](./Step-5-Sending-a-Message) y usa **R-Mail** (no necesitas cuenta).
 
-**A.** Usando Offline RelaySMS Mail, donde puedes enviar un correo sin necesidad de registro o guardar plataformas
+## Referencia rápida
 
-**B.** Guardando el acceso a tus plataformas deseadas en la app
+| Quiero... | Qué hacer |
+| --- | --- |
+| Enviar un mensaje rápido sin configurar nada | Redactar -> Opción "Sin cuenta" -> Enviar -> Elegir número de enrutamiento -> Enviar |
+| Enviar desde mi Gmail durante un corte | Guarda primero Gmail -> Redactar -> Gmail -> Enviar |
+| Hacer una copia de seguridad de mis plataformas | Menú ... -> Copias de seguridad -> Continuar -> Elegir carpeta -> Guardar la clave de recuperación |
+| Restaurar mis plataformas | Pantalla de bienvenida (primeros pasos) -> Restaurar copia de seguridad -> Elegir archivo -> Introducir la clave de recuperación |
+| Cambiar mi número de enrutamiento | Pestaña Números de enrutamiento -> Tocar un número -> Establecer como predeterminado |
 
+RelaySMS es una aplicación de código abierto del proyecto SMSWithoutBorders, creada para las personas que necesitan seguir conectadas cuando se corta internet.
 
-### A. Comunicarse usando Offline RelaySMS Mail
-
-*Uso de Offline RelaySMS Mail (sin configuracion previa) y uso de plataformas (registro y acceso guardado previamente)*
-
-## [1. Uso de Offline RelaySMS Mail (sin configuracion previa)](/docs/Bridges%20Tutorial/Bridges)
-
-**Paso 1: Pulsa el botón "redactar nuevo mensaje"**  
-<img src="/Android/pick.png" alt="sign_in" class="resized-image"/>
-
-**Paso 2: Redacta un mensaje**
-
-- Completa los campos requeridos (p.ej., e‑mail del destinatario para Gmail), pulsa Enviar y RelaySMS te redirigirá a la app de SMS.  
-<img src="/Android/bridges.png" alt="GatewayAvailable" class="resized-image"/>
-
-**Paso 3: Enviar mensajes vía SMS**
-
-Después de redactar tu mensaje, confírmalo y envíalo a través del servicio de SMS de tu teléfono. El destinatario lo recibirá como si se hubiera enviado directamente desde la plataforma en línea.  
-<img src="/Android/defualtMessage.png" alt="GatewayAvailable" class="resized-image"/>  
-<img src="/Android/notifi.png" alt="notifi" class="resized-image"/>
-
-**Paso 4: Recibir respuestas**
-
-- Abre la app **RelaySMS** y ve a la **Bandeja de entrada**.  
-- Toca **"Paste the incoming message here"** e ingresa la respuesta SMS.  
-- Toca **"Decrypt"** para mostrar el mensaje.  
-<img src="/Android/inbox.png" alt="GatewayAvailable" class="resized-image"/>  
-<img src="/Android/decryption.png" alt="GatewayAvailable" class="resized-image"/>  
-<img src="/Android/decryptMessage.png" alt="GatewayAvailable" class="resized-image"/>  
-<img src="/Android/Indox.png" alt="GatewayAvailable" class="resized-image"/>
-
-### B. Comunicarse usando plataformas guardadas
-
-**Paso 2: Crea una cuenta**
-
-1. Abre la app y toca **Sign Up**.  
-2. Ingresa la información requerida y continua.  
-3. Se enviará un PIN de autenticación por SMS a tu teléfono.
-
-**Pantallas de incorporación**  
-<img src="/Android/gettingstarted.png" alt="onbording1" class="resized-image"/>  
-<img src="/Android/pick.png" alt="sign_in" class="resized-image"/>  
-<img src="/Android/createaccount.png" alt="sign_in2" class="resized-image"/>
-
-**Paso 3: Verifica tu número de teléfono**
-
-- Ingresa el código de verificación recibido por SMS para completar la configuración.  
-<img src="/Android/verificationcode.png" alt="verificationcode" class="resized-image"/>
-
-**Paso 4: Inicia sesión**
-
-- Si ya tienes una cuenta, toca **Log In**.  
-- Ingresa tu número de teléfono y contraseña registrados.  
-- Ingresa el código de verificación recibido por SMS.  
-<img src="/Android/pick.png" class="resized-image"/>  
-<img src="/Android/login.png" class="resized-image"/>  
-<img src="/Android/login1.png" class="resized-image"/>  
-<img src="/Android/verificationcode.png" class="resized-image"/>
-
-**Guardar plataformas para mensajería sin conexión**
-
-1. **Inicia sesión** en RelaySMS.  
-2. Toca **Save Accounts** para ver la lista de plataformas disponibles.  
-3. Selecciona las que quieras guardar.  
-4. Asegúrate de que la plataforma esté instalada en tu teléfono.  
-<img src="/Android/GatewayNumber(1).png" class="resized-image"/>  
-<img src="/Android/addPlateform.png" class="resized-image"/>
-
-#### Gestionar plataformas guardadas
-
-**Revocar acceso**
-
-1. Abre **Platforms**  
-2. Selecciona la plataforma que deseas eliminar  
-3. Toca **Remove Access**  
-<img src="/Android/addPlateform.png" class="resized-image"/>  
-<img src="/Android/addPlateform.png" class="resized-image"/>  
-<img src="/Android/RevokeTelegram.png" class="resized-image"/>
-
-**Eliminar y cerrar sesión**
-
-- **Eliminar cuenta**: borra todas las cuentas y datos guardados.  
-- **Cerrar sesión**: borra los mensajes actuales pero permite iniciar sesión después.  
-<img src="/OnDeviceToken/1.png" class="resized-image"/>  
-<img src="/OnDeviceToken/2.png" class="resized-image"/>  
-<img src="/OnDeviceToken/3.png" class="resized-image"/>
-
----
-
-RelaySMS garantiza una comunicación fluida incluso sin conexión, manteniéndote conectado dondequiera que estés.
+¿Tienes problemas? Consulta [Solución de problemas](/docs/Troubleshooting/Troubleshooting-FAQ), únete a nuestra comunidad en [Telegram](https://t.me/+IPYp6q06dWsyZjY0) o contribuye en [GitHub](https://github.com/smswithoutborders)
