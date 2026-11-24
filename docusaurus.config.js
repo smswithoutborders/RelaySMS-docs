@@ -81,7 +81,7 @@ const config = {
         {
           label: "Docs",
           position: "left",
-          to: "/docs/Android Tutorial/Getting-Started-With-Android",
+          to: "/",
         },
 
         {
@@ -89,7 +89,7 @@ const config = {
           position: "left",
           items: [
             {
-              label: "Get Started withAndroid",
+              label: "Get Started with Android",
               to: "/docs/Android Tutorial/Getting-Started-With-Android",
             },
             {
@@ -129,7 +129,7 @@ const config = {
       items: [
         {
           label: "Getting Started",
-          to: "/docs/Android Tutorial/Getting-Started-With-Android",
+          to: "/",
         },
         {
           label: "Troubleshooting",
