@@ -1,74 +1,74 @@
 ---
-sidebar_position: 1
+sidebar: false
+unlisted: true
 ---
 
-# Utiliser Offline RelaySMS Mail dans l’application RelaySMS (Aucune configuration requise)
+# Envoyer avec RelaySMS Mail hors ligne (aucune configuration)
 
-Découvrez comment utiliser Offline RelaySMS Mail dans l’application RelaySMS. Cet outil vous permet d’envoyer des messages en toute sécurité vers des plateformes en ligne **sans vous connecter et sans utiliser Internet**. Suivez ces étapes pour commencer.
+Cette page décrit le fonctionnement de RelaySMS Mail hors ligne. Utilisez-le lorsque vous devez envoyer rapidement un message pendant une coupure, sans avoir enregistré de plateformes au préalable.
 
 ---
 
-C’est la manière la plus rapide de débuter. L’application crée un alias temporaire utilisant votre numéro de téléphone (ex. : **123456789@relaysms.me**) pour envoyer des emails ou tweets **sans stocker de jetons ni se connecter**.
+C'est le moyen le plus rapide de commencer. RelaySMS vous donne une adresse RelaySMS Mail anonyme pour que vous puissiez envoyer des messages immédiatement par SMS.
 
-## Étapes pour utiliser Offline RelaySMS Mail :
+## Étapes {#steps}
 
-### **1. Téléchargez l’application RelaySMS depuis :**
+**1. Téléchargez l'application RelaySMS depuis :**
 
-- Google Play Store  
-- Github  
-- Ou compilez depuis le code source
+- [Google Play Store](https://play.google.com/store/apps/details?id=com.afkanerd.sw0b)
+- [GitHub](https://github.com/smswithoutborders/SMSwithoutBorders-Android/releases/tag/v1.0) ou
+- Compilez-la à partir du [code source](https://github.com/smswithoutborders/SMSwithoutBorders-Android)
 
-<img src="/Android/Playstore.png" alt="onboarding1" class="resized-image"/>
+<img src="/mockup/play-store.png" alt="RelaySMS sur le Google Play Store" class="resized-image"/>
 
-## **Exigences techniques**
+## Configuration requise {#technical-requirements}
 
-- Smartphone Android capable d’envoyer des SMS  
-- Android 6.0 ou version ultérieure  
+- Smartphone Android capable d'envoyer des SMS
+- Android 6.0 ou version ultérieure
 
-### **2. Passez les pages d’onboarding** pour comprendre le fonctionnement.
+**2. Parcourez les pages de prise en main** pour comprendre le fonctionnement.
 
-- Cliquez sur le bouton « Définir l’application par défaut » (optionnel)
+> Appuyez sur le bouton Définir comme application par défaut. C'est facultatif, mais définir RelaySMS comme application de messagerie par défaut facilite l'envoi des messages et vous permet aussi d'envoyer des images.
 
-<img src="/SAndroid/Welcome.png" alt="onboarding1" class="resized-image"/>
-<img src="/SAndroid/SkipSMSemail.png" alt="onboarding" class="resized-image"/>
-<img src="/SAndroid/SkipSaveAccount.png" alt="onboarding" class="resized-image"/>
-<img src="/SAndroid/SkipStartMessaging.png" alt="onboarding" class="resized-image"/>
-<img src="/SAndroid/SkipSecure.png" alt="onboarding2" class="resized-image"/>
-<img src="/SAndroid/MakeAppDefualt.png" alt="onboarding2" class="resized-image"/>
+<img src="/mockup/oboarding-1.png" alt="Écran de prise en main 1" class="resized-image"/>
+<img src="/mockup/oboarding-2.png" alt="Écran de prise en main 2" class="resized-image"/>
+<img src="/mockup/oboarding-3.png" alt="Écran de prise en main 3" class="resized-image"/>
+<img src="/mockup/oboarding-4.png" alt="Écran de prise en main 4" class="resized-image"/>
 
-### **3. Sélectionnez un numero de routage :**
 
-- Appuyez sur l’onglet 🌍 *Pays* dans la barre de navigation.
-- Choisissez un numero de routage (ce sont des numéros qui transmettent votre message hors-ligne vers Internet).
-- Vous pouvez aussi sélectionner un numero de routage dans la liste qui s’affiche lorsque vous appuyez sur *Envoyer* après avoir rédigé un message.
+**3. Choisissez un numéro de routage :**
 
-<img src="/SAndroid/Gateway.png" alt="GatewayAvailable" class="resized-image"/>
-<img src="/SAndroid/AddGateway.png" alt="addgatewayclient" class="resized-image"/>
+- Appuyez sur l'onglet 🌍 Numéros de routage dans la barre de navigation.
 
-*Note : Si vous n’en choisissez pas, l’application en sélectionnera un automatiquement.*
+- Choisissez un numéro de routage (c'est le numéro qui achemine votre message hors ligne vers Internet).
 
-### **4. Envoyer des messages**
+- Vous pouvez aussi choisir un numéro de routage dans la liste qui s'affiche après avoir appuyé sur Envoyer.
 
-- Appuyez sur **« Composer un nouveau message »**.
+<img src="/mockup/routing-number.png" alt="Numéros de routage" class="resized-image"/>
+<img src="/mockup/add-routing-number.png" alt="Ajouter un numéro de routage" class="resized-image"/>
 
-<img src="/SAndroid/Afterlogin.png" alt="addgatewayclient" class="resized-image"/>
-<img src="/SAndroid/bridgeMessage.png" alt="addgatewayclient" class="resized-image"/>
+*Remarque : si vous n'en choisissez pas, l'application vous attribue un numéro de routage par défaut.*
 
-Pour Offline RelaySMS Mail :
-- Remplissez les champs requis (email du destinataire, objet et message).
+
+**4. Envoyer des messages**
+- Appuyez sur **« Écrire un nouveau message »**.
+
+<img src="/mockup/inbox-empty.png" alt="Écran des messages" class="resized-image"/>
+
+
+- **Remplissez les champs obligatoires** (adresse e-mail du destinataire et message).
 - Appuyez sur **Envoyer** en haut à droite.
-- Confirmez le numero de routage, et c’est tout (si RelaySMS est votre application SMS par défaut).
+- Confirmez le numéro de routage, et c'est tout (si RelaySMS est votre application de messagerie par défaut).
 
-<img src="/SAndroid/sendGateway.png" alt="addgatewayclient" class="resized-image"/>
+<img src="/SAndroid/sendGateway.png" alt="Envoi via un numéro de routage" class="resized-image"/>
 
-*NB : Si RelaySMS n’est pas votre application de messagerie par défaut, vous devrez en choisir une pour envoyer le message.*
+*Remarque : si RelaySMS n'est pas votre application de messagerie par défaut, on vous demandera d'en choisir une pour envoyer.*
 
-*Votre message part maintenant vers Internet — même sans connexion !*
+*Votre message est en route vers Internet, même sans connexion !*
 
-### **5. Recevoir des messages**
-
-- Copiez le message SMS entier  
-- Allez dans l’application et ouvrez l’onglet *Inbox*  
-<img src="/Android/inbox.png" alt="addgatewayclient" class="resized-image"/>
-- Collez le message dans le champ de texte  
-- Appuyez sur *Décrypter*
+**5. Recevoir des messages**
+- Copiez l'intégralité du SMS reçu
+- Ouvrez l'application et appuyez sur l'onglet Boîte de réception
+<img src="/Android/inbox.png" alt="Boîte de réception" class="resized-image"/>
+- Collez le message dans la zone de texte
+- Appuyez sur Déchiffrer

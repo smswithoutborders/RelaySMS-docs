@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-title: Step 3 - Onboarding
+title: Step 2 - Onboarding
 sidebar_label: Onboarding
 ---
 

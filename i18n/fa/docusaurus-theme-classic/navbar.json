@@ -1,6 +1,6 @@
 {
   "logo.alt": {
-    "message": "لوگوی ریلِی‌اس‌ام‌اس",
+    "message": "SWOB",
     "description": "The alt text of navbar logo"
   },
   "item.label.Docs": {
@@ -11,24 +11,20 @@
     "message": "آموزش‌ها",
     "description": "Navbar item with label Tutorials"
   },
-  "item.label.TroubleShooting": {
-    "message": "عیب‌یابی",
-    "description": "Navbar item with label TroubleShooting"
+  "item.label.Troubleshooting": {
+    "message": "رفع مشکلات",
+    "description": "Navbar item with label Troubleshooting"
   },
   "item.label.GitHub": {
     "message": "گیت‌هاب",
     "description": "Navbar item with label GitHub"
   },
-  "item.label.RelaySMS Android Tutorial": {
-    "message": "آموزش ریلِی‌اس‌ام‌اس اندروید",
-    "description": "Navbar item with label RelaySMS Android Tutorial"
+  "item.label.Get Started with Android": {
+    "message": "شروع کار با اندروید",
+    "description": "Navbar item with label Get Started with Android"
   },
-  "item.label.RelaySMS iOS Tutorial": {
-    "message": "آموزش ریلِی‌اس‌ام‌اس آی‌اواس",
-    "description": "Navbar item with label RelaySMS iOS Tutorial"
-  },
-  "item.label.Setting up a Gateway": {
-    "message": "راه‌اندازی گیت‌وی",
-    "description": "Navbar item with label Setting up a Gateway"
+  "item.label.Get Started with iOS": {
+    "message": "شروع کار با iOS",
+    "description": "Navbar item with label Get Started with iOS"
   }
 }

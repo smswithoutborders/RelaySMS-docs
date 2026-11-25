@@ -1,74 +1,74 @@
 ---
-sidebar_position: 1
+sidebar: false
+unlisted: true
 ---
 
-# Usar Offline RelaySMS Mail en la aplicacion RelaySMS (Sin configuracion previa)
+# Enviar con RelaySMS Mail sin conexión (sin configuración)
 
-Aprende a usar Offline RelaySMS Mail en la aplicacion RelaySMS. Esta herramienta te permite enviar mensajes de forma segura a plataformas en linea **sin iniciar sesion y sin usar Internet**. Sigue estos pasos para comenzar.
+Esta página describe cómo funciona RelaySMS Mail sin conexión. Úsalo cuando necesites enviar algo rápido durante un corte, sin haber guardado plataformas antes.
 
 ---
 
-Esta es la forma más rápida de empezar. La app crea un alias temporal usando tu número de teléfono (por ejemplo: **123456789@relaysms.me**) para enviar correos o tweets **sin almacenar tokens ni iniciar sesión**.
+Es la forma más rápida de empezar. RelaySMS te da una dirección de RelaySMS Mail anónima para que puedas enviar mensajes por SMS de inmediato.
 
-## Pasos para usar Offline RelaySMS Mail:
+## Pasos {#steps}
 
-### **1. Descarga la aplicación RelaySMS desde:**
+**1. Descarga la app RelaySMS desde:**
 
-- Google Play Store  
-- Github  
-- O compílala desde el código fuente  
+- [Google Play Store](https://play.google.com/store/apps/details?id=com.afkanerd.sw0b)
+- [GitHub](https://github.com/smswithoutborders/SMSwithoutBorders-Android/releases/tag/v1.0) o
+- Compílala desde el [código fuente](https://github.com/smswithoutborders/SMSwithoutBorders-Android)
 
-<img src="/Android/Playstore.png" alt="onboarding1" class="resized-image"/>
+<img src="/mockup/play-store.png" alt="RelaySMS en Google Play Store" class="resized-image"/>
 
-## **Requisitos técnicos**
+## Requisitos técnicos {#technical-requirements}
 
-- Teléfono Android con capacidad SMS  
-- Android 6.0 o superior  
+- Teléfono Android que pueda enviar SMS
+- Android 6.0 o posterior
 
-### **2. Pasa por las pantallas de introducción (onboarding)** para entender cómo funciona.
+**2. Recorre las pantallas de introducción** para entender cómo funciona.
 
-- Presiona el botón “Hacer app predeterminada” (opcional)
+> Toca el botón Establecer como app predeterminada. Es opcional, pero configurar RelaySMS como tu app de mensajería predeterminada facilita el envío de mensajes y además te permite enviar imágenes.
 
-<img src="/SAndroid/Welcome.png" alt="onboarding1" class="resized-image"/>
-<img src="/SAndroid/SkipSMSemail.png" alt="onboarding" class="resized-image"/>
-<img src="/SAndroid/SkipSaveAccount.png" alt="onboarding" class="resized-image"/>
-<img src="/SAndroid/SkipStartMessaging.png" alt="onboarding" class="resized-image"/>
-<img src="/SAndroid/SkipSecure.png" alt="onboarding2" class="resized-image"/>
-<img src="/SAndroid/MakeAppDefualt.png" alt="onboarding2" class="resized-image"/>
+<img src="/mockup/oboarding-1.png" alt="Pantalla de introducción 1" class="resized-image"/>
+<img src="/mockup/oboarding-2.png" alt="Pantalla de introducción 2" class="resized-image"/>
+<img src="/mockup/oboarding-3.png" alt="Pantalla de introducción 3" class="resized-image"/>
+<img src="/mockup/oboarding-4.png" alt="Pantalla de introducción 4" class="resized-image"/>
 
-### **3. Selecciona un numero de enrutamiento:**
 
-- Pulsa la pestaña 🌍 *País* en la barra de navegación.
-- Elige un numero de enrutamiento (numeros que envian tu mensaje offline a Internet).
-- También puedes seleccionarlo en la lista que aparece cuando presionas *Enviar* luego de escribir tu mensaje.
+**3. Elige un número de enrutamiento:**
 
-<img src="/SAndroid/Gateway.png" alt="GatewayAvailable" class="resized-image"/>
-<img src="/SAndroid/AddGateway.png" alt="addgatewayclient" class="resized-image"/>
+- Toca la pestaña 🌍 Números de enrutamiento en la barra de navegación.
 
-*Nota: Si no seleccionas uno, la app asignará uno automáticamente.*
+- Elige un número de enrutamiento (es el número que lleva tu mensaje sin conexión a internet).
 
-### **4. Enviar mensajes**
+- También puedes elegir un número de enrutamiento de la lista que aparece después de tocar Enviar.
 
-- Pulsa **“Componer nuevo mensaje”**.
+<img src="/mockup/routing-number.png" alt="Números de enrutamiento" class="resized-image"/>
+<img src="/mockup/add-routing-number.png" alt="Añadir un número de enrutamiento" class="resized-image"/>
 
-<img src="/SAndroid/Afterlogin.png" alt="addgatewayclient" class="resized-image"/>
-<img src="/SAndroid/bridgeMessage.png" alt="addgatewayclient" class="resized-image"/>
+*Nota: si no eliges ninguno, la app te asigna un número de enrutamiento predeterminado.*
 
-Para Offline RelaySMS Mail:
-- Completa los campos necesarios (correo del destinatario, asunto y mensaje).
-- Presiona **Enviar** en la esquina superior derecha.
-- Confirma el numero de enrutamiento y listo (si RelaySMS es tu app SMS predeterminada).
 
-<img src="/SAndroid/sendGateway.png" alt="addgatewayclient" class="resized-image"/>
+**4. Enviar mensajes**
+- Toca **"Redactar mensaje nuevo"**.
 
-*Nota: Si RelaySMS no es la app de SMS predeterminada, tendrás que elegir una para enviar el mensaje.*
+<img src="/mockup/inbox-empty.png" alt="Pantalla de mensajes" class="resized-image"/>
 
-*¡Tu mensaje ahora viaja hacia Internet, incluso sin conexión!*
 
-### **5. Recibir mensajes**
+- **Rellena los campos obligatorios** (correo del destinatario y mensaje).
+- Toca **Enviar** en la esquina superior derecha.
+- Confirma el número de enrutamiento, y listo (si RelaySMS es tu app de mensajería predeterminada).
 
-- Copia todo el mensaje SMS  
-- Ve a la app y pulsa la pestaña *Inbox*  
-<img src="/Android/inbox.png" alt="addgatewayclient" class="resized-image"/>
-- Pega el mensaje en el cuadro de texto  
-- Presiona *Decrypt*
+<img src="/SAndroid/sendGateway.png" alt="Enviar mediante un número de enrutamiento" class="resized-image"/>
+
+*Nota: si RelaySMS no es tu app de mensajería predeterminada, se te pedirá que elijas una para enviar.*
+
+*¡Tu mensaje ya va camino de internet, incluso sin conexión!*
+
+**5. Recibir mensajes**
+- Copia el SMS completo
+- Abre la app y toca la pestaña Bandeja de entrada
+<img src="/Android/inbox.png" alt="Bandeja de entrada" class="resized-image"/>
+- Pega el mensaje en el cuadro de texto
+- Toca Descifrar

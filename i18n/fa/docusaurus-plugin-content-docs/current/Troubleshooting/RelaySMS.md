@@ -4,194 +4,162 @@ sidebar_position: 3
 
 # RelaySMS
 
-## Common Issues and Solutions for RelaySMS App
+## پرسش‌های رایج درباره برنامه RelaySMS
 
-### 1. **Why am I not receiving SMS messages on RelaySMS?**
+### ۱. **آیا برای استفاده از RelaySMS به اینترنت نیاز دارم؟** {#1-do-i-need-an-internet-connection-to-use-relaysms}
 
-- **Possible causes:**
-  - Ensure your SMS Gateway client is properly configured.
-  - Check if your device has sufficient signal for SMS.
-  - Verify that RelaySMS has permission to read and send SMS messages.
+- **پاسخ:**
+  - برای ارسال پیام به اینترنت **نیاز ندارید**. RelaySMS پیام شما را با پیامک به یک شماره مسیریابی می‌فرستد و آن شماره پیام را به‌صورت آنلاین در پلتفرم انتخابی شما منتشر می‌کند.
+  - برای دانلود برنامه و ذخیره پلتفرم‌ها (Gmail، Bluesky، Telegram، RelaySMS Mail، Mastodon) به اینترنت **نیاز دارید**. پلتفرم‌هایتان را پیش از قطعی اینترنت ذخیره کنید.
 
-### 2. **Why are my messages not being sent from RelaySMS?**
+### ۲. **سریع‌ترین راه برای ارسال پیام چیست؟** {#2-what-is-the-quickest-way-to-send-a-message}
 
-- **Possible causes:**
-  - Ensure that the OAuth2 tokens for the platform you're sending to are still valid.
-  - Verify that your SMS credits are sufficient for sending messages.
-  - Check that your default SMS app is functioning and not restricted by battery-saving settings.
+- **پاسخ:**
+  - از **RelaySMS Mail آفلاین** استفاده کنید. به تنظیم یا پلتفرم ذخیره‌شده نیازی ندارد.
+  - روی **نوشتن** بزنید، **«ارسال از نام مستعار تصادفی»** را انتخاب کنید، نشانی ایمیل گیرنده و پیام خود را وارد کنید و روی **ارسال** بزنید.
+  - [ارسال پیام](/docs/Android%20Tutorial/Step-5-Sending-a-Message) را ببینید.
 
-### 3. **Why does RelaySMS keep crashing or freezing?**
+### ۳. **به کدام پلتفرم‌ها می‌توانم بفرستم؟** {#3-which-platforms-can-i-send-to}
 
-- **Possible causes:**
-  - Make sure you're using the latest version of the app (currently 0.17.0).
-  - Clear the app cache and data if the app becomes unresponsive.
-  - Restart your phone to clear potential memory or process conflicts.
-  - If you're using older Android versions (below 7.0), the app may not function properly.
+- **پاسخ:**
+  - RelaySMS در حال حاضر از **Gmail**، **Bluesky**، **Telegram**، **RelaySMS Mail** و **Mastodon** پشتیبانی می‌کند.
+  - به زبانه **پلتفرم‌ها** بروید و روی یک پلتفرم بزنید تا ذخیره شود. پلتفرم ذخیره‌شده روشن می‌شود. روی آن بزنید تا ببینید کدام حساب متصل است.
+  - [ذخیره پلتفرم‌ها](/docs/Android%20Tutorial/Step-3-Save-Platforms) را ببینید.
 
-### 4. **Why is there a delay in sending or receiving messages?**
+### ۴. **فرق حساب ناشناس RelaySMS Mail با حساب احراز هویت‌شده چیست؟** {#4-what-is-the-difference-between-an-anonymous-and-an-authenticated-relaysms-mail-account}
 
-- **Possible causes:**
-  - Ensure that your SMS Gateway client has an active connection.
-  - If you're offline, messages will only be sent when the device reconnects to a network.
-  - Ensure there’s no high traffic or overload on the Vault servers.
+- **پاسخ:**
+  - **ناشناس (RelaySMS Mail آفلاین):** بدون تأیید شماره تلفن، از یک نام مستعار تصادفی می‌فرستید. برای ارسال سریع مناسب است.
+  - **احراز هویت‌شده (RelaySMS Mail ذخیره‌شده):** شماره تلفن خود را با کدی که از طریق Signal یا Telegram فرستاده می‌شود تأیید می‌کنید. پس از آن می‌توانید پاسخ‌ها را با پیامک دریافت کنید، حتی هنگام قطعی اینترنت، و حسابتان امن‌تر است.
 
-### 5. **Why is my RelaySMS app not syncing with Vault servers?**
+### ۵. **چرا کد تأیید RelaySMS Mail را دریافت نمی‌کنم؟** {#5-why-am-i-not-receiving-the-verification-code-for-relaysms-mail}
 
-- **Possible causes:**
-  - Confirm that your Device ID Registration is complete and properly configured.
-  - Ensure that your Vault server credentials are correctly stored.
-  - Try to refresh the token stored via OAuth2 for the online platform you're connecting with.
+- **علت‌های احتمالی:**
+  - کد از طریق **Signal** یا **Telegram** فرستاده می‌شود، نه با پیامک. برنامه‌ای را که انتخاب کردید بررسی کنید.
+  - شماره‌ای که وارد کرده‌اید در آن برنامه ثبت نشده یا پیش‌شماره کشور اشتباه است.
+  - هنگام درخواست کد به اینترنت وصل نبودید.
+- **راه‌حل:**
+  - یک دقیقه صبر کنید و دوباره روی **درخواست کد** بزنید، یا برنامه دیگر را انتخاب کنید.
+  - برای کمک بیشتر [راهنمای رفع مشکلات](/docs/Troubleshooting/Troubleshooting-FAQ) را ببینید.
 
-### 6. **How do I fix login issues with platforms like Gmail, Twitter, or Telegram in RelaySMS?**
+### ۶. **شماره مسیریابی چیست و کدام را انتخاب کنم؟** {#6-what-is-a-routing-number-and-which-one-should-i-choose}
 
-- **Possible causes:**
-  - Double-check your OAuth2 token for the platform and ensure it's up to date.
-  - Try reauthorizing the platform connection from within the app.
-  - Clear the cache of the RelaySMS app and retry.
+- **پاسخ:**
+  - شماره مسیریابی یک شماره تلفن متصل به اینترنت است. پیامک شما را دریافت می‌کند و پیامتان را به پلتفرم انتخابی شما می‌فرستد.
+  - هنگام انتخاب، به این موارد فکر کنید:
+    - آیا اینترنت آن کشور قطع است؟
+    - آیا سیم‌کارت شما می‌تواند به آن کشور پیامک بفرستد؟
+    - کدام شماره به شما نزدیک‌تر است؟
+    - ارسال پیامک به کدام شماره برای شما ارزان‌تر است؟
+  - می‌توانید شماره مسیریابی خودتان را هم اضافه کنید. [شماره‌های مسیریابی](/docs/Android%20Tutorial/Step-6-Routing-Numbers) را ببینید.
 
-### 7. **What should I do if RelaySMS displays "Unknown Error" during message transmission?**
+### ۷. **چرا پیام‌هایم تحویل داده نمی‌شوند؟** {#7-why-are-my-messages-not-being-delivered}
 
-- **Possible causes:**
-  - Check if your message is properly composed and encrypted before sending.
-  - Make sure that your SMS Gateway client is running properly.
-  - Verify your OAuth2 tokens and attempt to resend the message.
+- **علت‌های احتمالی:**
+  - شماره مسیریابی انتخابی شما کار نمی‌کند یا در کشوری با قطعی اینترنت است.
+  - سیم‌کارت شما اعتبار ندارد یا نمی‌تواند به کشور شماره مسیریابی پیامک بفرستد.
+  - RelaySMS برنامه پیام‌رسان پیش‌فرض شما نیست و پیام از برنامه پیامکی که به آن هدایت شدید فرستاده نشده است.
+  - دسترسی به یک پلتفرم ذخیره‌شده منقضی شده است.
+- **راه‌حل:**
+  - یک شماره مسیریابی دیگر را امتحان کنید. اگر گزینه **«دیگر نپرس»** را علامت زده‌اید، شاید لازم باشد شماره جدیدی انتخاب کنید.
+  - اعتبار و آنتن سیم‌کارت خود را بررسی کنید.
+  - پلتفرم را حذف و دوباره ذخیره کنید.
 
-### 8. **How do I grant SMS permissions for RelaySMS?**
+### ۸. **چرا پیامک ارسالی من شبیه حروف و اعداد درهم است؟** {#8-why-does-my-outgoing-sms-look-like-random-letters-and-numbers}
 
-- **Solution:**
-  - Go to your phone’s settings.
-  - Navigate to "Apps" and select RelaySMS.
-  - Tap on "Permissions" and toggle the SMS permission to "Allow."
+- **پاسخ:**
+  - این طبیعی است. RelaySMS پیش از ارسال با پیامک، پیام شما را به‌طور خودکار رمزگذاری می‌کند. برای فعال کردن رمزگذاری لازم نیست کاری انجام دهید.
 
-### 9. **How do I store tokens for platforms like Gmail, Twitter, and Telegram?**
+### ۹. **آیا RelaySMS را برنامه پیام‌رسان پیش‌فرض کنم؟** {#9-should-i-make-relaysms-my-default-messaging-app}
 
-- **Solution:**
-  - In the RelaySMS app, use the OAuth2 authorization method to store tokens securely in the Vault.
-  - Ensure you follow the prompts to log into each platform and authorize RelaySMS to use them on your behalf.
+- **پاسخ:**
+  - اختیاری است، اما پیشنهاد می‌شود. RelaySMS به‌عنوان برنامه پیام‌رسان پیش‌فرض می‌تواند پیام‌ها را مستقیم بفرستد و امکان **ارسال تصویر** را به شما می‌دهد.
+  - اگر برنامه پیش‌فرض شما نباشد، برای کامل کردن هر ارسال از شما خواسته می‌شود یک برنامه پیامک انتخاب کنید.
 
-### 10. **Why am I not receiving notifications for new SMS messages in RelaySMS?**
+### ۱۰. **چطور تصویر بفرستم؟** {#10-how-do-i-send-an-image}
 
-- **Possible causes:**
-  - Ensure that notifications are enabled for RelaySMS in your device's settings.
-  - Check if the app is restricted by battery optimization or "Do Not Disturb" mode.
-  - Make sure that your device is connected to a network that allows the reception of SMS messages.
+- **راه‌حل:**
+  - RelaySMS را برنامه پیام‌رسان پیش‌فرض کنید.
+  - روی **نوشتن** بزنید، پلتفرم خود را انتخاب کنید، روی نماد پیوست بزنید و تصویر خود را انتخاب کنید.
+  - با ابزارهای فشرده‌سازی و تغییر اندازه هزینه پیامک را کم و سرعت را بیشتر کنید، سپس روی **تمام** و **ارسال** بزنید.
+  - [ارسال تصویر](/docs/Android%20Tutorial/Step-5-Sending-a-Message#sending-an-image) را ببینید.
 
-### 11. **Why is my device ID registration not working in RelaySMS Vault?**
+### ۱۱. **پلتفرم‌های ذخیره‌شده من کجا نگه‌داری می‌شوند؟** {#11-where-are-my-saved-platforms-stored}
 
-- **Possible causes:**
-  - Verify that you’ve entered the correct Device ID and it matches the one registered in your Vault.
-  - Ensure you have a stable network connection when registering the device.
-  - Restart the app and try the registration process again.
+- **پاسخ:**
+  - پلتفرم‌های ذخیره‌شده شما **روی دستگاه خودتان** نگه‌داری می‌شوند. اگر برنامه را حذف کنید، داده‌هایش را پاک کنید یا گوشی را عوض کنید، ممکن است آن‌ها را از دست بدهید.
+  - به‌طور منظم [پشتیبان بگیرید](/docs/Android%20Tutorial/Step-4-Back-Up-and-Restore#back-up) و کلید تأیید خود را در جای امنی نگه دارید.
 
-### 12. **How do I troubleshoot compatibility issues with older Android versions?**
+### ۱۲. **چطور از پلتفرم‌هایم پشتیبان بگیرم و آن‌ها را بازیابی کنم؟** {#12-how-do-i-back-up-and-restore-my-platforms}
 
-- **Solution:**
-  - RelaySMS requires Android 7.0 and above to function correctly. Ensure that your device meets the minimum system requirements.
-  - Check if the latest version of RelaySMS (v0.17.0) is installed.
+- **راه‌حل:**
+  - **پشتیبان‌گیری:** در صفحه اصلی روی منوی سه‌نقطه و سپس **پشتیبان‌گیری > اکنون پشتیبان بگیر** بزنید. فایل را ذخیره کنید، سپس روی **نمایش کلید تأیید** بزنید و کلید را در جای امنی نگه دارید.
+  - **بازیابی:** فقط در **صفحه خوش‌آمد و هنگام آشنایی اولیه** می‌توانید بازیابی کنید. روی **بازیابی نسخه پشتیبان** بزنید، فایل پشتیبان را انتخاب کنید و کلید تأیید را وارد کنید.
+  - [پشتیبان‌گیری و بازیابی](/docs/Android%20Tutorial/Step-4-Back-Up-and-Restore) را ببینید.
 
-### 13. **How do I resolve issues with OAuth2 token expiration?**
+### ۱۳. **چطور به RelaySMS مجوز پیامک بدهم؟** {#13-how-do-i-grant-sms-permissions-for-relaysms}
 
-- **Solution:**
-  - Go to the platform where the token was issued (e.g., Gmail, Twitter, Telegram) and refresh the authorization.
-  - Ensure that RelaySMS has the correct permissions for accessing the token.
-  - You can also remove and reauthorize the platform from within the app.
+- **راه‌حل:**
+  - **تنظیمات** گوشی را باز کنید.
+  - به **برنامه‌ها** بروید و **RelaySMS** را انتخاب کنید.
+  - روی **مجوزها** بزنید و مجوز پیامک را روی **مجاز** بگذارید.
 
-### 14. **Can I send messages to multiple platforms at once?**
+### ۱۴. **چرا از RelaySMS اعلان دریافت نمی‌کنم؟** {#14-why-am-i-not-getting-notifications-from-relaysms}
 
-- **Answer:**
-  - Yes, RelaySMS allows you to send messages to multiple online platforms like Gmail, Twitter, or Telegram simultaneously. However, ensure that OAuth2 tokens are valid for each platform before sending.
-  - You can compose a message and select the desired platforms for message delivery.
+- **علت‌های احتمالی:**
+  - اعلان‌های RelaySMS در تنظیمات دستگاه شما خاموش است.
+  - برنامه با بهینه‌سازی باتری یا حالت «مزاحم نشوید» محدود شده است.
+  - دستگاه شما برای دریافت پیامک آنتن ندارد.
 
-### 15. **How secure is RelaySMS when sending messages offline?**
+### ۱۵. **چرا RelaySMS مدام بسته می‌شود یا هنگ می‌کند؟** {#15-why-does-relaysms-keep-crashing-or-freezing}
 
-- **Answer:**
-  - RelaySMS uses advanced encryption protocols like the Signal Double Ratchet algorithm to ensure end-to-end encryption of messages. Your messages remain encrypted from the moment they are composed to when they are received and published on the selected platform.
-  - Even when offline, the encrypted messages are transferred securely through your default SMS messaging app.
+- **راه‌حل:**
+  - مطمئن شوید آخرین نسخه برنامه را دارید.
+  - گوشی خود را دوباره راه‌اندازی کنید.
+  - حافظه پنهان برنامه را پاک کنید: **تنظیمات > برنامه‌ها > RelaySMS > فضای ذخیره‌سازی > پاک کردن حافظه پنهان**.
+  - RelaySMS به **Android 7.0 یا جدیدتر** نیاز دارد.
 
-### 16. **How do I check if my messages are being encrypted properly?**
-
-- **Solution:**
-  - RelaySMS automatically encrypts your messages when you send them, but you can verify by ensuring that the app’s encryption protocols (Signal Double Ratchet) are enabled in settings.
-  - Messages sent through the app are encoded before being sent via your SMS messaging service, so there is no need for manual encryption.
-
-### 17. **What happens if my device loses connection while sending a message?**
-
-- **Answer:**
-  - If your device loses connection, the message will be queued in the app and sent automatically once a connection is re-established.
-  - RelaySMS’s offline functionality ensures that the message will still be sent via SMS even if you don’t have an internet connection.
-
-### 18. **How do I manage multiple accounts in RelaySMS?**
-
-- **Solution:**
-  - You can easily manage multiple accounts by adding different OAuth2 tokens for each platform (e.g., multiple Gmail, Twitter, or Telegram accounts).
-  - Simply go to the account management section in RelaySMS and add or remove accounts as needed.
-
-### 19. **How do I send messages without an authentication phone number?**
-
-- **Solution:**
-  - In RelaySMS, you can choose to send messages without requiring your phone number. To do this, ensure that the "Send without phone number" option is enabled in the app's settings.
-  - This allows the app to use the stored tokens for authentication rather than your phone number.
-
-### 20. **How do I check the status of messages sent via RelaySMS?**
-
-- **Solution:**
-  - You can track message status within the app by viewing the "Sent Messages" tab, which shows whether a message was successfully delivered or still pending.
-  - For any messages sent to online platforms, you can also check the respective platform for message delivery status.
+> *پاک کردن **داده‌های** برنامه، پلتفرم‌های ذخیره‌شده شما را پاک می‌کند. ابتدا پشتیبان بگیرید.*
 
 ---
 
-# RelaySMS Multi-Platform FAQ
+# RelaySMS در iOS
 
-## General Questions
+### ۱. **چطور RelaySMS را روی iOS نصب کنم؟** {#1-how-do-i-install-relaysms-on-ios}
 
-### 1. **What platforms is RelaySMS available on?**
+- **مراحل:**
+  1. App Store را روی آیفون خود باز کنید.
+  2. **«RelaySMS»** را جست‌وجو کنید یا از [این پیوند](https://apps.apple.com/us/app/relaysms/id6630382970) استفاده کنید.
+  3. برای دانلود و نصب برنامه روی **دریافت** بزنید.
 
-- **Answer:**
-  - RelaySMS is available on multiple platforms, including:
-    - **Android**: Available on Google Play and other app stores.
-    - **iOS**: Available on the App Store for iPhone, iPod touch, and Mac devices.
-    - **Linux**: Open source and can be installed from source or through package managers.
+### ۲. **نیازمندی‌های RelaySMS در iOS چیست؟** {#2-what-are-the-system-requirements-for-relaysms-on-ios}
 
-### 2. **How do I install RelaySMS on iOS?**
+- **پاسخ:**
+  - یک آیفون با قابلیت ارسال پیامک و **iOS 15.0 یا جدیدتر**.
 
-- **Steps:**
-  1. Open the App Store on your iPhone or iPod touch.
-  2. Search for "RelaySMS" by Wisdom Nji.
-  3. Tap "Get" to download and install the app.
-  4. Once installed, open the app and grant it the necessary permissions to access SMS.
+### ۳. **کدام پلتفرم‌ها در iOS در دسترس هستند؟** {#3-which-platforms-are-available-on-ios}
 
-### 3. **What features does the iOS version of RelaySMS offer?**
+- **پاسخ:**
+  - می‌توانید **Bluesky**، **Gmail**، **Mastodon** و **Telegram** را ذخیره کنید. همچنین می‌توانید بدون ذخیره چیزی با **R-Mail** ایمیل بفرستید.
 
-- **Answer:**
-  - The iOS version of RelaySMS includes:
-    - Secure online messaging via SMS without needing an internet connection.
-    - Storage of OAuth2 tokens for services like Gmail, Twitter, and Telegram.
-    - Support for managing multiple accounts seamlessly.
-    - Free and open source, allowing for community contributions and transparency.
+### ۴. **چطور در iOS پیام بفرستم؟** {#4-how-do-i-send-a-message-on-ios}
 
-### 4. **Does RelaySMS on iOS support end-to-end encryption?**
+- **پاسخ:**
+  - روی دکمه نوشتن بزنید. در منوی **ارسال با...** یک پلتفرم ذخیره‌شده را انتخاب کنید، یا گزینه **بدون حساب** در پایین را بزنید تا از یک نشانی تصادفی ایمیل بفرستید (R-Mail). نمی‌توانید در R-Mail پاسخ دریافت کنید.
+  - روی نماد ارسال بزنید، شماره مسیریابی را بررسی کنید و بفرستید. iOS صفحه پیامی با پیام رمزگذاری‌شده شما باز می‌کند. برای پایان، روی پیکان ارسال بزنید.
+  - [ارسال پیام در iOS](/docs/iOS%20Tutorial/Step-5-Sending-a-Message) را ببینید.
 
-- **Answer:**
-  - Yes, the iOS version supports end-to-end encryption, similar to the Android and Linux versions. Users can exchange messages securely without the risk of interception.
+### ۵. **چطور در iOS پشتیبان بگیرم و بازیابی کنم؟** {#5-how-do-i-back-up-and-restore-on-ios}
 
-### 5. **What are the system requirements for RelaySMS on iOS?**
+- **پاسخ:**
+  - **پشتیبان‌گیری:** روی منوی **...** و سپس **پشتیبان‌ها** بزنید و مراحل را دنبال کنید. یک پوشه برای نسخه پشتیبان انتخاب کنید و **کلید بازیابی** ۶۴ نویسه‌ای خود را در جای امنی نگه دارید.
+  - **بازیابی:** فقط در صفحه خوش‌آمد و هنگام آشنایی اولیه می‌توانید بازیابی کنید. روی **بازیابی نسخه پشتیبان** بزنید، فایل پشتیبان را انتخاب کنید و کلید بازیابی را وارد کنید.
+  - [پشتیبان‌گیری و بازیابی در iOS](/docs/iOS%20Tutorial/Step-4-Back-Up-and-Restore) را ببینید.
 
-- **Answer:**
-  - The iOS version requires:
-    - **iOS 15.0 or later** for iPhone and iPod touch.
-    - **macOS 12.0 or later** and an Apple M1 chip or later for Mac.
-    - **visionOS 1.0 or later** for Apple Vision.
+---
 
-### 6. **Are there any known issues with the iOS version of RelaySMS?**
+## هنوز به کمک نیاز دارید؟ {#still-need-help}
 
-- **Answer:**
-  - The latest update (version 1.0.9) fixed several issues, including:
-    - Problems with switching phone numbers and device IDs.
-    - Issues with account creation and country code selection.
-    - Bugs causing the app to close unexpectedly after adding new platforms.
-
-### 7. **How do I report issues with the iOS version of RelaySMS?**
-
-- **Answer:**
-  - You can report issues by visiting the developer's support page or submitting issues on the RelaySMS GitHub repository. Include details about the problem, device model, and version of iOS you are using.
-    s
+- به جامعه ما در [تلگرام](https://t.me/+IPYp6q06dWsyZjY0) بپیوندید.
+- مشکلات را در [گیت‌هاب](https://github.com/smswithoutborders) گزارش دهید.
+- با <a href="mailto:developers@smswithoutborders.com">تیم پشتیبانی</a> ما تماس بگیرید.

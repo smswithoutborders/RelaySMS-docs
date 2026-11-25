@@ -4,194 +4,162 @@ sidebar_position: 3
 
 # RelaySMS
 
-## Common Issues and Solutions for RelaySMS App
+## Questions fréquentes sur l'application RelaySMS
 
-### 1. **Why am I not receiving SMS messages on RelaySMS?**
+### 1. **Ai-je besoin d'une connexion Internet pour utiliser RelaySMS ?** {#1-do-i-need-an-internet-connection-to-use-relaysms}
 
-- **Possible causes:**
-  - Ensure your SMS Gateway client is properly configured.
-  - Check if your device has sufficient signal for SMS.
-  - Verify that RelaySMS has permission to read and send SMS messages.
+- **Réponse :**
+  - Vous n'avez **pas** besoin d'Internet pour envoyer des messages. RelaySMS envoie votre message par SMS à un numéro de routage, qui le publie en ligne sur la plateforme choisie.
+  - Vous **avez** besoin d'Internet pour télécharger l'application et pour enregistrer des plateformes (Gmail, Bluesky, Telegram, RelaySMS Mail, Mastodon). Enregistrez vos plateformes avant une coupure d'Internet.
 
-### 2. **Why are my messages not being sent from RelaySMS?**
+### 2. **Quel est le moyen le plus rapide d'envoyer un message ?** {#2-what-is-the-quickest-way-to-send-a-message}
 
-- **Possible causes:**
-  - Ensure that the OAuth2 tokens for the platform you're sending to are still valid.
-  - Verify that your SMS credits are sufficient for sending messages.
-  - Check that your default SMS app is functioning and not restricted by battery-saving settings.
+- **Réponse :**
+  - Utilisez **RelaySMS Mail hors ligne**. Il ne nécessite ni configuration ni plateforme enregistrée.
+  - Appuyez sur **Écrire**, sélectionnez **« Envoyer depuis un alias aléatoire »**, saisissez l'adresse e-mail du destinataire et votre message, puis appuyez sur **Envoyer**.
+  - Consultez [Envoyer un message](/docs/Android%20Tutorial/Step-5-Sending-a-Message).
 
-### 3. **Why does RelaySMS keep crashing or freezing?**
+### 3. **Vers quelles plateformes puis-je envoyer ?** {#3-which-platforms-can-i-send-to}
 
-- **Possible causes:**
-  - Make sure you're using the latest version of the app (currently 0.17.0).
-  - Clear the app cache and data if the app becomes unresponsive.
-  - Restart your phone to clear potential memory or process conflicts.
-  - If you're using older Android versions (below 7.0), the app may not function properly.
+- **Réponse :**
+  - RelaySMS prend actuellement en charge **Gmail**, **Bluesky**, **Telegram**, **RelaySMS Mail** et **Mastodon**.
+  - Allez dans l'onglet **Plateformes** et appuyez sur une plateforme pour l'enregistrer. Une plateforme enregistrée s'allume. Appuyez dessus pour voir quel compte est connecté.
+  - Consultez [Enregistrer des plateformes](/docs/Android%20Tutorial/Step-3-Save-Platforms).
 
-### 4. **Why is there a delay in sending or receiving messages?**
+### 4. **Quelle est la différence entre un compte RelaySMS Mail anonyme et un compte authentifié ?** {#4-what-is-the-difference-between-an-anonymous-and-an-authenticated-relaysms-mail-account}
 
-- **Possible causes:**
-  - Ensure that your SMS Gateway client has an active connection.
-  - If you're offline, messages will only be sent when the device reconnects to a network.
-  - Ensure there’s no high traffic or overload on the Vault servers.
+- **Réponse :**
+  - **Anonyme (RelaySMS Mail hors ligne) :** vous envoyez depuis un alias aléatoire sans vérifier votre numéro de téléphone. Pratique pour envoyer rapidement.
+  - **Authentifié (RelaySMS Mail enregistré) :** vous vérifiez votre numéro de téléphone avec un code envoyé via Signal ou Telegram. Vous pouvez ensuite recevoir des réponses par SMS, même pendant une coupure d'Internet, et votre compte est plus sûr.
 
-### 5. **Why is my RelaySMS app not syncing with Vault servers?**
+### 5. **Pourquoi est-ce que je ne reçois pas le code de vérification de RelaySMS Mail ?** {#5-why-am-i-not-receiving-the-verification-code-for-relaysms-mail}
 
-- **Possible causes:**
-  - Confirm that your Device ID Registration is complete and properly configured.
-  - Ensure that your Vault server credentials are correctly stored.
-  - Try to refresh the token stored via OAuth2 for the online platform you're connecting with.
+- **Causes possibles :**
+  - Le code est envoyé via **Signal** ou **Telegram**, pas par SMS. Vérifiez l'application que vous avez choisie.
+  - Le numéro saisi n'est pas inscrit sur cette application, ou l'indicatif du pays est incorrect.
+  - Vous n'étiez pas connecté à Internet au moment de demander le code.
+- **Solution :**
+  - Attendez une minute et appuyez à nouveau sur **Demander le code**, ou choisissez l'autre application.
+  - Consultez le [Guide de dépannage](/docs/Troubleshooting/Troubleshooting-FAQ) pour plus d'aide.
 
-### 6. **How do I fix login issues with platforms like Gmail, Twitter, or Telegram in RelaySMS?**
+### 6. **Qu'est-ce qu'un numéro de routage et lequel choisir ?** {#6-what-is-a-routing-number-and-which-one-should-i-choose}
 
-- **Possible causes:**
-  - Double-check your OAuth2 token for the platform and ensure it's up to date.
-  - Try reauthorizing the platform connection from within the app.
-  - Clear the cache of the RelaySMS app and retry.
+- **Réponse :**
+  - Un numéro de routage est un numéro de téléphone connecté à Internet. Il reçoit votre SMS et transmet votre message à la plateforme choisie.
+  - Pour en choisir un, demandez-vous :
+    - Ce pays subit-il une coupure d'Internet ?
+    - Votre carte SIM peut-elle envoyer des SMS vers ce pays ?
+    - Quel numéro est le plus proche de vous ?
+    - Quel numéro vous coûte le moins cher en SMS ?
+  - Vous pouvez aussi ajouter votre propre numéro de routage. Consultez [Numéros de routage](/docs/Android%20Tutorial/Step-6-Routing-Numbers).
 
-### 7. **What should I do if RelaySMS displays "Unknown Error" during message transmission?**
+### 7. **Pourquoi mes messages ne sont-ils pas remis ?** {#7-why-are-my-messages-not-being-delivered}
 
-- **Possible causes:**
-  - Check if your message is properly composed and encrypted before sending.
-  - Make sure that your SMS Gateway client is running properly.
-  - Verify your OAuth2 tokens and attempt to resend the message.
+- **Causes possibles :**
+  - Le numéro de routage choisi ne fonctionne pas ou se trouve dans un pays qui subit une coupure.
+  - Votre carte SIM n'a plus de crédit ou ne peut pas envoyer de SMS vers le pays du numéro de routage.
+  - RelaySMS n'est pas votre application de messagerie par défaut et le message n'a pas été envoyé depuis l'application SMS vers laquelle vous avez été redirigé.
+  - L'accès à une plateforme enregistrée a expiré.
+- **Solution :**
+  - Essayez un autre numéro de routage. Si vous avez coché **« Ne plus demander »**, vous devrez peut-être en choisir un nouveau.
+  - Vérifiez votre crédit et le signal de votre SIM.
+  - Supprimez la plateforme et enregistrez-la à nouveau.
 
-### 8. **How do I grant SMS permissions for RelaySMS?**
+### 8. **Pourquoi mon SMS sortant ressemble-t-il à une suite de lettres et de chiffres au hasard ?** {#8-why-does-my-outgoing-sms-look-like-random-letters-and-numbers}
 
-- **Solution:**
-  - Go to your phone’s settings.
-  - Navigate to "Apps" and select RelaySMS.
-  - Tap on "Permissions" and toggle the SMS permission to "Allow."
+- **Réponse :**
+  - C'est normal. RelaySMS chiffre automatiquement votre message avant de l'envoyer par SMS. Vous n'avez rien à faire pour activer le chiffrement.
 
-### 9. **How do I store tokens for platforms like Gmail, Twitter, and Telegram?**
+### 9. **Dois-je faire de RelaySMS mon application de messagerie par défaut ?** {#9-should-i-make-relaysms-my-default-messaging-app}
 
-- **Solution:**
-  - In the RelaySMS app, use the OAuth2 authorization method to store tokens securely in the Vault.
-  - Ensure you follow the prompts to log into each platform and authorize RelaySMS to use them on your behalf.
+- **Réponse :**
+  - C'est facultatif, mais recommandé. En tant qu'application de messagerie par défaut, RelaySMS peut envoyer les messages directement et vous permet d'**envoyer des images**.
+  - Si ce n'est pas votre application par défaut, on vous demandera de choisir une application SMS pour terminer chaque envoi.
 
-### 10. **Why am I not receiving notifications for new SMS messages in RelaySMS?**
+### 10. **Comment envoyer une image ?** {#10-how-do-i-send-an-image}
 
-- **Possible causes:**
-  - Ensure that notifications are enabled for RelaySMS in your device's settings.
-  - Check if the app is restricted by battery optimization or "Do Not Disturb" mode.
-  - Make sure that your device is connected to a network that allows the reception of SMS messages.
+- **Solution :**
+  - Définissez RelaySMS comme application de messagerie par défaut.
+  - Appuyez sur **Écrire**, choisissez votre plateforme, appuyez sur l'icône de pièce jointe et sélectionnez votre image.
+  - Utilisez les outils de compression et de redimensionnement pour réduire le coût en SMS et accélérer l'envoi, puis appuyez sur **Terminé** et **Envoyer**.
+  - Consultez [Envoyer une image](/docs/Android%20Tutorial/Step-5-Sending-a-Message#sending-an-image).
 
-### 11. **Why is my device ID registration not working in RelaySMS Vault?**
+### 11. **Où sont stockées mes plateformes enregistrées ?** {#11-where-are-my-saved-platforms-stored}
 
-- **Possible causes:**
-  - Verify that you’ve entered the correct Device ID and it matches the one registered in your Vault.
-  - Ensure you have a stable network connection when registering the device.
-  - Restart the app and try the registration process again.
+- **Réponse :**
+  - Vos plateformes enregistrées sont stockées **sur votre appareil**. Si vous supprimez l'application, effacez ses données ou changez de téléphone, vous risquez de les perdre.
+  - [Faites des sauvegardes](/docs/Android%20Tutorial/Step-4-Back-Up-and-Restore#back-up) régulièrement et conservez votre clé de vérification en lieu sûr.
 
-### 12. **How do I troubleshoot compatibility issues with older Android versions?**
+### 12. **Comment sauvegarder et restaurer mes plateformes ?** {#12-how-do-i-back-up-and-restore-my-platforms}
 
-- **Solution:**
-  - RelaySMS requires Android 7.0 and above to function correctly. Ensure that your device meets the minimum system requirements.
-  - Check if the latest version of RelaySMS (v0.17.0) is installed.
+- **Solution :**
+  - **Sauvegarder :** appuyez sur le menu à 3 points de l'écran d'accueil, puis sur **Sauvegarder > Sauvegarder maintenant**. Enregistrez le fichier, puis appuyez sur **Afficher la clé de vérification** et conservez la clé en lieu sûr.
+  - **Restaurer :** vous ne pouvez restaurer que sur l'**écran d'accueil, pendant la prise en main**. Appuyez sur **Restaurer une sauvegarde**, choisissez votre fichier de sauvegarde et saisissez votre clé de vérification.
+  - Consultez [Sauvegarder et restaurer](/docs/Android%20Tutorial/Step-4-Back-Up-and-Restore).
 
-### 13. **How do I resolve issues with OAuth2 token expiration?**
+### 13. **Comment accorder les autorisations SMS à RelaySMS ?** {#13-how-do-i-grant-sms-permissions-for-relaysms}
 
-- **Solution:**
-  - Go to the platform where the token was issued (e.g., Gmail, Twitter, Telegram) and refresh the authorization.
-  - Ensure that RelaySMS has the correct permissions for accessing the token.
-  - You can also remove and reauthorize the platform from within the app.
+- **Solution :**
+  - Ouvrez les **Paramètres** de votre téléphone.
+  - Allez dans **Applications** et sélectionnez **RelaySMS**.
+  - Appuyez sur **Autorisations** et réglez l'autorisation SMS sur **Autoriser**.
 
-### 14. **Can I send messages to multiple platforms at once?**
+### 14. **Pourquoi est-ce que je ne reçois pas de notifications de RelaySMS ?** {#14-why-am-i-not-getting-notifications-from-relaysms}
 
-- **Answer:**
-  - Yes, RelaySMS allows you to send messages to multiple online platforms like Gmail, Twitter, or Telegram simultaneously. However, ensure that OAuth2 tokens are valid for each platform before sending.
-  - You can compose a message and select the desired platforms for message delivery.
+- **Causes possibles :**
+  - Les notifications de RelaySMS sont désactivées dans les paramètres de votre appareil.
+  - L'application est limitée par l'optimisation de la batterie ou le mode « Ne pas déranger ».
+  - Votre appareil n'a pas de signal pour recevoir des SMS.
 
-### 15. **How secure is RelaySMS when sending messages offline?**
+### 15. **Pourquoi RelaySMS plante-t-il ou se fige-t-il ?** {#15-why-does-relaysms-keep-crashing-or-freezing}
 
-- **Answer:**
-  - RelaySMS uses advanced encryption protocols like the Signal Double Ratchet algorithm to ensure end-to-end encryption of messages. Your messages remain encrypted from the moment they are composed to when they are received and published on the selected platform.
-  - Even when offline, the encrypted messages are transferred securely through your default SMS messaging app.
+- **Solution :**
+  - Assurez-vous d'avoir la dernière version de l'application.
+  - Redémarrez votre téléphone.
+  - Videz le cache de l'application : **Paramètres > Applications > RelaySMS > Stockage > Vider le cache**.
+  - RelaySMS nécessite **Android 7.0 ou version ultérieure**.
 
-### 16. **How do I check if my messages are being encrypted properly?**
-
-- **Solution:**
-  - RelaySMS automatically encrypts your messages when you send them, but you can verify by ensuring that the app’s encryption protocols (Signal Double Ratchet) are enabled in settings.
-  - Messages sent through the app are encoded before being sent via your SMS messaging service, so there is no need for manual encryption.
-
-### 17. **What happens if my device loses connection while sending a message?**
-
-- **Answer:**
-  - If your device loses connection, the message will be queued in the app and sent automatically once a connection is re-established.
-  - RelaySMS’s offline functionality ensures that the message will still be sent via SMS even if you don’t have an internet connection.
-
-### 18. **How do I manage multiple accounts in RelaySMS?**
-
-- **Solution:**
-  - You can easily manage multiple accounts by adding different OAuth2 tokens for each platform (e.g., multiple Gmail, Twitter, or Telegram accounts).
-  - Simply go to the account management section in RelaySMS and add or remove accounts as needed.
-
-### 19. **How do I send messages without an authentication phone number?**
-
-- **Solution:**
-  - In RelaySMS, you can choose to send messages without requiring your phone number. To do this, ensure that the "Send without phone number" option is enabled in the app's settings.
-  - This allows the app to use the stored tokens for authentication rather than your phone number.
-
-### 20. **How do I check the status of messages sent via RelaySMS?**
-
-- **Solution:**
-  - You can track message status within the app by viewing the "Sent Messages" tab, which shows whether a message was successfully delivered or still pending.
-  - For any messages sent to online platforms, you can also check the respective platform for message delivery status.
+> *Effacer les **données** de l'application supprime vos plateformes enregistrées. Faites d'abord une sauvegarde.*
 
 ---
 
-# RelaySMS Multi-Platform FAQ
+# RelaySMS sur iOS
 
-## General Questions
+### 1. **Comment installer RelaySMS sur iOS ?** {#1-how-do-i-install-relaysms-on-ios}
 
-### 1. **What platforms is RelaySMS available on?**
+- **Étapes :**
+  1. Ouvrez l'App Store sur votre iPhone.
+  2. Recherchez **« RelaySMS »** ou utilisez [ce lien](https://apps.apple.com/us/app/relaysms/id6630382970).
+  3. Appuyez sur **Obtenir** pour télécharger et installer l'application.
 
-- **Answer:**
-  - RelaySMS is available on multiple platforms, including:
-    - **Android**: Available on Google Play and other app stores.
-    - **iOS**: Available on the App Store for iPhone, iPod touch, and Mac devices.
-    - **Linux**: Open source and can be installed from source or through package managers.
+### 2. **Quelle est la configuration requise pour RelaySMS sur iOS ?** {#2-what-are-the-system-requirements-for-relaysms-on-ios}
 
-### 2. **How do I install RelaySMS on iOS?**
+- **Réponse :**
+  - Un iPhone capable d'envoyer des SMS, sous **iOS 15.0 ou version ultérieure**.
 
-- **Steps:**
-  1. Open the App Store on your iPhone or iPod touch.
-  2. Search for "RelaySMS" by Wisdom Nji.
-  3. Tap "Get" to download and install the app.
-  4. Once installed, open the app and grant it the necessary permissions to access SMS.
+### 3. **Quelles plateformes sont disponibles sur iOS ?** {#3-which-platforms-are-available-on-ios}
 
-### 3. **What features does the iOS version of RelaySMS offer?**
+- **Réponse :**
+  - Vous pouvez enregistrer **Bluesky**, **Gmail**, **Mastodon** et **Telegram**. Vous pouvez aussi envoyer des e-mails avec **R-Mail** sans rien enregistrer.
 
-- **Answer:**
-  - The iOS version of RelaySMS includes:
-    - Secure online messaging via SMS without needing an internet connection.
-    - Storage of OAuth2 tokens for services like Gmail, Twitter, and Telegram.
-    - Support for managing multiple accounts seamlessly.
-    - Free and open source, allowing for community contributions and transparency.
+### 4. **Comment envoyer un message sur iOS ?** {#4-how-do-i-send-a-message-on-ios}
 
-### 4. **Does RelaySMS on iOS support end-to-end encryption?**
+- **Réponse :**
+  - Appuyez sur le bouton d'écriture. Dans le menu **Envoyer avec...**, choisissez une plateforme enregistrée, ou l'option **Aucun compte** en bas pour envoyer un e-mail depuis une adresse aléatoire (R-Mail). Vous ne pouvez pas recevoir de réponses sur R-Mail.
+  - Appuyez sur l'icône d'envoi, vérifiez le numéro de routage et envoyez. iOS ouvre un écran de message contenant votre message chiffré. Appuyez sur la flèche d'envoi pour terminer.
+  - Consultez [Envoyer un message sur iOS](/docs/iOS%20Tutorial/Step-5-Sending-a-Message).
 
-- **Answer:**
-  - Yes, the iOS version supports end-to-end encryption, similar to the Android and Linux versions. Users can exchange messages securely without the risk of interception.
+### 5. **Comment sauvegarder et restaurer sur iOS ?** {#5-how-do-i-back-up-and-restore-on-ios}
 
-### 5. **What are the system requirements for RelaySMS on iOS?**
+- **Réponse :**
+  - **Sauvegarder :** appuyez sur le menu **...**, puis sur **Sauvegardes**, et suivez les étapes. Choisissez un dossier pour la sauvegarde et conservez votre **clé de récupération** de 64 caractères en lieu sûr.
+  - **Restaurer :** vous ne pouvez restaurer que sur l'écran d'accueil, pendant la prise en main. Appuyez sur **Restaurer une sauvegarde**, choisissez votre fichier de sauvegarde et saisissez votre clé de récupération.
+  - Consultez [Sauvegarder et restaurer sur iOS](/docs/iOS%20Tutorial/Step-4-Back-Up-and-Restore).
 
-- **Answer:**
-  - The iOS version requires:
-    - **iOS 15.0 or later** for iPhone and iPod touch.
-    - **macOS 12.0 or later** and an Apple M1 chip or later for Mac.
-    - **visionOS 1.0 or later** for Apple Vision.
+---
 
-### 6. **Are there any known issues with the iOS version of RelaySMS?**
+## Besoin d'aide ? {#still-need-help}
 
-- **Answer:**
-  - The latest update (version 1.0.9) fixed several issues, including:
-    - Problems with switching phone numbers and device IDs.
-    - Issues with account creation and country code selection.
-    - Bugs causing the app to close unexpectedly after adding new platforms.
-
-### 7. **How do I report issues with the iOS version of RelaySMS?**
-
-- **Answer:**
-  - You can report issues by visiting the developer's support page or submitting issues on the RelaySMS GitHub repository. Include details about the problem, device model, and version of iOS you are using.
-    s
+- Rejoignez notre communauté sur [Telegram](https://t.me/+IPYp6q06dWsyZjY0).
+- Signalez les problèmes sur [GitHub](https://github.com/smswithoutborders).
+- Contactez notre <a href="mailto:developers@smswithoutborders.com">équipe d'assistance</a>.
