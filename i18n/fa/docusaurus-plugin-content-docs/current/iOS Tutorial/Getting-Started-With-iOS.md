@@ -1,117 +1,38 @@
+---
 sidebar_position: 1
 ---
 
-## RelaySMS برای iOS
+# شروع کار با RelaySMS - iOS
 
-### ارتباط برقرار کنید، حتی بدون اینترنت
+### حتی وقتی اینترنت قطع است، در ارتباط بمانید
 
-RelaySMS به کاربران اجازه می‌دهد حتی زمانی که به اینترنت دسترسی ندارند، به پلتفرم‌های آنلاین خود متصل بمانند. با استفاده از پیام‌های SMS، کاربران می‌توانند بدون وقفه ارتباط برقرار کنند و مخاطبان آن‌ها پیام‌ها را درست مانند ارسال از طریق پلتفرم‌های آنلاین دریافت می‌کنند.
+RelaySMS به شما امکان می‌دهد فقط با پیامک، پیام، ایمیل و پست به پلتفرم‌های آنلاین خود بفرستید. به اینترنت نیازی نیست. مخاطبان شما پیام‌هایتان را درست مثل همیشه به‌صورت آنلاین دریافت می‌کنند.
 
-### شروع کار با RelaySMS در iOS
+RelaySMS دیگر از شما نمی‌خواهد وارد شوید یا ثبت‌نام کنید. هر چیزی که ذخیره می‌کنید روی دستگاه خودتان می‌ماند.
 
-#### مرحله ۱: دانلود اپلیکیشن
+## مراحل آموزش iOS
 
-![App Store](/img/ios2.jpeg)
+از نوار کناری آموزش iOS استفاده کنید تا مرحله به مرحله پیش بروید:
 
-- RelaySMS را از [App Store](https://apps.apple.com/us/app/relaysms/id6630382970) دانلود کنید  
-- یا می‌توانید آن را از [GitHub](https://github.com/smswithoutborders/SMSwithoutBorders-Android) دریافت کنید  
-- **نیازمندی‌های فنی:**  
-  - آیفونی که قابلیت ارسال SMS داشته باشد  
-  - نسخه iOS سازگار
+1. دانلود برنامه
+2. آشنایی اولیه
+3. ذخیره پلتفرم‌ها
+4. پشتیبان‌گیری و بازیابی
+5. ارسال پیام
+6. شماره‌های مسیریابی
 
-دو روش برای ارتباط با اپ در زمان قطع اینترنت وجود دارد:
+اگر عجله دارید، از [ارسال پیام](./Step-5-Sending-a-Message) شروع کنید و از **R-Mail** (بدون نیاز به حساب) استفاده کنید.
 
-**A.** با استفاده از Offline RelaySMS Mail می‌توانید بدون نیاز به ثبت‌نام یا ذخیره پلتفرم‌ها ایمیل ارسال کنید
+## راهنمای سریع
 
-**B.** با ذخیره دسترسی به پلتفرم‌های مورد نظر در اپ
+| می‌خواهم... | چه کار کنم |
+| --- | --- |
+| بدون هیچ تنظیمی سریع پیام بفرستم | نوشتن ← گزینه «بدون حساب» ← ارسال ← انتخاب شماره مسیریابی ← ارسال |
+| هنگام قطعی از Gmail خودم بفرستم | ابتدا Gmail را ذخیره کنید ← نوشتن ← Gmail ← ارسال |
+| از پلتفرم‌هایم پشتیبان بگیرم | منوی ... ← پشتیبان‌ها ← ادامه ← انتخاب پوشه ← نگه‌داشتن کلید بازیابی |
+| پلتفرم‌هایم را بازیابی کنم | صفحه خوش‌آمد (آشنایی اولیه) ← بازیابی نسخه پشتیبان ← انتخاب فایل ← وارد کردن کلید بازیابی |
+| شماره مسیریابی‌ام را عوض کنم | زبانه شماره‌های مسیریابی ← زدن روی یک شماره ← تنظیم به‌عنوان پیش‌فرض |
 
+RelaySMS یک برنامه متن‌باز از پروژه SMSWithoutBorders است که برای افرادی ساخته شده که باید هنگام قطع اینترنت در ارتباط بمانند.
 
-### A. ارتباط با Offline RelaySMS Mail
-
-*استفاده از Offline RelaySMS Mail (بدون نیاز به تنظیمات) و استفاده از پلتفرم‌ها (ثبت‌نام و ذخیره قبلی)*
-
-## [1. استفاده از Offline RelaySMS Mail (بدون نیاز به تنظیمات)](/docs/Bridges%20Tutorial/Bridges)
-
-**مرحله ۱: کلیک روی دکمه "نوشتن پیام جدید"**  
-<img src="/Android/pick.png" alt="sign_in" class="resized-image"/>
-
-**مرحله ۲: نوشتن پیام**
-
-- فیلدهای ضروری را پر کنید (مثلاً ایمیل گیرنده برای Gmail)، روی ارسال ضربه بزنید و RelaySMS شما را به اپ SMS هدایت می‌کند.  
-<img src="/Android/bridges.png" alt="GatewayAvailable" class="resized-image"/>
-
-**مرحله ۳: ارسال پیام از طریق SMS**
-
-پس از نوشتن پیام خود، آن را از طریق سرویس SMS تلفن ارسال کنید. گیرنده پیام را همانند ارسال از پلتفرم آنلاین دریافت می‌کند.  
-<img src="/Android/defualtMessage.png" alt="GatewayAvailable" class="resized-image"/>  
-<img src="/Android/notifi.png" alt="notifi" class="resized-image"/>
-
-**مرحله ۴: دریافت پاسخ**
-
-- اپ **RelaySMS** را باز کنید و به **Inbox** بروید.  
-- روی **"Paste the incoming message here"** ضربه بزنید و پاسخ SMS را وارد کنید.  
-- روی **"Decrypt"** ضربه بزنید تا پیام نمایان شود.  
-<img src="/Android/inbox.png" alt="GatewayAvailable" class="resized-image"/>  
-<img src="/Android/decryption.png" alt="GatewayAvailable" class="resized-image"/>  
-<img src="/Android/decryptMessage.png" alt="GatewayAvailable" class="resized-image"/>  
-<img src="/Android/Indox.png" alt="GatewayAvailable" class="resized-image"/>
-
-### B. ارتباط با پلتفرم‌های ذخیره شده
-
-**مرحله ۲: ثبت‌نام برای حساب کاربری**
-
-1. اپ را باز کنید و روی **Register** ضربه بزنید.  
-2. اطلاعات لازم را وارد کرده و ادامه دهید.  
-3. یک PIN تأیید از طریق SMS برای شما ارسال می‌شود.
-
-**صفحات راه‌اندازی**  
-<img src="/Android/gettingstarted.png" alt="onbording1" class="resized-image"/>  
-<img src="/Android/pick.png" alt="sign_in" class="resized-image"/>  
-<img src="/Android/createaccount.png" alt="sign_in2" class="resized-image"/>
-
-**مرحله ۳: تأیید شماره تلفن**
-
-- کد ارسال‌شده از طریق SMS را وارد کنید تا ثبت‌نام کامل شود.  
-<img src="/Android/verificationcode.png" alt="verificationcode" class="resized-image"/>
-
-**مرحله ۴: ورود به حساب**
-
-- اگر حساب دارید، روی **Login** ضربه بزنید.  
-- شماره تلفن و رمز عبور ثبت‌شده را وارد کنید.  
-- کد تأیید ارسال شده را وارد کنید.  
-<img src="/Android/pick.png" class="resized-image"/>  
-<img src="/Android/login.png" class="resized-image"/>  
-<img src="/Android/login1.png" class="resized-image"/>  
-<img src="/Android/verificationcode.png" class="resized-image"/>
-
-**ذخیره پلتفرم‌ها برای پیام‌رسانی آفلاین**
-
-1. به RelaySMS وارد شوید.  
-2. روی **Save Accounts** بزنید تا لیست پلتفرم‌های موجود را ببینید.  
-3. پلتفرم‌های مورد نظر خود را انتخاب کنید.  
-4. مطمئن شوید آن اپ روی گوشی شما نصب است.  
-<img src="/Android/GatewayNumber(1).png" class="resized-image"/>  
-<img src="/Android/addPlateform.png" class="resized-image"/>
-
-#### مدیریت پلتفرم‌های ذخیره‌شده
-
-**لغو دسترسی**
-
-1. وارد **Platforms** شوید  
-2. پلتفرم مورد نظر را انتخاب کنید  
-3. روی **Remove Access** ضربه بزنید  
-<img src="/Android/addPlateform.png" class="resized-image"/>  
-<img src="/Android/addPlateform.png" class="resized-image"/>  
-<img src="/Android/RevokeTelegram.png" class="resized-image"/>
-
-**حذف و خروج از حساب**
-
-- حذف حساب: همه داده‌ها و حساب‌های ذخیره‌شده پاک می‌شوند.  
-- خروج: پیام‌های جاری حذف می‌شوند اما می‌توانید بعداً وارد شوید.  
-<img src="/OnDeviceToken/1.png" class="resized-image"/>  
-<img src="/OnDeviceToken/2.png" class="resized-image"/>  
-<img src="/OnDeviceToken/3.png" class="resized-image"/>
-
----
-
-با RelaySMS حتی در حالت آفلاین هم ارتباط خود را حفظ کنید، در هر مکان در دسترس باشید.
+مشکلی دارید؟ [رفع مشکلات](/docs/Troubleshooting/Troubleshooting-FAQ) را ببینید، به جامعه ما در [تلگرام](https://t.me/+IPYp6q06dWsyZjY0) بپیوندید یا در [گیت‌هاب](https://github.com/smswithoutborders) مشارکت کنید.

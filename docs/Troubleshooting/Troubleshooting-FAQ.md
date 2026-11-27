@@ -1,8 +1,9 @@
 ---
 sidebar_position: 1
+sidebar_label: Troubleshooting Guide
 ---
 
-## RelaySMS Troubleshooting Guide
+# RelaySMS Troubleshooting Guide
 
 ### Common Issues and Solutions
 
@@ -81,7 +82,7 @@ Your saved platforms are stored on your device, so a backup is the only way to k
 **Issue**: Restore fails or my verification key is not accepted  
 **Solutions**:
 
-- Make sure you are entering the verification key that was shown for **that** backup file. Each backup has its own key.
+- Make sure you are entering the verification key (called the **recovery key** on iOS) that was shown for **that** backup file. Each backup has its own key.
 - Copy and paste the key instead of typing it, and check for extra spaces at the start or end.
 - Make sure you selected the correct backup file. If you have several, use the most recent one.
 - If you have lost the verification key, the backup cannot be restored. Save your platforms again and make a new backup.

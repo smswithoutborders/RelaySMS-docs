@@ -3,72 +3,89 @@ sidebar_position: 1
 unlisted: true
 ---
 
+# Numéros de routage
 
-# Guide d’hebergement et d’execution des numeros de routage
+Les numéros de routage sont au cœur du fonctionnement de RelaySMS. Ce sont des numéros de téléphone ou des appareils situés dans des zones disposant d'une connexion Internet active, qui acheminent les messages des utilisateurs hors ligne vers les plateformes en ligne.
 
-Suivez ce guide simple pour configurer et mettre en place un numero de routage Deku SMS sur votre appareil Android.
+Lorsqu'un utilisateur envoie un message avec RelaySMS sans accès à Internet, le message est transmis par SMS à un numéro de routage. Ce numéro le transfère à un serveur en ligne, où il est traité puis publié sur la plateforme choisie.
 
-## Exigences pour la configuration d’un numero de routage :
+Dans l'application, les numéros de routage sont listés dans l'onglet Pays. Les utilisateurs doivent choisir un numéro dans une région connectée à Internet pour que leurs messages soient envoyés.
 
-### Appareil Android :
-Votre appareil doit pouvoir se connecter à Internet.  
-Il doit disposer d’une carte SIM capable de recevoir des messages SMS.
+Les numéros de routage peuvent être configurés avec l'application DekuSMS. Élargir leur disponibilité dans différentes régions améliore la fiabilité, réduit les coûts et aide davantage d'utilisateurs à rester connectés pendant les coupures d'Internet.
 
-### Connexion Internet :
-Vous aurez besoin d’une connexion Internet fiable (Wi-Fi ou données mobiles).  
-Deku SMS utilise très peu de données, donc les données mobiles sont suffisantes.
+## Héberger et faire fonctionner un numéro de routage {#hosting-and-running-a-routing-number}
 
-## Étapes pour configurer Deku SMS sur un appareil Android :
+Suivez ce guide pour installer et configurer un numéro de routage Deku SMS sur votre appareil Android.
 
-### Étape 1 : Télécharger l’application Deku SMS
-Vous pouvez télécharger l’application Deku SMS à partir de l’une des sources suivantes :
+### Prérequis pour configurer un numéro de routage : {#requirements-for-setting-up-a-routing-number}
+
+#### Appareil Android : {#android-device}
+
+- Votre appareil doit pouvoir se connecter à Internet.  
+- Il doit avoir une carte SIM capable de recevoir des SMS.
+
+#### Connexion Internet : {#internet-connection}
+
+- Il vous faut une connexion Internet fiable (Wi-Fi ou données mobiles).  
+- Deku SMS consomme très peu de données : les données mobiles suffisent.
+
+## Étapes de configuration de Deku SMS sur un appareil Android : {#steps-to-configure-deku-sms-on-an-android-device}
+
+### Étape 1 : télécharger l'application Deku SMS {#step-1-download-the-deku-sms-app}
+
+Vous pouvez télécharger l'application Deku SMS depuis l'une des sources suivantes :
+
 - Google Play Store  
 - F-Droid  
-- GitHub Releases  
+- Versions GitHub  
 
-### Étape 2 : Définir Deku SMS comme application SMS par défaut
+### Étape 2 : définir Deku SMS comme application SMS par défaut {#step-2-set-deku-sms-as-your-default-sms-app}
 
-<img src="/GatewayHosting/1.png" alt="GatewayAvailable" class="resized-image"/>
+<img src="/mockup/Deku/1.png" alt="Définir Deku SMS par défaut" class="resized-image"/>
 
-Une fois l’application installée, définissez-la comme application SMS par défaut sur votre appareil Android.
+Une fois l'application installée, définissez-la comme application SMS par défaut sur votre appareil Android.
 
-### Étape 3 : Configurer le transfert de messages
+### Étape 3 : configurer le transfert des messages {#step-3-configure-message-forwarding}
 
-<img src="/GatewayHosting/2.png" alt="GatewayAvailable" class="resized-image"/>
+<img src="/mockup/Deku/2.png" alt="Menu de Deku SMS" class="resized-image"/>
+<img src="/mockup/Deku/3.png" alt="Transfert des messages" class="resized-image"/>
 
-Ouvrez l’application Deku SMS.  
-Appuyez sur les trois points en haut à droite de l’application.  
-Dans le menu déroulant, sélectionnez Transfert de messages.
 
-### Étape 4 : Ajouter un serveur Gateway
+1. Ouvrez l'application Deku SMS.  
+2. Appuyez sur les trois points en haut à droite de l'application.  
+3. Dans le menu déroulant, sélectionnez **Transfert des messages.**
 
-<img src="/GatewayHosting/3.png" alt="GatewayAvailable" class="resized-image"/>
-<img src="/GatewayHosting/4.png" alt="GatewayAvailable" class="resized-image"/>
-<img src="/GatewayHosting/5.png" alt="GatewayAvailable" class="resized-image"/>
+### Étape 4 : ajouter un serveur passerelle {#step-4-add-a-gateway-server}
 
-Appuyez sur les points de menu en haut à droite de la page des messages routés.  
-Appuyez sur les trois points en haut a droite de la page des messages routes.  
-Appuyez à nouveau sur les trois points et choisissez Ajouter des forwarders HTTPS.
+<img src="/mockup/Deku/4.png" alt="Page des messages routés" class="resized-image"/>
+<img src="/mockup/Deku/5.png" alt="Menu de la page des messages routés" class="resized-image"/>
+<img src="/mockup/Deku/6.png" alt="Ajouter des redirecteurs HTTPS" class="resized-image"/>
 
-### Étape 5 : Remplir les informations requises
-<img src="/GatewayHosting/6.png" alt="GatewayAvailable" class="resized-image"/>
-<img src="/GatewayHosting/7.png" alt="GatewayAvailable" class="resized-image"/>
 
-Entrez l’URL suivante :  
+1. Appuyez sur les points de menu en haut à droite de la page des messages routés.  
+2. Appuyez sur les trois points en haut à droite de la page des messages routés.  
+3. Appuyez à nouveau sur les trois points et choisissez **Ajouter des redirecteurs HTTPS.**
+
+### Étape 5 : renseigner les informations requises {#step-5-fill-in-the-required-information}
+
+<img src="/mockup/Deku/7.png" alt="Formulaire du serveur passerelle" class="resized-image"/>
+<img src="/mockup/Deku/8.png" alt="Formulaire du serveur passerelle rempli" class="resized-image"/>
+
+- Saisissez l'URL suivante :  
 https://gatewayserver.smswithoutborders.com/v3/publish  
 
-Tag : Entrez un nom pour votre serveur Gateway.  
+- **Étiquette** : saisissez un nom pour votre serveur passerelle.  
 
-Cochez "All" : Assurez-vous que la case "All" est cochée pour acheminer tous les messages SMS via le serveur.
+- **Cochez « Tous »** : assurez-vous que la case « Tous » est cochée pour acheminer tous les SMS via le serveur.
 
-### Étape 6 : Finaliser la configuration
+### Étape 6 : finaliser la configuration {#step-6-finalize-the-setup}
 
-<img src="/GatewayHosting/8.png" alt="GatewayAvailable" class="resized-image"/>
+<img src="/mockup/Deku/9.png" alt="Enregistrer la configuration" class="resized-image"/>
 
-Appuyez sur Enregistrer pour sauvegarder la configuration de votre serveur Gateway.
+1. Appuyez sur **Enregistrer** pour enregistrer la configuration de votre serveur passerelle.
 
-<img src="/GatewayHosting/9.png" alt="GatewayAvailable" class="resized-image"/>
+<img src="/mockup/Deku/10.png" alt="Serveur passerelle enregistré" class="resized-image"/>
 
-## Votre numero de routage est maintenant pret
+## Votre numéro de routage est prêt {#your-routing-number-is-now-ready}
 
-Vous pouvez maintenant partager votre numero avec les utilisateurs de RelaySMS. Votre appareil Android agira comme un numero de routage, aidant a acheminer les messages via l’application Deku SMS.
+Vous pouvez maintenant partager votre numéro avec les utilisateurs de RelaySMS. Votre appareil Android servira de numéro de routage et acheminera les messages grâce à l'application Deku SMS.

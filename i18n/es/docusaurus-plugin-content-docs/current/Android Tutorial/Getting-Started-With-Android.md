@@ -2,84 +2,35 @@
 sidebar_position: 1
 ---
 
-# Aplicación RelaySMS para Android
+# Primeros pasos con RelaySMS - Android
 
-## Comenzando con Android
+### Mantente conectado incluso cuando no hay internet
 
-RelaySMS permite a los usuarios mantenerse conectados a sus plataformas en línea incluso cuando no tienen acceso a Internet. Al usar mensajes SMS, los usuarios pueden seguir comunicándose y sus contactos recibirán los mensajes como si estuvieran en línea.
+RelaySMS te permite enviar mensajes, correos electrónicos y publicaciones a tus plataformas en línea usando solo SMS. No necesitas internet. Tus contactos reciben tus mensajes en línea, exactamente como siempre.
 
-## Introducción
+## Pasos del tutorial de Android
 
-RelaySMS te ayuda a enviar mensajes en línea **sin necesitar Internet**.  
-Funciona de **dos maneras:**
+Usa la barra lateral del tutorial de Android para avanzar paso a paso:
 
-## [1. Usando Offline RelaySMS Mail (Sin configuracion previa)](/docs/Bridges%20Tutorial/Bridges)
+1. Descargar la aplicación
+2. Primeros pasos en la app
+3. Guardar plataformas
+4. Copia de seguridad y restauración
+5. Enviar un mensaje
+6. Números de enrutamiento
 
-## **2. Usando Plataformas (Requiere registro y configuración previa)**
+Si tienes prisa, empieza por [Enviar un mensaje](./Step-5-Sending-a-Message) y elige **RelaySMS Mail sin conexión**.
 
-Método ideal para publicar en **Gmail, Bluesky o Telegram** durante cortes de Internet usando tus propias cuentas.
+## Referencia rápida
 
-### Pasos para usar Plataformas:
+| Quiero... | Qué hacer |
+| --- | --- |
+| Enviar un mensaje rápido sin configurar nada | Usa RelaySMS Mail sin conexión -> Redactar -> Enviar desde un alias aleatorio -> Enviar |
+| Enviar desde mi Gmail durante un corte | Guarda primero Gmail -> Redactar -> Gmail -> Enviar |
+| Enviar una imagen | Configura RelaySMS como app predeterminada -> Redactar -> Icono de adjunto |
+| Hacer una copia de seguridad de mis plataformas | Menú de 3 puntos -> Copia de seguridad -> Hacer copia ahora -> Guardar la clave |
+| Restaurar mis plataformas | Pantalla de bienvenida (primeros pasos) -> Restaurar -> Elegir archivo -> Introducir la clave |
 
-1. **Descarga la aplicación RelaySMS**
+RelaySMS es una aplicación de código abierto del proyecto SMSWithoutBorders, creada para las personas que necesitan seguir conectadas cuando se corta internet.
 
-- Google Play Store  
-- Github  
-- O compílala desde la fuente
-
-2. **Completa el onboarding**
-- Presiona **Make app default** (opcional)
-
-*(Imágenes mantenidas igual)*
-
-3. **Crear una cuenta**
-- Toca **Sign Up**
-- Introduce tu email o número de teléfono + contraseña
-- Acepta la política de privacidad
-- Ingresa el Recaptcha
-
-4. **¿Ya tienes cuenta?**
-- Toca **Login**, introduce la información y el Recaptcha
-
-5. **Verifica tu teléfono**
-- Introduce el código SMS y presiona **Submit**
-
-6. **Guardar plataformas**
-- Ve a **Platforms**
-- Puedes elegir Gmail, Twitter o Telegram
-- Toca **Add Platform**
-
-7. **Elegir un numero de enrutamiento**
-- Ve a **Country**
-- Selecciona un número y presiona **Make Default**
-- También puedes agregar un número propio
-
-8. **Enviar un mensaje**
-- En **Recent**, toca **Compose**
-- Elige una plataforma
-- Escribe tu mensaje y presiona **Send**
-- Confirma el numero de enrutamiento
-
-*NB: Si RelaySMS no es tu app SMS predeterminada, deberás elegir una.*
-
-### Uso del almacenamiento de tokens en el dispositivo
-
-La función **Store Tokens On-Device** guarda tus tokens **localmente en tu teléfono**.
-
-#### Activar:
-1. Abre la app
-2. Ve a **Settings**
-3. Entra en **Publishing**
-4. Activa **Store tokens on-device**
-
-#### Desactivar:
-- Desactiva el interruptor desde **Settings > Publishing**
-
-#### Refrescar tokens de Twitter:
-1. Después de tu tweet recibirás un SMS con un token actualizado
-2. Copia todo el SMS
-3. Entra a **Inbox**
-4. Pega el mensaje
-5. La app actualizará el token automáticamente
-
-## [How to Use the On-Device Token Storage Feature](/docs/On-Device%20Tutorial/On-DeviceToken)
+¿Tienes problemas? Únete a nuestra comunidad en [Telegram](https://t.me/+IPYp6q06dWsyZjY0) o contribuye en [GitHub](https://github.com/smswithoutborders)

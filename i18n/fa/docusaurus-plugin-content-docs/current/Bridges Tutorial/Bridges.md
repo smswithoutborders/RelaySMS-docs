@@ -1,75 +1,74 @@
 ---
-sidebar_position: 1
+sidebar: false
+unlisted: true
 ---
 
-# استفاده از Offline RelaySMS Mail در اپلیکیشن RelaySMS (بدون نیاز به تنظیمات)
+# ارسال با RelaySMS Mail آفلاین (بدون نیاز به تنظیم)
 
-در این بخش یاد می‌گیرید چگونه از **Offline RelaySMS Mail** در اپلیکیشن RelaySMS استفاده کنید. این ابزار به شما اجازه می‌دهد پیام‌ها را به صورت امن به پلتفرم‌های آنلاین ارسال کنید **بدون اینکه وارد حساب شوید یا از اینترنت استفاده کنید**. مراحل زیر را دنبال کنید.
+این صفحه روش کار RelaySMS Mail آفلاین را توضیح می‌دهد. وقتی هنگام قطعی باید سریع پیام بفرستید و از قبل پلتفرمی ذخیره نکرده‌اید، از آن استفاده کنید.
 
 ---
 
-این سریع‌ترین روش برای شروع است. اپلیکیشن یک آدرس موقت با استفاده از شماره تلفن شما ایجاد می‌کند (مثلاً:  
-**123456789@relaysms.me**) تا ایمیل یا توییت را **بدون ذخیره‌سازی توکن‌ها یا ورود به حساب** ارسال کند.
+این سریع‌ترین راه برای شروع است. RelaySMS یک نشانی ناشناس RelaySMS Mail به شما می‌دهد تا بتوانید بلافاصله با پیامک پیام بفرستید.
 
-## مراحل استفاده از Offline RelaySMS Mail:
+## مراحل {#steps}
 
-### **1. دانلود اپلیکیشن RelaySMS از:**
+**۱. برنامه RelaySMS را از این منابع دانلود کنید:**
 
-- گوگل پلی  
-- گیت‌هاب  
-- یا ساخت از طریق سورس‌کد  
+- [Google Play Store](https://play.google.com/store/apps/details?id=com.afkanerd.sw0b)
+- [گیت‌هاب](https://github.com/smswithoutborders/SMSwithoutBorders-Android/releases/tag/v1.0) یا
+- ساخت از [کد منبع](https://github.com/smswithoutborders/SMSwithoutBorders-Android)
 
-<img src="/Android/Playstore.png" alt="onboarding1" class="resized-image"/>
+<img src="/mockup/play-store.png" alt="RelaySMS در Google Play Store" class="resized-image"/>
 
-## **نیازمندی‌های فنی**
+## نیازمندی‌های فنی {#technical-requirements}
 
-- یک گوشی اندرویدی با قابلیت ارسال SMS  
-- اندروید نسخه 6.0 یا بالاتر  
+- گوشی اندرویدی با قابلیت ارسال پیامک
+- Android 6.0 یا جدیدتر
 
-### **2. صفحات راه‌اندازی اولیه (Onboarding)** را مشاهده کنید تا نحوه کارکرد را یاد بگیرید.
+**۲. صفحه‌های آشنایی اولیه را مرور کنید** تا با نحوه کار آشنا شوید.
 
-- دکمه «قرار دادن به عنوان برنامه پیش‌فرض» را فشار دهید (اختیاری)
+> روی دکمه تنظیم به‌عنوان برنامه پیش‌فرض بزنید. این کار اختیاری است، اما اگر RelaySMS را برنامه پیام‌رسان پیش‌فرض کنید، ارسال پیام آسان‌تر می‌شود و می‌توانید تصویر هم بفرستید.
 
-<img src="/SAndroid/Welcome.png" alt="onboarding1" class="resized-image"/>
-<img src="/SAndroid/SkipSMSemail.png" alt="onboarding" class="resized-image"/>
-<img src="/SAndroid/SkipSaveAccount.png" alt="onboarding" class="resized-image"/>
-<img src="/SAndroid/SkipStartMessaging.png" alt="onboarding" class="resized-image"/>
-<img src="/SAndroid/SkipSecure.png" alt="onboarding2" class="resized-image"/>
-<img src="/SAndroid/MakeAppDefualt.png" alt="onboarding2" class="resized-image"/>
+<img src="/mockup/oboarding-1.png" alt="صفحه آشنایی ۱" class="resized-image"/>
+<img src="/mockup/oboarding-2.png" alt="صفحه آشنایی ۲" class="resized-image"/>
+<img src="/mockup/oboarding-3.png" alt="صفحه آشنایی ۳" class="resized-image"/>
+<img src="/mockup/oboarding-4.png" alt="صفحه آشنایی ۴" class="resized-image"/>
 
-### **3. انتخاب شماره مسیریابی:**
 
-- روی تب 🌍 *کشور* در نوار پایین برنامه ضربه بزنید.
-- یک شماره مسیریابی انتخاب کنید (این شماره‌ها پیام آفلاین شما را به اینترنت منتقل می‌کنند).
-- همچنین می‌توانید بعد از نوشتن پیام و فشار دادن دکمه ارسال، از لیستی که ظاهر می‌شود یکی را انتخاب کنید.
+**۳. یک شماره مسیریابی انتخاب کنید:**
 
-<img src="/SAndroid/Gateway.png" alt="GatewayAvailable" class="resized-image"/>
-<img src="/SAndroid/AddGateway.png" alt="addgatewayclient" class="resized-image"/>
+- در نوار پیمایش روی زبانه 🌍 شماره‌های مسیریابی بزنید.
 
-*توجه: اگر هیچ گزینه‌ای انتخاب نکنید، برنامه یکی را به صورت خودکار انتخاب می‌کند.*
+- یک شماره مسیریابی انتخاب کنید (این شماره پیام آفلاین شما را به اینترنت می‌رساند).
 
-### **4. ارسال پیام**
+- همچنین می‌توانید پس از زدن ارسال، از فهرستی که نمایش داده می‌شود یک شماره مسیریابی انتخاب کنید.
 
-- روی **«نوشتن پیام جدید»** ضربه بزنید.
+<img src="/mockup/routing-number.png" alt="شماره‌های مسیریابی" class="resized-image"/>
+<img src="/mockup/add-routing-number.png" alt="افزودن شماره مسیریابی" class="resized-image"/>
 
-<img src="/SAndroid/Afterlogin.png" alt="addgatewayclient" class="resized-image"/>
-<img src="/SAndroid/bridgeMessage.png" alt="addgatewayclient" class="resized-image"/>
+*توجه: اگر شماره‌ای انتخاب نکنید، برنامه یک شماره مسیریابی پیش‌فرض برایتان تعیین می‌کند.*
 
-برای ارسال پیام از طریق Offline RelaySMS Mail:
-- فیلدهای لازم (ایمیل گیرنده، موضوع، متن پیام) را پر کنید.
+
+**۴. ارسال پیام**
+- روی **«نوشتن پیام جدید»** بزنید.
+
+<img src="/mockup/inbox-empty.png" alt="صفحه پیام‌ها" class="resized-image"/>
+
+
+- **فیلدهای لازم را پر کنید** (ایمیل گیرنده و پیام).
 - روی **ارسال** در گوشه بالا سمت راست بزنید.
-- شماره مسیریابی را تأیید کنید — همین! (اگر RelaySMS برنامه پیش‌فرض پیام‌رسان باشد)
+- شماره مسیریابی را تأیید کنید و تمام (اگر RelaySMS برنامه پیام‌رسان پیش‌فرض شما باشد).
 
-<img src="/SAndroid/sendGateway.png" alt="addgatewayclient" class="resized-image"/>
+<img src="/SAndroid/sendGateway.png" alt="ارسال از طریق شماره مسیریابی" class="resized-image"/>
 
-*نکته: اگر RelaySMS برنامه پیش‌فرض SMS نباشد، باید یک برنامه پیام‌رسان انتخاب کنید تا پیام ارسال شود.*
+*توجه: اگر RelaySMS برنامه پیام‌رسان پیش‌فرض شما نباشد، از شما خواسته می‌شود برای ارسال یک برنامه انتخاب کنید.*
 
-*پیام شما حتی بدون اینترنت در راه اینترنت است!*
+*پیام شما حتی بدون اینترنت در راه رسیدن به فضای آنلاین است!*
 
-### **5. دریافت پیام**
-
-- کل پیام SMS را کپی کنید  
-- وارد برنامه شوید و به سربرگ *Inbox* بروید  
-<img src="/Android/inbox.png" alt="addgatewayclient" class="resized-image"/>
-- پیام را در جعبه متن بچسبانید  
-- روی *Decrypt* بزنید  
+**۵. دریافت پیام**
+- کل پیامک را کپی کنید
+- برنامه را باز کنید و روی زبانه صندوق ورودی بزنید
+<img src="/Android/inbox.png" alt="صندوق ورودی" class="resized-image"/>
+- پیام را در کادر متن جای‌گذاری کنید
+- روی رمزگشایی بزنید

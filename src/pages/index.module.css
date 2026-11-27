@@ -1,145 +1,80 @@
-.heroBanner {
-  min-height: 80vh;
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100vh - var(--ifm-navbar-height));
+}
+
+.side {
+  position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: var(--ifm-background-color);
-  font-family: "Mona Sans", "Ubuntu", system-ui, sans-serif;
-  padding: 4rem 1.5rem;
-}
-
-.heroInner {
-  width: 100%;
-  max-width: 990px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 1rem;
-  animation: fadeInUp 0.9s ease forwards;
-  opacity: 0;
+  color: var(--ifm-heading-color) !important;
+  text-decoration: none !important;
 }
 
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to { opacity: 1; transform: translateY(0); }
+/* Thin line between the two halves */
+.ios::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15%;
+  bottom: 15%;
+  width: 1px;
+  background: var(--ifm-color-emphasis-300);
 }
 
-.heroLogo {
-  animation: float 6s ease-in-out infinite;
-  margin-bottom: 0.5rem;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-7px); }
-}
-
-.heroTitle {
-  font-size: clamp(1.6rem, 4vw, 2.8rem);
+.label {
+  font-family: var(--ifm-heading-font-family);
   font-weight: 500;
-  text-align: center;
-  letter-spacing: -0.02em;
-  margin: 0;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  letter-spacing: -0.03em;
+  line-height: 1;
 }
 
-.heroSubtitle {
-  font-size: clamp(0.95rem, 2vw, 1.15rem);
-  color: var(--ifm-color-primary);
-  text-align: center;
-  max-width: 600px;
-  line-height: 1.6;
-  margin: 0 0 1.5rem;
-}
-
-.dashboard {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.featureCard {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  padding: 1.4rem 1.8rem;
-  border-radius: 10px;
-  text-decoration: none !important;
-  color: inherit;
-  background: linear-gradient(135deg, #6690d4, #97bcf8);
-  color: #fff !important;
-  box-shadow: 0 5px 10px rgba(111, 134, 189, 0.3);
-  transition: all 0.3s ease;
-  border: none;
-}
-
-.featureCard:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 5px 20px rgba(30, 79, 194, 0.45);
-}
-
-.featureTitle {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 0.2rem;
-}
-
-.featureDesc {
-  font-size: 0.9rem;
-  opacity: 0.85;
-}
-
-.smallGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-}
-
-.smallCard {
-  background: linear-gradient(135deg, #f9fbff, #f2f7ff);
-  border-radius: 10px;
-  padding: 1.3rem 1.4rem;
-  text-decoration: none !important;
-  color: inherit;
-  border: 1px solid #e2edff;
-  transition: all 0.25s ease;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.smallCard:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(160, 174, 207, 0.15);
-}
-
-.smallTitle {
+.cta {
+  padding: 0.75rem 1.6rem;
+  border-radius: 999px;
+  background: #0b1a6e;
+  color: #ffffff;
   font-weight: 600;
-  font-size: 1rem;
-  color: var(--ifm-heading-color);
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
 }
 
-.smallDesc {
-  font-size: 0.83rem;
-  opacity: 0.65;
-  line-height: 1.5;
+[data-theme="dark"] .cta {
+  background: #3451d1;
 }
 
-[data-theme="dark"] .heroBanner {
-  background: #0f1520;
+.side:hover .cta,
+.side:focus-visible .cta {
+  transform: translateY(-3px);
 }
 
-[data-theme="dark"] .smallCard {
-  background: #1a2235;
+@media (max-width: 768px) {
+  .split {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .side {
+    min-height: 40vh;
+  }
+
+  .ios::before {
+    top: 0;
+    bottom: auto;
+    left: 15%;
+    right: 15%;
+    width: auto;
+    height: 1px;
+  }
 }
 
-[data-theme="dark"] .smallCard:hover {
-  box-shadow: 0 8px 20px rgba(176, 203, 226, 0.15);
-}
-
-@media (max-width: 640px) {
-  .smallGrid { grid-template-columns: 1fr; }
-  .featureCard { flex-direction: column; text-align: center; }
+@media (prefers-reduced-motion: reduce) {
+  .cta {
+    transition: none;
+  }
 }

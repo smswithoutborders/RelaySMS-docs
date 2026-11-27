@@ -2,87 +2,35 @@
 sidebar_position: 1
 ---
 
-# Application RelaySMS pour Android
+# Bien démarrer avec RelaySMS - Android
 
-## Bien démarrer avec Android
+### Restez connecté même lorsque Internet est coupé
 
-RelaySMS permet aux utilisateurs de rester connectés à leurs plateformes en ligne même lorsque l’accès à Internet est indisponible. En utilisant la messagerie SMS, les utilisateurs peuvent continuer à communiquer et leurs contacts reçoivent les messages en ligne comme d’habitude.
+RelaySMS vous permet d'envoyer des messages, des e-mails et des publications sur vos plateformes en ligne uniquement par SMS. Aucune connexion Internet n'est nécessaire. Vos contacts reçoivent vos messages en ligne, exactement comme d'habitude.
 
-## Introduction
+## Étapes du tutoriel Android
 
-RelaySMS vous aide à envoyer des messages en ligne **sans avoir besoin d’Internet**.  
-Il fonctionne de **deux manières :**
+Utilisez la barre latérale du tutoriel Android pour avancer étape par étape :
 
-## [1. Utiliser Offline RelaySMS Mail (Aucune configuration requise)](/docs/Bridges%20Tutorial/Bridges)
+1. Télécharger l'application
+2. Prise en main
+3. Enregistrer des plateformes
+4. Sauvegarder et restaurer
+5. Envoyer un message
+6. Numéros de routage
 
-## **2. Utiliser des plateformes (Inscription et configuration nécessaire à l’avance)**
+Si vous êtes pressé, commencez par [Envoyer un message](./Step-5-Sending-a-Message) et choisissez **RelaySMS Mail hors ligne**.
 
-Cette méthode est idéale si vous souhaitez publier sur des plateformes comme **Gmail, Bluesky ou Telegram** pendant des coupures d’Internet en utilisant vos propres comptes.
+## Aide-mémoire
 
-### Étapes pour utiliser la fonctionnalité Plateforme :
+| Je veux... | Que faire |
+| --- | --- |
+| Envoyer un message rapidement sans configuration | Utiliser RelaySMS Mail hors ligne -> Écrire -> Envoyer depuis un alias aléatoire -> Envoyer |
+| Envoyer depuis mon Gmail pendant une coupure | Enregistrer d'abord Gmail -> Écrire -> Gmail -> Envoyer |
+| Envoyer une image | Définir RelaySMS comme application par défaut -> Écrire -> Icône de pièce jointe |
+| Sauvegarder mes plateformes | Menu à 3 points -> Sauvegarder -> Sauvegarder maintenant -> Conserver la clé |
+| Restaurer mes plateformes | Page d'accueil (prise en main) -> Restaurer -> Choisir le fichier -> Saisir la clé |
 
-1. **Télécharger l’application RelaySMS.**
+RelaySMS est une application open source du projet SMSWithoutBorders, conçue pour les personnes qui doivent rester connectées lorsque Internet est coupé.
 
-- [Google Play Store](https://play.google.com/store/apps/details?id=com.afkanerd.sw0b)
-- [Github](https://github.com/smswithoutborders/SMSwithoutBorders-Android/releases/tag/v1.0)
-- Ou compiler depuis la [source](https://github.com/smswithoutborders/SMSwithoutBorders-Android)
-
-<img src="/Android/Playstore.png" class="resized-image"/>
-
-2. **Passez l’onboarding pour vous familiariser.**
-- Cliquez sur **Make app default** (optionnel)
-
-*(Images conservées inchangées)*
-
-3. **Créer un compte :**
-- Appuyez sur **Sign Up**
-- Entrez votre email ou numéro de téléphone + mot de passe
-- Cochez la politique de confidentialité
-- Cliquez sur **Create**
-- Entrez le code Recaptcha
-
-4. **Vous avez déjà un compte ?**
-Appuyez sur **Login**, entrez vos informations et le code Recaptcha.
-
-5. **Vérifiez votre téléphone**
-- Entrez le code SMS reçu puis cliquez sur **Submit**
-
-6. **Enregistrer vos plateformes :**
-- Ouvrez l’onglet **Platforms**
-- Choisissez Gmail, Twitter ou Telegram
-- Appuyez sur **Add Platform**
-
-7. **Choisir un numero de routage :**
-- Ouvrez l’onglet **Country**
-- Sélectionnez un numéro et appuyez sur **Make Default**
-- Vous pouvez ajouter votre propre gateway via **Add Number**
-
-8. **Envoyer un message :**
-- Sur la page **Recent**, appuyez sur l’icône **Compose**
-- Choisissez une plateforme sauvegardée
-- Rédigez votre message puis appuyez sur **Send**
-- Confirmez le numero de routage
-
-*NB : Si RelaySMS n’est pas votre application SMS par défaut, il vous sera demandé d’en choisir une.*
-
-### Comment utiliser la fonctionnalité de stockage de jetons sur l’appareil
-
-La fonction **Store Tokens On-Device** stocke vos jetons d’accès **sur votre appareil**, et non sur les serveurs RelaySMS.
-
-#### Activer le stockage local :
-1. Ouvrez **RelaySMS**
-2. Allez dans **Settings**
-3. Allez dans **Publishing**
-4. Activez **Store tokens on-device**
-
-#### Désactiver :
-- Désactivez le toggle dans **Settings > Publishing**
-
-#### Rafraîchir les jetons Twitter (local uniquement) :
-1. Après l’envoi d’un tweet, vous recevrez un SMS contenant un jeton mis à jour.
-2. Copiez le SMS complet.
-3. Ouvrez l’onglet **Inbox**
-4. Collez le SMS
-5. Le jeton sera extrait automatiquement.
-
-## [How to Use the On-Device Token Storage Feature](/docs/On-Device%20Tutorial/On-DeviceToken)
+Un problème ? Rejoignez notre communauté sur [Telegram](https://t.me/+IPYp6q06dWsyZjY0) ou contribuez sur [GitHub](https://github.com/smswithoutborders)

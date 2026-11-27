@@ -71,7 +71,7 @@ When a platform is saved it will light up. Tap it to see which account is connec
 ### Mastodon
 
 1. Tap Mastodon.
-2. . Sign in to your Mastodon account.
+2. Sign in to your Mastodon account.
 3. Tap Authorize.
 
 <img src="/mockup/mastodon-accounts.png" alt="Mastodon account" class="resized-image"/>

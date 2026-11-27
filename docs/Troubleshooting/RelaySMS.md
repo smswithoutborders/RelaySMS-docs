@@ -137,18 +137,24 @@ sidebar_position: 3
 - **Answer:**
   - An SMS-capable iPhone running **iOS 15.0 or later**.
 
-### 3. **How do I send a message on iOS?**
+### 3. **Which platforms are available on iOS?**
 
 - **Answer:**
-  - Like on Android, you can send with **Offline RelaySMS Mail** (no setup) or with saved platforms.
-  - After you tap **Send**, RelaySMS opens your SMS app. Send the message from there to finish.
-  - See [Getting started with iOS](/docs/iOS%20Tutorial/Getting-Started-With-iOS).
+  - You can save **Bluesky**, **Gmail**, **Mastodon** and **Telegram**. You can also send emails with **R-Mail** without saving anything.
 
-### 4. **How do I read replies on iOS?**
+### 4. **How do I send a message on iOS?**
 
 - **Answer:**
-  - Open RelaySMS and go to the **Inbox**.
-  - Tap **"Paste the incoming message here"**, paste the SMS reply, then tap **Decrypt**.
+  - Tap the compose button. In the **Send with...** menu, choose a saved platform, or the **No account** option at the bottom to send an email from a random address (R-Mail). You cannot get replies to R-Mail.
+  - Tap the send icon, check the routing number, and send. iOS opens a message screen with your encrypted message. Tap the send arrow to finish.
+  - See [Sending a message on iOS](/docs/iOS%20Tutorial/Step-5-Sending-a-Message).
+
+### 5. **How do I back up and restore on iOS?**
+
+- **Answer:**
+  - **Back up:** tap the **...** menu, then **Backups**, and follow the steps. Choose a folder for the backup and save your 64-character **recovery key** somewhere safe.
+  - **Restore:** you can only restore on the welcome screen during onboarding. Tap **Restore backup**, choose your backup file and enter your recovery key.
+  - See [Back up and restore on iOS](/docs/iOS%20Tutorial/Step-4-Back-Up-and-Restore).
 
 ---
 

@@ -35,7 +35,15 @@ const sidebars = {
     {
       type: 'category',
       label: 'iOS Tutorial',
-      items: ['iOS Tutorial/Getting-Started-With-iOS'],
+      items: [
+        'iOS Tutorial/Getting-Started-With-iOS',
+        'iOS Tutorial/Step-1-Download-the-App',
+        'iOS Tutorial/Step-2-Onboarding',
+        'iOS Tutorial/Step-3-Save-Platforms',
+        'iOS Tutorial/Step-4-Back-Up-and-Restore',
+        'iOS Tutorial/Step-5-Sending-a-Message',
+        'iOS Tutorial/Step-6-Routing-Numbers',
+      ],
     },
     // {
     //   type: 'category',
